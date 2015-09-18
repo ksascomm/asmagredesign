@@ -1,0 +1,196 @@
+/* 9.0 Pages
+----------------------------------*/
+
+body.category-exclusive .postmaterial {
+  h5 {
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+  a {
+    p, &:visited {
+      color: #333;
+      font-family: 'Myriad W01 Regular';
+    }
+  }
+}
+
+.listing {
+  margin-bottom: 15px;
+}
+
+#search-results ul {
+  list-style: none;
+}
+
+.catarticle {
+  width: 90%;
+  float: left;
+  padding: 15px;
+  img {
+    margin-right: 15px;
+  }
+  h5 {
+    font-size: 1.25em;
+    margin-bottom: 0;
+  }
+  a p {
+    color: #333;
+  }
+}
+
+.subtext p img, .catarticle p img, .featurelisting p img {
+  display: none;
+}
+
+blockquote {
+  margin: 1.5em 0 1.5em;
+  padding: 0 1em 0 2.5em;
+  position:relative;
+  border-left: none;
+}
+blockquote:before
+ {
+  color: $ksasblue;
+  content: "\201C";
+  font-size: 5em;
+  position:absolute;
+  left:5px;
+  top: 0.3em;
+  line-height: 0.1em;
+}
+
+blockquote:after
+ {
+   color: $ksasblue;
+  content: "\201D";
+  font-size: 5em;
+  position:absolute;
+  right:3px;
+  bottom: 0em;
+  line-height: 0.1em;
+}
+
+blockquote cite {
+    display: block;
+    font-size: 1.1rem;
+    color: $jhublue;
+    font-weight: bold;
+}
+
+.listing p {
+  font-size: 1rem;
+}
+
+ul.page-numbers {
+    list-style: none;
+    margin: 0;
+}
+
+.page-numbers:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+ul.page-numbers li {
+    display: block;
+    float: left;
+    margin: 0 4px 4px 0;
+    text-align: center;
+}
+
+.page-numbers a,
+.page-numbers span {
+    line-height: 1.6em;
+    display: block;
+    padding: .5em;
+    line-height: 18px;
+    font-size: 1.25em;
+    text-decoration: none;
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    color: #888;
+}
+
+.page-numbers a span { padding: 0 }
+
+.page-numbers a:hover,
+.page-numbers.current,
+.page-numbers.current:hover {
+    color: #000;
+    background: #f7f7f7;
+    text-decoration: none;
+}
+
+.page-numbers:hover { text-decoration: none }
+
+.tell-me {
+  h2 {
+    margin-top: 40px;
+    font-weight: 200;
+    color: #333;
+  }
+
+  .centered-text {
+    text-align: center;
+  }
+
+  .quote-marks {
+  color: $jhublue;
+  content: "\201C";
+  font-size: 5em;
+  position:absolute;
+  left:5px;
+  top: 0.3em;
+  line-height: 0.1em;
+  }
+
+  .move-right {
+    position: relative;
+    text-align: right;
+  }
+
+  .quote {
+    border-radius: 5px;
+    p {
+      font-weight: 300;
+    }
+  }
+
+  @media only screen and (max-width: 40em) {
+    .quote p {
+      padding-left: 20px;
+    }
+  }
+
+  .faculty-answer {
+    margin-left: 25px;
+    margin-bottom: 80px;
+    .photo {
+      background-color: #ccc;
+      border-radius: 100px;
+      width: 100px;
+      height: 100px;
+      float: left;
+      margin-right: 15px;
+    }
+    p {
+      position: relative;
+      top: 5px;
+      &:nth-child(2) {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+      &:nth-child(3) {
+        font-size: 14px;
+        font-weight: 400;
+        color: #777;
+      }
+    }
+  }
+}

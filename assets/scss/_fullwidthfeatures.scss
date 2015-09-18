@@ -1,0 +1,167 @@
+.intro-header {
+  background-color: #808080;
+  background: no-repeat center center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin-top:  -1em;
+  .post-heading {
+    padding: 100px 0 50px;
+    color: white;
+    h2 {
+      	font-size: 5em;
+    }
+    h3 {
+    	font-size: 2.5em;
+    }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-header {
+    .site-heading, .post-heading, .page-heading {
+      padding: 150px 0;
+    }
+  }
+}
+
+.features.content {
+	margin-top: 25px;
+  p {
+    font-size: 18px;
+    line-height: 1.6em;
+    padding: 0 20px;
+    position: relative;
+    max-width: 660px;
+    margin: 0 auto 20px;
+  }
+}
+
+.full-width img {
+  width: 100%;
+}
+
+.story {
+  margin-top: 1em;
+}
+
+.features {
+  .spacer {
+    background: $red;
+    width: 50%;
+    text-align: right;
+  }
+  h3 {
+    color: $red;
+    font-variant: small-caps;
+  }
+}
+
+.also-in {
+  .spacer {
+    background: $ksassky;
+    width: 50%;
+    text-align: right;
+  }
+  h3 {
+    color: $ksasblue;
+    font-variant: small-caps;
+  }
+}
+
+.spacer {
+  background: #333;
+  height: 18px;
+  display: inline-block;
+  margin: 0px 10px 0px 18px;
+}
+
+a.toc-bucket {
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+focus {
+  text-decoration: none;
+}
+
+.bs-callout {
+  padding: 20px;
+  margin: 10px 15px 10px -50px;
+  margin-left: -55px;
+  h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+  code {
+    border-radius: 3px;
+  }
+  + .bs-callout {
+    margin-top: -5px;
+  }
+}
+
+.bs-callout-default h4 {
+  color: #777;
+}
+
+.divider {
+  background: #000;
+  color: #fff;
+  padding: 0px;
+}
+
+.section-inverse {
+  background: #000;
+  color: #fff;
+}
+
+.pullquote {
+  border-radius: 5px;
+  background-color: aqua;
+  p {
+    font-weight: 300;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .pullquote p {
+    padding-left: 20px;
+  }
+}
+
+.pullquote-wrap {
+  float: left;
+  max-width: 350px;
+}
+
+.full-width .caption {
+  position: relative;
+  background-color: rgba($red, 0.85);
+  width: 250px;
+  float: right;
+  margin: -100px 2em auto 1em;
+  zoom: 1;
+  p {
+    font-family: 'gentona-light';
+    font-size: 1.125em;
+    color: #fff;
+    margin: 1em;
+    padding: 0 .5em;
+    width: 95% !important;
+  }
+}
+
+@media only screen and (max-width: 1277px) {
+    .full-width .caption p {
+    display: none;
+  }
+}

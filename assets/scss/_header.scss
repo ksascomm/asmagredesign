@@ -1,0 +1,257 @@
+/* 5.0 Header Content
+---------------------------------------------*/
+/* 5.1 Logo
+---------------------------------------------*/
+.top-bar {
+  background-color: $black;
+}
+
+.top-bar ul li a {
+  background-color: $black !important;
+  font-family: 'gentona-thin';
+  &:hover {
+    background-color: darken($black, 10%) !important;
+  }
+} 
+
+@media only screen and (min-width: 40.0625em) {
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+    background-color: darken($black, 10%) !important;
+    background: #222222;
+}
+}
+
+.top-bar-section ul li {
+  background-color: $black;
+}
+.top-bar-section ul li > a {
+  font-family: 'gentona-thin';
+  font-size: 1.2rem;
+  font-weight: normal;
+  padding-left: 0.9375rem;
+  padding: 12px 0 12px 0.9375rem;
+  text-transform: none;
+  width: 100%;
+}
+
+
+.navbar-brand-centered img {
+    position: absolute;
+    left: 40%;
+    display: block;
+    width: 300px;
+}
+
+
+.issue {
+  margin: 141px 5px 0px 15px;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 6px 2px;
+  display: inline-block;
+  color: #FFF;
+  font-family: 'Myriad W01 SmBd';
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: 0;
+  width: auto;
+  background: $black;
+}
+
+select.issue {
+  min-width: 88px;
+  text-indent: 7px;
+}
+
+.logo-sub {
+  display: inline;
+  font-size: 23px;
+  text-transform: uppercase;
+  color: #FFF;
+  font-family: 'Myriad W01 SmBd';
+  vertical-align: bottom;
+}
+
+.mobile-logo {
+  position: relative;
+  margin: 0 auto;
+  top: 32px;
+  height: 200px;
+  .issue {
+    margin-top: 122px;
+  }
+  a {
+    background: url(../images/logo.jpg) no-repeat top;
+    width: 235px;
+    height: 165px;
+    margin-top: 0;
+    text-indent: -9999px;
+    position: absolute;
+  }
+}
+
+#logo_nav li.logo {
+  background: #151313;
+}
+
+#search-bar {
+  text-transform: uppercase;
+  font-family: "Myriad W01 SmBd";
+  margin-top: 15px;
+  margin-bottom: 10px;
+  .columns {
+    padding: 0;
+  }
+  a {
+    color: #FFF;
+    font-size: 16px;
+  }
+  .links {
+    margin-top: 9px;
+  }
+}
+
+.links li {
+  list-style: none;
+  display: inline;
+  &:after {
+    content: " | ";
+  }
+  &:last-child:after {
+    content: "";
+  }
+}
+
+.sub-page#logo_nav {
+  min-height: 165px;
+  li.logo {
+    margin-top: 0px;
+    height: 150px;
+    a {
+      top: 0px;
+    }
+  }
+}
+
+.toc_nav {
+  background: $black;
+  color: #FFF;
+  position: relative;
+  top: 0;
+  left: 15px;
+  width: 235px;
+  margin-top: -56px;
+  font-size: 24px;
+  padding: 5px 0 0 15px;
+  margin-bottom: 0;
+  a {
+    color: #FFF;
+    &:hover, &:visited {
+      color: #FFF;
+    }
+  }
+  .issue {
+    margin: 0;
+    font-size: 20px;
+    padding: 6px 0 0 12px;
+    display: inline;
+    vertical-align: baseline;
+  }
+  &.mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 0;
+    z-index: 3000;
+  }
+}
+
+.spacer {
+  width: 82px;
+  background: #333;
+  height: 18px;
+  display: inline-block;
+  margin: 123px 10px 0px 18px;
+}
+
+#search-bar input {
+  &[type="text"] {
+    height: 31px;
+    margin-bottom: 0;
+    -webkit-border-top-left-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    -moz-border-radius-topleft: 7px;
+    -moz-border-radius-bottomleft: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    display: inline;
+    float: left;
+    width: 75%;
+    border: none;
+  }
+  &[type="submit"] {
+    height: 31px;
+    width: 30px;
+    font-family: 'magazine';
+    -webkit-border-top-right-radius: 7px;
+    -webkit-border-bottom-right-radius: 7px;
+    -moz-border-radius-topright: 7px;
+    -moz-border-radius-bottomright: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    font-size: 16px;
+    border: none;
+    float: left;
+    padding: 0;
+    color: #333;
+    background: #ccc;
+  }
+}
+
+#fields_search {
+  input {
+    &[type="text"] {
+      height: 31px;
+      margin-bottom: 0;
+      background: #fff;
+      background: rgba(255, 255, 255, 0.75);
+      -webkit-border-top-right-radius: 7px;
+      -webkit-border-bottom-right-radius: 7px;
+      -moz-border-radius-topright: 7px;
+      -moz-border-radius-bottomright: 7px;
+      border-top-right-radius: 7px;
+      border-bottom-right-radius: 7px;
+      display: inline;
+      float: left;
+      width: 75%;
+      border: none;
+    }
+    &[type="submit"] {
+      background: #666;
+      height: 31px;
+      width: 30px;
+      font-family: 'magazine';
+      -webkit-border-top-left-radius: 7px;
+      -webkit-border-bottom-left-radius: 7px;
+      -moz-border-radius-topleft: 7px;
+      -moz-border-radius-bottomleft: 7px;
+      border-top-left-radius: 7px;
+      border-bottom-left-radius: 7px;
+      font-size: 16px;
+      border: none;
+      float: left;
+      padding: 0;
+      color: #ccc;
+    }
+  }
+  margin-top: 45px;
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+}
+
+.option-set {
+  padding-right: 0;
+}

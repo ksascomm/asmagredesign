@@ -1,0 +1,117 @@
+.slide img {
+	width: 100%;
+	height: 500px;
+}
+
+.orbit-caption {
+	background-color: inherit !important;
+	width: 75% !important;
+}
+
+.orbit-container .orbit-slides-container > * .slide-caption {
+    bottom: 0;
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 0.875rem;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 70px;
+    font-size: 30px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    left: 15%;
+    right: 15%;
+    bottom: 20px;
+    z-index: 10;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.slide-caption {
+	h1 {
+		color: #fff;
+	}
+	p {
+		font-size: 16px;
+	}
+}
+section.features {
+  background: #000;
+  height: 500px;
+}
+
+/* Orbit Fix */
+
+    ul[data-orbit] {
+        margin: 0;
+        padding-left: 0;
+        list-style-type: none;
+    }
+
+    /* initially, hide all slides... */
+    ul[data-orbit] li,
+    ul[data-orbit] .orbit-caption {
+        display: none;
+    }
+
+    /* ...except for the first one */
+    ul[data-orbit] li:first-child { display: none; 
+     }
+
+    /* show slides once .orbit-container is loaded */
+    .orbit-container ul[data-orbit] li,
+    .orbit-container ul[data-orbit] .orbit-caption {
+        display: block;
+    }
+
+section.news {
+    margin-bottom: 20px;
+}
+
+.home .spacer {
+    width: 75%;
+}
+.news {
+	h2 {
+	color: $ksasblue;
+	font-variant: small-caps;
+	}
+	.spacer {
+		background: $ksasblue;
+	}
+}
+
+.big-ideas, .bigideas {
+	h2 {
+	color: $green;
+	font-variant: small-caps;
+	}
+	.spacer {
+		background: $green;
+	}
+}
+
+.bluejays {
+    h2 {
+    color: $jhublue;
+    font-variant: small-caps;
+    }
+    .spacer {
+        background: $jhublue;
+    }
+}
+
+.item {
+	h5 {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold;
+	}
+	p {
+		font-size: .9em;
+		margin: -10px 0 20px 0;
+		color: #6a6f73;
+	}
+}

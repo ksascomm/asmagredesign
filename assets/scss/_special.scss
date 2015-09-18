@@ -1,0 +1,104 @@
+/* 1.0 Special Classes
+___________________________________________________________*/
+
+.offset-gutter {
+  padding: 0;
+}
+
+.clearboth {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearleft {
+  clear: left;
+}
+
+.clearright {
+  clear: right;
+}
+
+.floatleft, .alignleft {
+  float: left;
+}
+
+.floatright, .alignright {
+  float: right;
+}
+
+.video-container {
+  /* Wrap around iFrame and SWF embeds for responsive sizing */
+  position: relative;
+  padding-top: 1.875em;
+  overflow: hidden;
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+img a {
+  border: none;
+  text-decoration: none;
+}
+
+.dropcap {
+  float: left;
+  font-size: 3.5em;
+  margin-top: 5px;
+  padding-right: 3px;
+  padding-bottom: 1px;
+}
+
+.smallcap {
+  font-variant: small-caps;
+}
+
+.postmaterial img.noshadow {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+em, i {
+  font-family: "Myriad W01 It";
+  font-style: normal;
+}
+
+blockquote {
+  font-family: "Myriad W01 It";
+  font-style: normal;
+  p {
+    font-family: "Myriad W01 It";
+    font-style: normal;
+  }
+}
+
+.italic {
+  font-family: "Myriad W01 It";
+  font-style: normal;
+}
+
+strong, b, .bold {
+  font-family: "Myriad W01 SmBd";
+}
+
+.b.em, .strong.em {
+  font-family: "Myriad W01 It";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Myriad W01 SmBd";
+  font-size: 80%;
+}

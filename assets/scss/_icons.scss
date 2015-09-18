@@ -1,0 +1,133 @@
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "magazine";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-exclusive:before {
+  content: '\2a';
+}
+
+/* '*' */
+
+.icon-expanded-story:before {
+  content: '\25';
+}
+
+/* '%' */
+
+.icon-slideshow:before {
+  content: '\40';
+}
+
+/* '@' */
+
+.icon-toc3:before {
+  content: '\3d';
+}
+
+/* '=' */
+
+.icon-home:before {
+  content: '\5e';
+}
+
+/* '^' */
+
+.icon-link:before {
+  content: '\5b';
+}
+
+/* '[' */
+
+.icon-comments:before {
+  content: '\6f';
+}
+
+/* 'o' */
+
+.icon-rss:before {
+  content: '\7d';
+}
+
+/* '}' */
+
+.icon-toc4:before {
+  content: '\23';
+}
+
+/* '#' */
+
+.icon-video:before {
+  content: '\e808';
+}
+
+/* '' */
+
+.icon-audio:before {
+  content: '\3e';
+}
+
+/* '&gt;' */
+
+.icon-toc:before {
+  content: '\3a';
+}
+
+/* ':' */
+
+.icon-toc2:before {
+  content: '\7b';
+}
+
+/* '{' */
+
+.icon-facebook:before {
+  content: '\66';
+}
+
+/* 'f' */
+
+.icon-twitter:before {
+  content: '\74';
+}
+
+/* 't' */
+
+.icon-vimeo:before {
+  content: '\76';
+}
+
+/* 'v' */
+
+.icon-search:before {
+  content: '\30';
+}
+
+/* '0' */
+
+.icon-interview:before {
+  content: '\e806';
+}
+
+/* '' */
+@charset "utf-8";

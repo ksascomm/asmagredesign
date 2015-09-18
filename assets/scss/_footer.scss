@@ -1,0 +1,149 @@
+/* 7.0 - Footer
+----------------------------------*/
+
+footer {
+  background: $black;
+  padding: 1.5em;
+  margin-top: 1.5em;
+  a {
+    color: $silver;
+  }
+}
+
+.inline-list li a {
+  color: $silver;
+}
+
+#social-media {
+  margin-top: 9px;
+  a {
+    content: none;
+    color: #333;
+    background: #555;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    &:hover {
+      color: #333;
+      background: $silver;
+    }
+  }
+}
+
+#menu-footer-links {
+  margin-top: 15px;
+  a {
+    font-size: 12px;
+  }
+}
+
+#copyright p {
+  text-align: center;
+  font-size: 12px;
+  color: $silver;
+  margin: 20px 0 0px 0;
+}
+
+#footer-top {
+  background: rgba(255, 255, 255, 0.2);
+  padding-bottom: 100px;
+   .spacer {
+  height: 14px;
+  background: $red;
+  width: 90px;
+  margin: 4px 5px 0 5px;
+  }
+  .table h4 {
+    color: $red;
+  }
+  h4 {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: $red;
+    margin-bottom: 20px;
+  }
+  h5 {
+    color: #333;
+    a {
+      color: #333;
+    }
+  }
+}
+
+/* 7.3 - Table of Contents
+----------------------------------*/
+
+#modal_toc {
+  background: #FFF;
+}
+
+.reveal-modal-bg {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+#modal_toc img {
+  margin: 0 7px 4px 0;
+}
+
+h2.toc_header {
+  text-transform: uppercase;
+  border-bottom: solid 3px;
+  &.features {
+    color: $red;
+    border-bottom-color: $red;
+  }
+  &.alumni {
+    color: $orange;
+    border-bottom-color: $orange;
+  }
+  &.departments {
+    color: $black;
+    border-bottom-color: $black;
+  }
+  &.bluejays {
+    color: $jhublue;
+    border-bottom-color: $jhublue;
+  }
+  &.bigideas {
+    color: $green;
+    border-bottom-color: $green;
+  }
+  &.exclusive {
+    color: #3478b6;
+    border-bottom-color: #3478b6;
+  }
+}
+
+#modal_toc {
+  li {
+    font-size: 18px;
+    line-height: 1em;
+    list-style: circle;
+    margin-bottom: 10px;
+  }
+  a {
+    color: #333 !important;
+  }
+}
+
+#modal_toc {
+  .uppercase {
+    font-size: 10px;
+    color: $black;
+  }
+  article {
+    &.vertical {
+      min-height: 275px;
+    }
+    &.horizontal {
+      min-height: 80px;
+      h4 {
+        margin-top: 0;
+        font-size: 20px;
+      }
+    }
+  }
+}

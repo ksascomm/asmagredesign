@@ -1,0 +1,255 @@
+/* 2.0 Backgrounds -- See 6.0 for HP Backgrounds
+---------------------------------------------*/
+
+body {
+  &.v8n2 {
+    background: url('../images/v8n2.jpg') repeat 0 0;
+  }
+  &.v9n1, &.v9n2 {
+    background: url('../images/v9n1.jpg') repeat 0 0;
+  }
+  &.v10n1, &.v10n2 {
+    background: #384d5c;
+  }
+  &.v11n1 {
+    background: #000 url('../images/v11n1.jpg') no-repeat fixed top center;
+  }
+  &.v11n2 {
+    background: #384d5c;
+  }
+  &.v12n2 {
+    background: -webkit-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%);
+    /* Chrome 10+, Saf5.1+ */
+    background: -moz-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%);
+    /* FF3.6+ */
+    background: -ms-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%);
+    /* IE10 */
+    background: -o-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%);
+    /* Opera 11.10+ */
+    background: linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%);
+    /* W3C */
+  }
+}
+
+#container-mid {
+  background: #fff;
+}
+
+.black_bg {
+  background: #000;
+}
+
+/* 6.0 Homepage
+----------------------------------*/
+
+header, body.page-template-template-tableofcontents-php #container-mid, header, body.page-template-template-tableofcontents-features-php #container-mid {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#homepage {
+  h3 {
+    font-size: 22px;
+    margin-bottom: 3px;
+    color: #f7f7f7;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.2em;
+    margin-bottom: 15px;
+    color: #f7f7f7;
+  }
+}
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+.isotope {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  .isotope-item {
+    /* change duration value to whatever you like */
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -ms-transition-property: -ms-transform, opacity;
+    -o-transition-property: -o-transform, opacity;
+    transition-property: transform, opacity;
+  }
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+
+article.field {
+  height: 90px;
+  min-height: 90px;
+  margin-bottom: 20px;
+  width: 235px !important;
+}
+
+#features .caption-box, .green_bg {
+  background: $green;
+}
+
+.purple_bg, #news .caption-box {
+  background: $purple;
+}
+
+.fushia, #insights .caption-box {
+  background: #8e3a80;
+}
+
+.yellow_bg, #research .caption-box {
+  background: $yellow;
+}
+
+.orange_bg, #alumni .caption-box {
+  background: #cc6600;
+}
+
+.bright_blue_bg, #exclusive .caption-box {
+  background: $ksasblue;
+}
+
+#homepage .row {
+  width: 1040px;
+}
+
+.box {
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  margin: 20px 0;
+  padding: 0 10px !important;
+  img {
+    position: absolute;
+    left: 10px;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+    max-height: 195px;
+  }
+}
+
+.caption-box {
+  z-index: 100;
+  position: absolute;
+  top: 195px;
+  width: 235px !important;
+  min-height: 90px;
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  -ms-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  p {
+    display: none;
+  }
+}
+
+.box:hover {
+  .caption-box {
+    transform: translate(0px, -195px);
+    -webkit-transform: translate(0px, -195px);
+    -moz-transform: translate(0px, -195px);
+    -o-transform: translate(0px, -195px);
+    -ms-transform: translate(0px, -195px);
+    height: 195px;
+    p {
+      display: block;
+    }
+  }
+  #features .caption-box {
+    background: #006666;
+    background: rgba(0, 102, 102, 0.85) !important;
+  }
+  #news .caption-box {
+    background: rgb(36, 19, 95);
+    background: rgba(36, 19, 95, 0.85) !important;
+  }
+  #insights .caption-box {
+    background: rgb(142, 58, 126);
+    background: rgba(142, 58, 126, 0.85) !important;
+  }
+  #alumni .caption-box {
+    background: rgb(204, 102, 0);
+    background: rgba(204, 102, 0, 0.85) !important;
+  }
+  #research .caption-box {
+    background: rgb(203, 160, 82);
+    background: rgba(203, 160, 82, 0.85) !important;
+  }
+  #exclusive .caption-box {
+    background: rgb(51, 153, 255);
+    background: rgba(51, 153, 255, 0.85) !important;
+  }
+}
+
+button, .button {
+  border: none;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  font-family: "Myriad W01 SmBd", Arial, sans-serif;
+  color: #FFF;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 6px 6px;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  opacity: 1;
+  font-weight: normal;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: inline-block;
+  *display: inline;
+}
+
+button:hover {
+  -moz-box-shadow: 0 0 5px #fff;
+  -webkit-box-shadow: 0 0 5px #fff;
+  box-shadow: 0px 0px 5px #fff;
+  filter: progid:DXImageTransform.Microsoft.Glow(Color=white,Strength=5);
+  -webkit-transition: 500ms linear 0s;
+  -moz-transition: 300ms linear 0s;
+  -o-transition: 300ms linear 0s;
+  transition: 300ms linear 0s;
+}
+
+.button {
+  &:hover {
+    -moz-box-shadow: 0 0 5px #fff;
+    -webkit-box-shadow: 0 0 5px #fff;
+    box-shadow: 0px 0px 5px #fff;
+    filter: progid:DXImageTransform.Microsoft.Glow(Color=white,Strength=5);
+    -webkit-transition: 500ms linear 0s;
+    -moz-transition: 300ms linear 0s;
+    -o-transition: 300ms linear 0s;
+    transition: 300ms linear 0s;
+  }
+  a {
+    color: #fff;
+    &:hover, &:visited {
+      color: #fff;
+    }
+  }
+}

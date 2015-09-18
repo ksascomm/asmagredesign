@@ -1,0 +1,149 @@
+/* 8.0 Sidebar
+----------------------------------*/
+
+#sidebar {
+    margin-top: 40px;
+   h4 {
+      text-transform: uppercase;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  .spacer {
+    height: 14px;
+    width: 90px;
+    margin: 4px 5px 0 5px;
+  }
+  h5 {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-top: 0;
+    color: #000;
+  }
+  img {
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+  .Insights {
+    color: #993366;
+    h4 {
+      color: #993366;
+    }
+    .spacer {
+      background: #993366;
+    }
+  }
+  .Alumni {
+    color: $orange;
+    h4 {
+      color: $orange;
+    }
+    .spacer {
+      background:$orange;
+    }
+  }
+  .News, .news {
+    color: $ksasblue;
+    h4 {
+      color: $ksasblue;
+    }
+    .spacer {
+      background: $ksasblue;
+    }
+  }
+  .features {
+    color: $red;
+    h4 {
+      color: $red;
+    }
+    .spacer {
+      background: $red;
+    }
+  }
+  .Research {
+    color: #dbb003;
+    h4 {
+      color: #dbb003;
+    }
+    .spacer {
+      background: #dbb003;
+    }
+  }
+  .bigideas,.Big.Ideas {
+  color: $green;
+   h4 {
+      color: $green;
+    }
+    .spacer {
+      background: $green;
+    }
+  }
+  .bluejays {
+  color: $jhublue;
+   h4 {
+      color: $jhublue;
+    }
+    .spacer {
+      background: $jhublue;
+    }
+  }
+  .table h4 {
+    color: #333;
+  }
+}
+
+.button {
+  color: #fff !important;
+}
+.news.button{
+  background-color:#418def;
+}
+.bigideas.button, .big-ideas.button {
+  background-color:$green;
+}
+.bluejays.button{
+  background-color:$jhublue;
+}
+.alumni.button{
+  background-color:$orange;
+ 
+}
+.features.button{
+  background-color:$red;
+}
+
+#sidebar .table .spacer {
+  background: #333;
+}
+
+#sidebar p img, .box span.caption img {
+  display: none;
+}
+
+#disqus_thread {
+  margin: 40px;
+}
+
+#sidebar {
+  .breadcrumbs > li {
+    &:first-child:before {
+    content: " ";
+    margin: 0;
+    }
+    &:before {
+      content: ">";
+    }
+  font-size: 1rem;
+  line-height: 1rem;
+  text-transform: inherit;
+  font-family: 'gentona';
+  float: inherit;
+    a {
+     color: $jhublue;
+    }
+  }
+}

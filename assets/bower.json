@@ -1,0 +1,7 @@
+{
+  "name": "foundation-libsass-template",
+  "dependencies": {
+    "font-awesome": "~4.4.0",
+    "foundation": "zurb/bower-foundation"
+  }
+}
