@@ -1,0 +1,79 @@
+@media only screen and (min-width: 40.0625em) {
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+    background-color: darken($black, 10%) !important;
+    background: #222222;
+}
+}
+
+@media only screen and (max-width: 40em) {
+	.pullquote p {
+		padding-left: 20px;
+	}
+	.orbit-container .orbit-slides-container > * .slide-caption {
+	    padding: 0px;
+	}
+	.orbit-next, .orbit-prev {
+	    display: inherit;
+	    position: absolute!important;
+	    bottom: 0!important;
+	    background: rgba(0,0,0,0.75);
+	}
+	.quote p {
+	  padding-left: 20px;
+	}
+	.item img {
+	width: 60%;
+	}
+	ul.button-group {
+	  margin-left: 25px;
+	}
+}
+
+@media only screen and (min-width: 48em) {
+  .intro-hero {
+    .site-heading, .post-heading, .page-heading {
+      /*padding: 150px 0;*/
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+	.intro-hero .post-heading h2 {
+		font-size: 2.5rem;
+	}
+}
+
+@media only screen and (min-width: 641px) and (max-width: 960px) {
+	.top-bar ul li a {
+	  font-size: 1rem;
+	}
+	.top-bar-section ul li > a {
+	  font-size: 1rem;
+	}
+
+	.navbar-brand-centered img {
+	    position: absolute;
+	    left: 25%;
+	    width: 250px;
+	    padding-top: 3px;
+	}
+}
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+.navbar-brand-centered img {
+    position: absolute;
+    left: 25%;
+    width: 300px;
+}
+}
+
+@media only screen and (max-width: 1277px) {
+    .full-width .caption p {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 120.063em) /* 1921px */ {
+	.intro-header {
+ 	 background: $black;
+ 	}
+}

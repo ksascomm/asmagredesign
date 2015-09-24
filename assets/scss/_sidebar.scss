@@ -99,6 +99,10 @@
 .button {
   color: #fff !important;
 }
+.button.tiny{
+    background-color: $ksassky;
+    padding: 6px;
+}
 .news.button{
   background-color:#418def;
 }

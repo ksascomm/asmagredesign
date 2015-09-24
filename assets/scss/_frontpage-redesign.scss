@@ -103,6 +103,16 @@ section.news {
     }
 }
 
+.alumni {
+    h2 {
+    color: $orange;
+    font-variant: small-caps;
+    }
+    .spacer {
+        background: $orange;
+    }
+}
+
 .item {
 	h5 {
     font-size: 18px;

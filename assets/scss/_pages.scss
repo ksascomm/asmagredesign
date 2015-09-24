@@ -45,36 +45,32 @@ body.category-exclusive .postmaterial {
 blockquote {
   margin: 1.5em 0 1.5em;
   padding: 0 1em 0 2.5em;
-  position:relative;
+  position: relative;
   border-left: none;
-}
-blockquote:before
- {
-  color: $ksasblue;
-  content: "\201C";
-  font-size: 5em;
-  position:absolute;
-  left:5px;
-  top: 0.3em;
-  line-height: 0.1em;
-}
-
-blockquote:after
- {
-   color: $ksasblue;
-  content: "\201D";
-  font-size: 5em;
-  position:absolute;
-  right:3px;
-  bottom: 0em;
-  line-height: 0.1em;
-}
-
-blockquote cite {
+  &:before {
+    color: $ksasblue;
+    content: "\201C";
+    font-size: 5em;
+    position: absolute;
+    left: 5px;
+    top: 0.3em;
+    line-height: 0.1em;
+  }
+  &:after {
+    color: $ksasblue;
+    content: "\201D";
+    font-size: 5em;
+    position: absolute;
+    right: 3px;
+    bottom: 0em;
+    line-height: 0.1em;
+  }
+  cite {
     display: block;
     font-size: 1.1rem;
     color: $jhublue;
     font-weight: bold;
+  }
 }
 
 .listing p {
@@ -82,28 +78,28 @@ blockquote cite {
 }
 
 ul.page-numbers {
-    list-style: none;
-    margin: 0;
+  list-style: none;
+  margin: 0;
 }
 
 .page-numbers:after {
-    content: ".";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 ul.page-numbers li {
-    display: block;
-    float: left;
-    margin: 0 4px 4px 0;
-    text-align: center;
+  display: block;
+  float: left;
+  margin: 0 4px 4px 0;
+  text-align: center;
 }
 
-.page-numbers a,
-.page-numbers span {
+.page-numbers {
+  a, span {
     line-height: 1.6em;
     display: block;
     padding: .5em;
@@ -114,19 +110,31 @@ ul.page-numbers li {
     cursor: pointer;
     border: 1px solid #ddd;
     color: #888;
-}
-
-.page-numbers a span { padding: 0 }
-
-.page-numbers a:hover,
-.page-numbers.current,
-.page-numbers.current:hover {
+  }
+  a {
+    span {
+      padding: 0;
+    }
+    &:hover {
+      color: #000;
+      background: #f7f7f7;
+      text-decoration: none;
+    }
+  }
+  &.current {
     color: #000;
     background: #f7f7f7;
     text-decoration: none;
+    &:hover {
+      color: #000;
+      background: #f7f7f7;
+      text-decoration: none;
+    }
+  }
+  &:hover {
+    text-decoration: none;
+  }
 }
-
-.page-numbers:hover { text-decoration: none }
 
 .tell-me {
   h2 {
@@ -161,11 +169,6 @@ ul.page-numbers li {
     }
   }
 
-  @media only screen and (max-width: 40em) {
-    .quote p {
-      padding-left: 20px;
-    }
-  }
 
   .faculty-answer {
     margin-left: 25px;

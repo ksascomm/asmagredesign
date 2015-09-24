@@ -7790,27 +7790,20 @@ hr.style15:after {
   color: #8c8b8b;
   font-size: 18px; }
 
-@media only screen and (max-width: 40em) {
-  .item img {
-    width: 60%; } }
-
 /* 5.0 Header Content
 ---------------------------------------------*/
 /* 5.1 Logo
 ---------------------------------------------*/
 .top-bar {
-  background-color: #2C2C33; }
+  background: #2C2C33; }
+  .top-bar .name {
+    background-color: #2C2C33; }
 
 .top-bar ul li a {
   background-color: #2C2C33 !important;
   font-family: 'gentona-thin'; }
   .top-bar ul li a:hover {
     background-color: #141418 !important; }
-
-@media only screen and (min-width: 40.0625em) {
-  .top-bar-section li:not(.has-form) a:not(.button):hover {
-    background-color: #141418 !important;
-    background: #222222; } }
 
 .top-bar-section ul li {
   background-color: #2C2C33; }
@@ -7870,6 +7863,28 @@ select.issue {
     margin-top: 0;
     text-indent: -9999px;
     position: absolute; }
+
+#logo_nav li.logo, .mobile-logo {
+  width: 235px;
+  height: 180px;
+  padding: 0;
+  position: absolute;
+  margin-top: -61px;
+  -webkit-border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  list-style: none; }
+
+#logo_nav li.logo a {
+  background: url(../images/logo.jpg) no-repeat top;
+  width: 207px;
+  height: 115px;
+  position: absolute;
+  top: 20px;
+  left: 15px; }
 
 #logo_nav li.logo {
   background: #151313; }
@@ -8471,30 +8486,27 @@ blockquote {
   padding: 0 1em 0 2.5em;
   position: relative;
   border-left: none; }
-
-blockquote:before {
-  color: #418fde;
-  content: "\201C";
-  font-size: 5em;
-  position: absolute;
-  left: 5px;
-  top: 0.3em;
-  line-height: 0.1em; }
-
-blockquote:after {
-  color: #418fde;
-  content: "\201D";
-  font-size: 5em;
-  position: absolute;
-  right: 3px;
-  bottom: 0em;
-  line-height: 0.1em; }
-
-blockquote cite {
-  display: block;
-  font-size: 1.1rem;
-  color: #005eb8;
-  font-weight: bold; }
+  blockquote:before {
+    color: #418fde;
+    content: "\201C";
+    font-size: 5em;
+    position: absolute;
+    left: 5px;
+    top: 0.3em;
+    line-height: 0.1em; }
+  blockquote:after {
+    color: #418fde;
+    content: "\201D";
+    font-size: 5em;
+    position: absolute;
+    right: 3px;
+    bottom: 0em;
+    line-height: 0.1em; }
+  blockquote cite {
+    display: block;
+    font-size: 1.1rem;
+    color: #005eb8;
+    font-weight: bold; }
 
 .listing p {
   font-size: 1rem; }
@@ -8528,15 +8540,20 @@ ul.page-numbers li {
   cursor: pointer;
   border: 1px solid #ddd;
   color: #888; }
-
 .page-numbers a span {
   padding: 0; }
-
-.page-numbers a:hover, .page-numbers.current, .page-numbers.current:hover {
+.page-numbers a:hover {
   color: #000;
   background: #f7f7f7;
   text-decoration: none; }
-
+.page-numbers.current {
+  color: #000;
+  background: #f7f7f7;
+  text-decoration: none; }
+  .page-numbers.current:hover {
+    color: #000;
+    background: #f7f7f7;
+    text-decoration: none; }
 .page-numbers:hover {
   text-decoration: none; }
 
@@ -8561,9 +8578,6 @@ ul.page-numbers li {
   border-radius: 5px; }
   .tell-me .quote p {
     font-weight: 300; }
-@media only screen and (max-width: 40em) {
-  .tell-me .quote p {
-    padding-left: 20px; } }
 .tell-me .faculty-answer {
   margin-left: 25px;
   margin-bottom: 80px; }
@@ -9086,6 +9100,10 @@ ul.page-numbers li {
 .button {
   color: #fff !important; }
 
+.button.tiny {
+  background-color: #68ace5;
+  padding: 6px; }
+
 .news.button {
   background-color: #418def; }
 
@@ -9284,6 +9302,12 @@ section.news {
 .bluejays .spacer {
   background: #005eb8; }
 
+.alumni h2 {
+  color: #ff6900;
+  font-variant: small-caps; }
+.alumni .spacer {
+  background: #ff6900; }
+
 .item h5 {
   font-size: 18px;
   line-height: 21px;
@@ -9293,24 +9317,59 @@ section.news {
   margin: -10px 0 20px 0;
   color: #6a6f73; }
 
-.intro-header {
-  background-color: #808080;
-  background: no-repeat center center;
-  background-attachment: scroll;
+@media only screen and (max-width: 64em) {
+  body, html, main {
+    /* important */
+    height: 100%; } }
+
+.intro-hero {
+  background-repeat: no-repeat;
+  height: 525px;
+  /*background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-top: -1em; }
-  .intro-header .post-heading {
-    padding: 100px 0 50px;
-    color: white; }
-    .intro-header .post-heading h2 {
-      font-size: 5em; }
-    .intro-header .post-heading h3 {
-      font-size: 2.5em; }
+  margin-top:  -1em;*/ }
 
-@media only screen and (min-width: 768px) {
-  .intro-header .site-heading, .intro-header .post-heading, .intro-header .page-heading {
-    padding: 150px 0; } }
+.post-heading {
+  padding: 100px 0 50px; }
+  .post-heading h2 {
+    font-size: 5em;
+    color: white; }
+  .post-heading h3 {
+    font-size: 2.5em; }
+  .post-heading h4 {
+    color: white; }
+
+.full-width-fixed-bg {
+  min-height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 500px; }
+
+.full-width-fixed-bg .caption {
+  position: relative;
+  background-color: rgba(138, 42, 43, 0.85);
+  width: 250px;
+  float: right;
+  margin: -100px 2em auto 1em;
+  zoom: 1; }
+  .full-width-fixed-bg .caption p {
+    font-family: 'gentona-light';
+    font-size: 1.125em;
+    color: #fff;
+    margin: 1em;
+    padding: 0 .5em;
+    width: 95% !important; }
+
+.headerbreak {
+  padding: 35px; }
+
+.cd-scrolling-bg {
+  min-height: 100%; }
 
 .features.content {
   margin-top: 25px; }
@@ -9321,9 +9380,6 @@ section.news {
     position: relative;
     max-width: 660px;
     margin: 0 auto 20px; }
-
-.full-width img {
-  width: 100%; }
 
 .story {
   margin-top: 1em; }
@@ -9386,37 +9442,13 @@ focus {
   color: #fff; }
 
 .pullquote {
-  border-radius: 5px;
-  background-color: aqua; }
+  border-radius: 5px; }
   .pullquote p {
     font-weight: 300; }
-
-@media only screen and (max-width: 40em) {
-  .pullquote p {
-    padding-left: 20px; } }
 
 .pullquote-wrap {
   float: left;
   max-width: 350px; }
-
-.full-width .caption {
-  position: relative;
-  background-color: rgba(138, 42, 43, 0.85);
-  width: 250px;
-  float: right;
-  margin: -100px 2em auto 1em;
-  zoom: 1; }
-  .full-width .caption p {
-    font-family: 'gentona-light';
-    font-size: 1.125em;
-    color: #fff;
-    margin: 1em;
-    padding: 0 .5em;
-    width: 95% !important; }
-
-@media only screen and (max-width: 1277px) {
-  .full-width .caption p {
-    display: none; } }
 
 /* 7.0 - Footer
 ----------------------------------*/
@@ -9526,4 +9558,59 @@ h2.toc_header {
   #modal_toc article.horizontal h4 {
     margin-top: 0;
     font-size: 20px; }
+
+@media only screen and (min-width: 40.0625em) {
+  .top-bar-section li:not(.has-form) a:not(.button):hover {
+    background-color: #141418 !important;
+    background: #222222; } }
+
+@media only screen and (max-width: 40em) {
+  .pullquote p {
+    padding-left: 20px; }
+  .orbit-container .orbit-slides-container > * .slide-caption {
+    padding: 0px; }
+  .orbit-next, .orbit-prev {
+    display: inherit;
+    position: absolute !important;
+    bottom: 0 !important;
+    background: rgba(0, 0, 0, 0.75); }
+  .quote p {
+    padding-left: 20px; }
+  .item img {
+    width: 60%; }
+  ul.button-group {
+    margin-left: 25px; } }
+
+@media only screen and (min-width: 48em) {
+  .intro-hero .site-heading, .intro-hero .post-heading, .intro-hero .page-heading {
+    /*padding: 150px 0;*/ } }
+
+@media only screen and (max-width: 767px) {
+  .intro-hero .post-heading h2 {
+    font-size: 2.5rem; } }
+
+@media only screen and (min-width: 641px) and (max-width: 960px) {
+  .top-bar ul li a {
+    font-size: 1rem; }
+  .top-bar-section ul li > a {
+    font-size: 1rem; }
+  .navbar-brand-centered img {
+    position: absolute;
+    left: 25%;
+    width: 250px;
+    padding-top: 3px; } }
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  .navbar-brand-centered img {
+    position: absolute;
+    left: 25%;
+    width: 300px; } }
+
+@media only screen and (max-width: 1277px) {
+  .full-width .caption p {
+    display: none; } }
+
+@media only screen and (min-width: 120.063em) {
+  .intro-header {
+    background: #2C2C33; } }
 /*# sourceMappingURL=app.css.map */

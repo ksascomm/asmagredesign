@@ -3,7 +3,10 @@
 /* 5.1 Logo
 ---------------------------------------------*/
 .top-bar {
-  background-color: $black;
+  background: $black;
+  .name {
+    background-color: $black;
+  }
 }
 
 .top-bar ul li a {
@@ -13,13 +16,6 @@
     background-color: darken($black, 10%) !important;
   }
 } 
-
-@media only screen and (min-width: 40.0625em) {
-.top-bar-section li:not(.has-form) a:not(.button):hover {
-    background-color: darken($black, 10%) !important;
-    background: #222222;
-}
-}
 
 .top-bar-section ul li {
   background-color: $black;
@@ -88,6 +84,30 @@ select.issue {
     text-indent: -9999px;
     position: absolute;
   }
+}
+
+#logo_nav li.logo,.mobile-logo {
+  width:235px;
+  height:180px;
+  padding:0;
+  position:absolute;
+  margin-top: -61px;
+  -webkit-border-bottom-right-radius:20px;
+  -webkit-border-bottom-left-radius:20px;
+  -moz-border-radius-bottomright:20px;
+  -moz-border-radius-bottomleft:20px;
+  border-bottom-right-radius:20px;
+  border-bottom-left-radius:20px;
+  list-style: none;
+}
+
+#logo_nav li.logo a {
+  background:url(../images/logo.jpg) no-repeat top;
+  width:207px;
+  height:115px;
+  position:absolute;
+  top:20px;
+  left:15px;
 }
 
 #logo_nav li.logo {

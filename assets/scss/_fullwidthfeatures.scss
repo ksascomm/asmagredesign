@@ -1,30 +1,67 @@
-.intro-header {
-  background-color: #808080;
-  background: no-repeat center center;
-  background-attachment: scroll;
+@media only screen and (max-width: 64em) {
+  body, html, main {
+  /* important */
+  height: 100%;
+  }
+}
+
+.intro-hero {
+  background-repeat: no-repeat;
+  height: 525px;
+  /*background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-top:  -1em;
-  .post-heading {
+  margin-top:  -1em;*/
+}
+
+.post-heading {
     padding: 100px 0 50px;
-    color: white;
     h2 {
-      	font-size: 5em;
+        font-size: 5em;
+        color: white;
     }
     h3 {
-    	font-size: 2.5em;
+      font-size: 2.5em;
     }
+    h4 {
+      color: white;
     }
 }
 
-@media only screen and (min-width: 768px) {
-  .intro-header {
-    .site-heading, .post-heading, .page-heading {
-      padding: 150px 0;
-    }
+.full-width-fixed-bg {
+  min-height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 500px;
+}
+
+.full-width-fixed-bg .caption {
+  position: relative;
+  background-color: rgba($red, 0.85);
+  width: 250px;
+  float: right;
+  margin: -100px 2em auto 1em;
+  zoom: 1;
+  p {
+    font-family: 'gentona-light';
+    font-size: 1.125em;
+    color: #fff;
+    margin: 1em;
+    padding: 0 .5em;
+    width: 95% !important;
   }
+}
+
+.headerbreak {
+    padding: 35px;
+}
+
+.cd-scrolling-bg {
+  min-height: 100%;
 }
 
 .features.content {
@@ -37,10 +74,6 @@
     max-width: 660px;
     margin: 0 auto 20px;
   }
-}
-
-.full-width img {
-  width: 100%;
 }
 
 .story {
@@ -126,42 +159,12 @@ focus {
 
 .pullquote {
   border-radius: 5px;
-  background-color: aqua;
   p {
     font-weight: 300;
-  }
-}
-
-@media only screen and (max-width: 40em) {
-  .pullquote p {
-    padding-left: 20px;
   }
 }
 
 .pullquote-wrap {
   float: left;
   max-width: 350px;
-}
-
-.full-width .caption {
-  position: relative;
-  background-color: rgba($red, 0.85);
-  width: 250px;
-  float: right;
-  margin: -100px 2em auto 1em;
-  zoom: 1;
-  p {
-    font-family: 'gentona-light';
-    font-size: 1.125em;
-    color: #fff;
-    margin: 1em;
-    padding: 0 .5em;
-    width: 95% !important;
-  }
-}
-
-@media only screen and (max-width: 1277px) {
-    .full-width .caption p {
-    display: none;
-  }
 }

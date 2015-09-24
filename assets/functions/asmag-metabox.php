@@ -132,7 +132,7 @@ $story_extra_metabox = array(
 					'id' 			=> 'ecpt_pull_quote',
 					'class' 		=> 'ecpt_pull_quote',
 					'type' 			=> 'textarea',
-					'rich_editor' 	=> 1,			
+					'rich_editor' 	=> 0,			
 					'max' 			=> 0													
 				),
 															

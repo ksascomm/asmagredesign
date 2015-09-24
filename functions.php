@@ -492,5 +492,19 @@ if ( !function_exists( 'wpex_pagination' ) ) {
 }
 
 
+/**
+ * Create Custom Image Sizes for Responsive 
+ * Based on Foundations breakpoints for SM, MD, LG
+ */
+function namespace_add_image_sizes(){
+  /* Soft proportional crops */
+  add_image_size( 'xtra-large-hero', 1920 );
+  add_image_size( 'large-hero', 1400 );
+  add_image_size( 'medium-hero', 1024 ); 
+  add_image_size( 'mobile-hero', 640 );
+}
+add_action( 'init', 'namespace_add_image_sizes');
+
+
 include_once (TEMPLATEPATH . '/assets/functions/asmag-metabox.php');
 ?>

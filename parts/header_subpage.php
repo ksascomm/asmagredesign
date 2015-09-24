@@ -2,19 +2,19 @@
   $volume = get_the_volume($post); 
 
   $departments = get_terms('category', array(
-              'orderby'     => 'ID',
-              'post_type' => 'post',
-              'category__not_in' => array(2, 9),
-              'order'     => 'ASC',
-              'hide_empty'  => true,
-              'parent'      => '81',
-              ));
+                  'orderby'     => 'ID',
+                  'post_type' => 'post',
+                  'include' => array(4, 80, 28, 85,), //get IDs for News, Alumni, #Bluejays, Big Ideas
+                  'order'     => 'ASC',
+                  'hide_empty'  => true,
+                  //'parent'      => '81',
+                  ));
 { ?> 
 
 <nav class="top-bar" data-topbar role="navigation">
   <ul class="title-area">
     <li class="name">
-      <h1><a href="<?php echo site_url(); ?>"><?php $volume_name = get_the_volume_name($post); echo $volume_name; ?> Issue</a></h1>
+      <h1><a href="<?php echo home_url(); ?>"><?php $volume_name = get_the_volume_name($post); echo $volume_name; ?> Issue</a></h1>
     </li>
      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
     <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -22,14 +22,14 @@
 
   <section class="top-bar-section">
    <div class="navbar-brand-centered">
-            <a href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/EZineMasthead.png"></a>
+            <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/EZineMasthead.png"></a>
     </div>
     <!-- Right Nav Section -->
     <ul class="right">
       <li class="has-dropdown">
         <a href="#">Departments</a>
         <ul class="dropdown">
-        <li><a href="<?php echo site_url(); ?>/volume/feature/">Features</a></li>
+        <li><a href="<?php echo home_url(); ?>/volume/feature/">Features</a></li>
             <?php if ( ! empty( $departments ) && ! is_wp_error( $departments ) ) {
                 $count = count( $departments );
                 $i = 0;

@@ -8,9 +8,8 @@
 		
 </div> <!--End container-mid -->
 <?php endif; $volume = get_the_volume($post); $volume_name = get_the_volume_name($post);?>
-			<div id="footer-top">
-			<div class="featurelisting row">
-			
+	<div id="footer-top">
+		<div class="featurelisting row">
 			<div class="small-12 columns table">
 				<h4><?php echo $volume_name; ?> Feature Stories<span class="spacer"></span></h4>
 			</div>
@@ -44,6 +43,6 @@
 	    			</div><!--End snippet -->
 	    			<?php endwhile; //End loop ?>
 
-			</div>
+		</div>
 
-			</div>
+	</div>

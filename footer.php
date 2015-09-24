@@ -25,7 +25,7 @@
 	                <a href="http://facebook.com/jhuksas" title="Facebook"><i class="fa fa-3x fa-fw fa-facebook-square"></i></a>
 	            </div>
 	            <div class="small-4 columns">
-	            <a href="<?php echo site_url(); ?>/feed"><i class="fa fa-3x fa-fw fa-rss-square"></i></a>
+	            <a href="<?php echo home_url(); ?>/feed"><i class="fa fa-3x fa-fw fa-rss-square"></i></a>
 	            </div>
             </div>
          </div>

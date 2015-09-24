@@ -34,6 +34,13 @@ Template Name: Redesign Front Page
 				'order' => 'DESC',
 				'posts_per_page' => '-1'));
 
+			$asmag_alumni_query = new WP_Query(array(
+				'post_type' => 'post',
+				'volume' => $volume,
+				'category__in' => array(28),
+				'orderby' => 'modified',
+				'order' => 'DESC',
+				'posts_per_page' => '-1'));
 
 			$asmag_features_query = new WP_Query(array(
 				'post_type' => 'page',
@@ -54,7 +61,7 @@ Template Name: Redesign Front Page
 	  <li>
 	  	<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field">
 	  	<div class="slide">
-		    <?php echo the_post_thumbnail('filterthumbbig', array('class'=>'no-margin')); ?>
+		    <?php echo the_post_thumbnail('fullbleed', array('class'=>'no-margin')); ?>
 		    <div class="slide-caption">
 				<h1><?php the_title(); ?></h1>
 				<hr>
@@ -121,6 +128,26 @@ Template Name: Redesign Front Page
 <div class="row">
 <?php if ( $asmag_bluejays_query->have_posts() ) :	while ($asmag_bluejays_query->have_posts()) : $asmag_bluejays_query->the_post(); ?>
 	<article class="small-12 medium-4 large-3 columns end bluejays item">
+		<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php echo the_post_thumbnail('filterthumbbig', array('class'=>'no-margin home-img img-responsive')); ?>
+		<h5><?php the_title(); ?></h5>
+		<p><?php the_excerpt(); ?></p>
+		</a>
+	</article>
+	<?php endwhile; wp_reset_postdata(); ?>	
+	<?php endif; ?>
+</div>
+</section>
+
+<section class="alumni home">
+<div class="row">
+	<div class="small-12 columns">
+		<h2>Alumni
+		<span class="spacer"></div></h2>
+	</div>
+</div>
+<div class="row">
+<?php if ( $asmag_alumni_query->have_posts() ) :	while ($asmag_alumni_query->have_posts()) : $asmag_alumni_query->the_post(); ?>
+	<article class="small-12 medium-4 large-3 columns end alumni item">
 		<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php echo the_post_thumbnail('filterthumbbig', array('class'=>'no-margin home-img img-responsive')); ?>
 		<h5><?php the_title(); ?></h5>
 		<p><?php the_excerpt(); ?></p>
