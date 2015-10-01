@@ -13,7 +13,11 @@ $ksassky: #68ace5;
 $flagship_icon: flagship-icon; //flagship icon
 $fa-font-path: "../fonts";
 
-$font-stack: 'gentona-light', Arial, sans-serif;
-$font-header: 'quadon', Arial, sans-serif;
-$font-subhead-book: 'gentona-book', Arial, sans-serif;
-$font-subhead-light: 'gentona-extralight', Arial, sans-serif;
+$font-stack: 'arnhem', Georgia, serif;
+$font-stack-bold: 'arnhem-bold', Georgia, serif;
+$font-header: 'gentona-light', 'Myriad W01 SmBd Cnd', Arial, sans-serif;
+$font-subhead: 'gentona-light', 'Myriad W01 SmBd', Arial, sans-serif;
+$font-subhead-italic: 'gentona-light-italic', 'Myriad W01 It', Arial, sans-serif;
+$font-subhead-light: 'gentona-extra-light', 'Myriad W01 Regular', Arial, sans-serif;
+$font-navigation: 'gentona-thin', 'Myriad W01 Regular', Arial, sans-serif;
+$font-header-mobile: 'gentona-book', 'Myriad W01 SmBd Cnd', Arial, sans-serif;

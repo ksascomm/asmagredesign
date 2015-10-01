@@ -40,7 +40,10 @@ $hero_sm = $sm_hero_array[0]; // Mobile Hero
                 <div class="small-12 medium-10 medium-offset-1 large-8 large-offset-2 columns">
                     <div class="post-heading">
                         <h2><?php the_title(); ?></h2>
+                        
+					<?php if (!is_mobile()) : ?>
                         <?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) : ?>  <h4 class="small-12 columns"><?php echo get_post_meta($post->ID, 'ecpt_tagline', true); ?></h4><?php endif; ?>
+                    <?php endif ;?>
                     </div>
                 </div>
         </div>
@@ -52,28 +55,57 @@ $hero_sm = $sm_hero_array[0]; // Mobile Hero
 <div class="cd-scrolling-bg">
 	<div id="container-mid">
 		<div id="feature story">
-		    <div class="row">
-		    	<div class="small-12 medium-3 medium-push-10 columns">
-					<p class="othercredits"><?php if ( get_post_meta($post->ID, 'ecpt_other_credits', true) ) : ?>  <?php echo get_post_meta($post->ID, 'ecpt_other_credits', true); ?><?php endif; ?></p>
-		    	</div>
-				<div class="small-12 medium-8 medium-pull-2 columns">
+			<?php if (is_mobile()) : ?>
+                  <?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) : ?>  <h4 class="small-12 columns"><?php echo get_post_meta($post->ID, 'ecpt_tagline', true); ?></h4><?php endif; ?>
+            <?php endif ;?>
+		<?php if (is_handheld()) { ?>	
+		  	<div class="row">	
+				<div class="small-12 medium-10 medium-offset-1 columns">
+					<p class="othercredits"><?php if ( get_post_meta($post->ID, 'ecpt_other_credits', true) ) : ?> <?php echo get_post_meta($post->ID, 'ecpt_other_credits', true); ?><?php endif; ?></p>
+				</div>
+			</div>
+			<div class="row">	
+				<div class="small-12 medium-10 medium-offset-1 columns feature-intro">
 					<?php the_content(); ?>
 				</div>
-			</div><!--End postmaterial -->
+			</div>
+		<?php } else { ?>
+			<div class="row">
+				<div class="small-12 columns hide-for-large-up">
+					<p class="othercredits"><?php if ( get_post_meta($post->ID, 'ecpt_other_credits', true) ) : ?> <?php echo get_post_meta($post->ID, 'ecpt_other_credits', true); ?><?php endif; ?></p>
+		    	</div>
+		    	<div class="small-12 large-8 large-offset-2 columns feature-intro">
+					<?php the_content(); ?>
+				</div>
+		    	<div class="small-12 large-2 columns show-for-large-up">
+					<p class="othercredits"><?php if ( get_post_meta($post->ID, 'ecpt_other_credits', true) ) : ?> <?php echo get_post_meta($post->ID, 'ecpt_other_credits', true); ?><?php endif; ?></p>
+		    	</div>
+			</div><!--End first section -->
+		<?php } ?>			
+		<?php if (!is_handheld()) { ?>
 			<div class="full-width-fixed-bg" style="background-image: url('<?php echo get_post_meta($post->ID, 'ecpt_fullimage', true); ?>')">
-			 	<div class="hide-for-small">
-			 		<div class="caption"><p><?php if ( get_post_meta($post->ID, 'ecpt_pull_quote', true) ) : ?>  <?php echo get_post_meta($post->ID, 'ecpt_pull_quote', true); ?><?php endif; ?></p></div>
-			 		</div>
+		 		<div class="show-for-large-up caption">
+		 			<p><?php if ( get_post_meta($post->ID, 'ecpt_pull_quote', true) ) : ?>  <?php echo get_post_meta($post->ID, 'ecpt_pull_quote', true); ?><?php endif; ?></p>
+		 		</div>
+		 	</div>
+		 	<div class="row hide-for-large-up">
+		 			<div class="small-12 medium-8 medium-offset-2 columns">
+		 				<p><blockquote><?php if ( get_post_meta($post->ID, 'ecpt_pull_quote', true) ) : ?>  <?php echo get_post_meta($post->ID, 'ecpt_pull_quote', true); ?><?php endif; ?></blockquote></p>
+		 			</div>
+		 	</div>
+		<?php } else { ?>
+			<div class="row">
+				<img src="<?php echo get_post_meta($post->ID, 'ecpt_fullimage', true); ?>">
+			 		<div class="small-12 medium-8 medium-offset-2 columns">
+			 			<p><blockquote><?php if ( get_post_meta($post->ID, 'ecpt_pull_quote', true) ) : ?>  <?php echo get_post_meta($post->ID, 'ecpt_pull_quote', true); ?><?php endif; ?></blockquote></p>
+					</div>
 			</div>
-		<div class="row">
-			<div class="small-12 medium-8 medium-offset-2 columns story">
-				<div class="show-for-small-only">
-				 	<p><small><?php if ( get_post_meta($post->ID, 'ecpt_pull_quote', true) ) : ?>  <?php echo get_post_meta($post->ID, 'ecpt_pull_quote', true); ?><?php endif; ?></small></p>
-				 </div>
-				<p><?php if ( get_post_meta($post->ID, 'ecpt_second_section', true) ) : ?>  <?php echo get_post_meta($post->ID, 'ecpt_second_section', true); ?><?php endif; ?></p>
-			</div>
-		</div>
-		
+		<?php } ?>	
+			<div class="row">	
+				<div class="small-12 medium-10 medium-offset-1 large-8 large-offset-2 columns story">
+					<p><?php if ( get_post_meta($post->ID, 'ecpt_second_section', true) ) : ?>  <?php echo get_post_meta($post->ID, 'ecpt_second_section', true); ?><?php endif; ?></p>
+				</div>
+			</div><!--End second section -->		
 		<?php endwhile; endif; wp_reset_query(); ?>
 		</div>
 	</div>

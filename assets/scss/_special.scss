@@ -62,43 +62,21 @@ img a {
 }
 
 .postmaterial img.noshadow {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
 }
 
-em, i {
-  font-family: "Myriad W01 It";
-  font-style: normal;
-}
-
-blockquote {
-  font-family: "Myriad W01 It";
-  font-style: normal;
-  p {
-    font-family: "Myriad W01 It";
-    font-style: normal;
-  }
-}
-
-.italic {
-  font-family: "Myriad W01 It";
-  font-style: normal;
-}
-
 strong, b, .bold {
-  font-family: "Myriad W01 SmBd";
+  font-family: $font-stack-bold;
 }
 
 .b.em, .strong.em {
-  font-family: "Myriad W01 It";
+  font-family: $font-subhead-italic;
   font-weight: 700;
-  font-style: normal;
 }
 
 .uppercase {
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: "Myriad W01 SmBd";
+  font-family: inherit;
   font-size: 80%;
 }

@@ -9,7 +9,7 @@ body.category-exclusive .postmaterial {
   a {
     p, &:visited {
       color: #333;
-      font-family: 'Myriad W01 Regular';
+      font-family: $font-stack;
     }
   }
 }
@@ -43,6 +43,7 @@ body.category-exclusive .postmaterial {
 }
 
 blockquote {
+  font-family: $font-subhead;
   margin: 1.5em 0 1.5em;
   padding: 0 1em 0 2.5em;
   position: relative;
@@ -70,6 +71,9 @@ blockquote {
     font-size: 1.1rem;
     color: $jhublue;
     font-weight: bold;
+  }
+  p {
+    font-family: $font-subhead-italic;
   }
 }
 

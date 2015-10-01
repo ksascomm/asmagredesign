@@ -18,16 +18,7 @@ body {
     background: #384d5c;
   }
   &.v12n2 {
-    background: -webkit-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%);
-    /* Chrome 10+, Saf5.1+ */
-    background: -moz-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%);
-    /* FF3.6+ */
-    background: -ms-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%);
-    /* IE10 */
-    background: -o-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%);
-    /* Opera 11.10+ */
     background: linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%);
-    /* W3C */
   }
 }
 
@@ -71,28 +62,12 @@ header, body.page-template-template-tableofcontents-php #container-mid, header, 
 
 .isotope {
   /* change duration value to whatever you like */
-  -webkit-transition-duration: 0.8s;
-  -moz-transition-duration: 0.8s;
-  -ms-transition-duration: 0.8s;
-  -o-transition-duration: 0.8s;
   transition-duration: 0.8s;
   .isotope-item {
     /* change duration value to whatever you like */
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -ms-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
     transition-duration: 0.8s;
-    -webkit-transition-property: -webkit-transform, opacity;
-    -moz-transition-property: -moz-transform, opacity;
-    -ms-transition-property: -ms-transform, opacity;
-    -o-transition-property: -o-transform, opacity;
     transition-property: transform, opacity;
   }
-  -webkit-transition-property: height, width;
-  -moz-transition-property: height, width;
-  -ms-transition-property: height, width;
-  -o-transition-property: height, width;
   transition-property: height, width;
 }
 
@@ -140,10 +115,6 @@ article.field {
   img {
     position: absolute;
     left: 10px;
-    -webkit-transition: all 500ms ease-out;
-    -moz-transition: all 500ms ease-out;
-    -o-transition: all 500ms ease-out;
-    -ms-transition: all 500ms ease-out;
     transition: all 500ms ease-out;
     max-height: 195px;
   }
@@ -155,10 +126,6 @@ article.field {
   top: 195px;
   width: 235px !important;
   min-height: 90px;
-  -webkit-transition: all 500ms ease-out;
-  -moz-transition: all 500ms ease-out;
-  -o-transition: all 500ms ease-out;
-  -ms-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
   p {
     display: none;
@@ -168,10 +135,6 @@ article.field {
 .box:hover {
   .caption-box {
     transform: translate(0px, -195px);
-    -webkit-transform: translate(0px, -195px);
-    -moz-transform: translate(0px, -195px);
-    -o-transform: translate(0px, -195px);
-    -ms-transform: translate(0px, -195px);
     height: 195px;
     p {
       display: block;
@@ -205,10 +168,8 @@ article.field {
 
 button, .button {
   border: none;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
   border-radius: 7px;
-  font-family: "Myriad W01 SmBd", Arial, sans-serif;
+  font-family: $font-subhead;
   color: #FFF;
   font-size: 14px;
   text-transform: uppercase;
@@ -217,33 +178,20 @@ button, .button {
   margin-bottom: 10px;
   opacity: 1;
   font-weight: normal;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
   display: inline-block;
-  *display: inline;
 }
 
 button:hover {
-  -moz-box-shadow: 0 0 5px #fff;
-  -webkit-box-shadow: 0 0 5px #fff;
   box-shadow: 0px 0px 5px #fff;
   filter: progid:DXImageTransform.Microsoft.Glow(Color=white,Strength=5);
-  -webkit-transition: 500ms linear 0s;
-  -moz-transition: 300ms linear 0s;
-  -o-transition: 300ms linear 0s;
   transition: 300ms linear 0s;
 }
 
 .button {
   &:hover {
-    -moz-box-shadow: 0 0 5px #fff;
-    -webkit-box-shadow: 0 0 5px #fff;
     box-shadow: 0px 0px 5px #fff;
     filter: progid:DXImageTransform.Microsoft.Glow(Color=white,Strength=5);
-    -webkit-transition: 500ms linear 0s;
-    -moz-transition: 300ms linear 0s;
-    -o-transition: 300ms linear 0s;
     transition: 300ms linear 0s;
   }
   a {

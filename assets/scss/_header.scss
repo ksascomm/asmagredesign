@@ -3,25 +3,30 @@
 /* 5.1 Logo
 ---------------------------------------------*/
 .top-bar {
-  background: $black;
-  .name {
-    background-color: $black;
-  }
+  background: $jhublue;
+}
+
+.top-bar.expanded {
+  background: $jhublue;
+  height: auto;
+}
+
+.top-bar.expanded .title-area {
+  background: $jhublue;
 }
 
 .top-bar ul li a {
-  background-color: $black !important;
-  font-family: 'gentona-thin';
+  font-family: $font-navigation;
   &:hover {
     background-color: darken($black, 10%) !important;
   }
 } 
-
 .top-bar-section ul li {
-  background-color: $black;
+  background: inherit;
 }
+
 .top-bar-section ul li > a {
-  font-family: 'gentona-thin';
+  font-family: $font-navigation;
   font-size: 1.2rem;
   font-weight: normal;
   padding-left: 0.9375rem;
@@ -46,7 +51,7 @@
   padding: 6px 2px;
   display: inline-block;
   color: #FFF;
-  font-family: 'Myriad W01 SmBd';
+  font-family: $font-stack;
   -webkit-appearance: none;
   border-radius: 0;
   border: 0;
@@ -64,7 +69,7 @@ select.issue {
   font-size: 23px;
   text-transform: uppercase;
   color: #FFF;
-  font-family: 'Myriad W01 SmBd';
+  font-family: $font-stack;
   vertical-align: bottom;
 }
 
@@ -92,10 +97,6 @@ select.issue {
   padding:0;
   position:absolute;
   margin-top: -61px;
-  -webkit-border-bottom-right-radius:20px;
-  -webkit-border-bottom-left-radius:20px;
-  -moz-border-radius-bottomright:20px;
-  -moz-border-radius-bottomleft:20px;
   border-bottom-right-radius:20px;
   border-bottom-left-radius:20px;
   list-style: none;
@@ -116,7 +117,7 @@ select.issue {
 
 #search-bar {
   text-transform: uppercase;
-  font-family: "Myriad W01 SmBd";
+  font-family: $font-subhead;
   margin-top: 15px;
   margin-bottom: 10px;
   .columns {
@@ -199,10 +200,6 @@ select.issue {
   &[type="text"] {
     height: 31px;
     margin-bottom: 0;
-    -webkit-border-top-left-radius: 7px;
-    -webkit-border-bottom-left-radius: 7px;
-    -moz-border-radius-topleft: 7px;
-    -moz-border-radius-bottomleft: 7px;
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
     display: inline;
@@ -214,10 +211,6 @@ select.issue {
     height: 31px;
     width: 30px;
     font-family: 'magazine';
-    -webkit-border-top-right-radius: 7px;
-    -webkit-border-bottom-right-radius: 7px;
-    -moz-border-radius-topright: 7px;
-    -moz-border-radius-bottomright: 7px;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
     font-size: 16px;
@@ -236,10 +229,6 @@ select.issue {
       margin-bottom: 0;
       background: #fff;
       background: rgba(255, 255, 255, 0.75);
-      -webkit-border-top-right-radius: 7px;
-      -webkit-border-bottom-right-radius: 7px;
-      -moz-border-radius-topright: 7px;
-      -moz-border-radius-bottomright: 7px;
       border-top-right-radius: 7px;
       border-bottom-right-radius: 7px;
       display: inline;
@@ -252,10 +241,6 @@ select.issue {
       height: 31px;
       width: 30px;
       font-family: 'magazine';
-      -webkit-border-top-left-radius: 7px;
-      -webkit-border-bottom-left-radius: 7px;
-      -moz-border-radius-topleft: 7px;
-      -moz-border-radius-bottomleft: 7px;
       border-top-left-radius: 7px;
       border-bottom-left-radius: 7px;
       font-size: 16px;

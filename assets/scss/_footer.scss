@@ -20,8 +20,6 @@ footer {
     content: none;
     color: #333;
     background: #555;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
     border-radius: 50%;
     padding: 10px;
     margin-right: 10px;
@@ -50,11 +48,11 @@ footer {
 #footer-top {
   background: rgba(255, 255, 255, 0.2);
   padding-bottom: 100px;
-   .spacer {
-  height: 14px;
-  background: $red;
-  width: 90px;
-  margin: 4px 5px 0 5px;
+  .spacer {
+      height: 14px;
+      background: $red;
+      width: 90px;
+      margin: 4px 5px 0 5px;
   }
   .table h4 {
     color: $red;

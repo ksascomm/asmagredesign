@@ -12,7 +12,7 @@
 
 		<?php $volume = get_the_volume($post); ?>
 		<!-- CSS -->
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/app.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/app.min.css">
 		<script async type="text/javascript" src="http://fast.fonts.net/jsapi/1db25190-910a-4ab7-bd9b-5582bf1b2833.js"></script>
 		
 		<?php if (is_page('on-display')) { ?>
@@ -32,11 +32,13 @@
 		<?php wp_head(); ?>
 		
   <!-- Make IE a modern browser -->
-  <!--[if lt IE 9]>
+  <!--[if lt IE 10]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-    <script src="<?php echo get_template_directory_uri() ?>/assets/js/lte-ie7.js"></script>
-  <![endif]-->
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<script src="<?php echo get_template_directory_uri() ?>/assets/js/ie.js"></script>
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/assets/css/app.ie.css">
+<![endif]-->
 	</head>
 
 <body <?php body_class($volume); ?>>

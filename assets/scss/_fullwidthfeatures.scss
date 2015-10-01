@@ -1,19 +1,7 @@
 @media only screen and (max-width: 64em) {
   body, html, main {
-  /* important */
   height: 100%;
   }
-}
-
-.intro-hero {
-  background-repeat: no-repeat;
-  height: 525px;
-  /*background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  margin-top:  -1em;*/
 }
 
 .post-heading {
@@ -47,7 +35,7 @@
   margin: -100px 2em auto 1em;
   zoom: 1;
   p {
-    font-family: 'gentona-light';
+    font-family: $font-subhead;
     font-size: 1.125em;
     color: #fff;
     margin: 1em;

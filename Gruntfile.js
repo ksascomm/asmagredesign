@@ -21,7 +21,8 @@ module.exports = function(grunt) {
           sourceMap: true,
         },
         files: {
-          'assets/css/app.min.css': 'assets/scss/app.scss'
+          'assets/css/app.min.css': 'assets/scss/app.scss',
+          'assets/css/app.ie.css': 'assets/scss/app.scss'
         }
       }
     },
@@ -31,7 +32,7 @@ module.exports = function(grunt) {
       options: {
         map: true,
         processors: [
-          require('autoprefixer-core')({browsers: ['last 2 versions', 'ie 8', 'ie 9', '> 1%']})
+          require('autoprefixer')({browsers: ['last 2 versions', 'ie 8', 'ie 9', '> 1%']})
         ]
       },
       //prefix all files

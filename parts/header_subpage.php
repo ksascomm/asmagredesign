@@ -12,6 +12,11 @@
 { ?> 
 
 <nav class="top-bar" data-topbar role="navigation">
+  <div class="row">
+       <div class="show-for-small-only">
+            <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/EZineMasthead.png"></a>
+        </div>
+  </div>
   <ul class="title-area">
     <li class="name">
       <h1><a href="<?php echo home_url(); ?>"><?php $volume_name = get_the_volume_name($post); echo $volume_name; ?> Issue</a></h1>
@@ -21,9 +26,9 @@
   </ul>
 
   <section class="top-bar-section">
-   <div class="navbar-brand-centered">
+   <div class="navbar-brand-centered hide-for-small">
             <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/EZineMasthead.png"></a>
-    </div>
+   </div>
     <!-- Right Nav Section -->
     <ul class="right">
       <li class="has-dropdown">
@@ -42,7 +47,8 @@
             } ?>
         </ul>
       </li>
-      <li><a href="/archive/">Archives <i class="fa fa-archive"></i></a></li>
+      <li class="divider"></li>
+      <li><a style="font-size: 1.0625rem;" href="/archive/">Archives <i class="fa fa-archive"></i></a></li>
     </ul>
   </section>
 </nav>

@@ -64,7 +64,7 @@ Template Name: Redesign Front Page
 		    <?php echo the_post_thumbnail('fullbleed', array('class'=>'no-margin')); ?>
 		    <div class="slide-caption">
 				<h1><?php the_title(); ?></h1>
-				<hr>
+				<hr class="hide-for-small-only">
 				<p><?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) { echo get_post_meta($post->ID, 'ecpt_tagline', true); } else { the_excerpt(); } ?></p>			
 		    </div>
 		 </div>
@@ -89,7 +89,7 @@ Template Name: Redesign Front Page
 	<article class="small-12 medium-4 large-3 columns end news item">
 		<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php echo the_post_thumbnail('filterthumbbig', array('class'=>'no-margin home-img img-responsive')); ?>
 		<h5><?php the_title(); ?></h5>
-		<p><?php the_excerpt(); ?></p>
+		<?php the_excerpt(); ?>
 		</a>
 	</article>
 
