@@ -3,7 +3,8 @@
 		color: #fff;
 	}
 	p {
-		font-size: 16px;
+		font-size: 1.5rem;
+		font-family: $font-header-mobile;
 	}
 }
 
@@ -12,12 +13,14 @@ section.news {
 }
 
 .home .spacer {
-    width: 75%;
+    width: 100%;
+    float: right;
+    margin-top: 1rem;
 }
 .news {
 	h2 {
 	color: $ksasblue;
-	font-variant: small-caps;
+	font-family: $font-frontpage-header;
 	}
 	.spacer {
 		background: $ksasblue;
@@ -27,7 +30,8 @@ section.news {
 .big-ideas, .bigideas {
 	h2 {
 	color: $green;
-	font-variant: small-caps;
+	font-family: $font-frontpage-header;
+	
 	}
 	.spacer {
 		background: $green;
@@ -37,7 +41,7 @@ section.news {
 .bluejays {
     h2 {
     color: $jhublue;
-    font-variant: small-caps;
+    font-family: $font-frontpage-header;
     }
     .spacer {
         background: $jhublue;
@@ -47,7 +51,7 @@ section.news {
 .alumni {
     h2 {
     color: $orange;
-    font-variant: small-caps;
+    font-family: $font-frontpage-header;
     }
     .spacer {
         background: $orange;
@@ -57,11 +61,13 @@ section.news {
 .item {
     text-align: center;
 	h5 {
-    font-family: $font-header;
+    font-family: $font-frontpage-header;
+    letter-spacing: 1.1px;
 	}
 	p {
 		font-size: .9em;
 		margin: -10px 0 20px 0;
 		color: #6a6f73;
+		font-family: $font-subhead;
 	}
 }

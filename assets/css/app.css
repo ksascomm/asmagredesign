@@ -7697,6 +7697,20 @@ th.hide-for-touch {
   font-style: normal; }
 
 @font-face {
+  font-family: 'gentona-extrabold';
+  src: url('../fonts/gentona/webfonts/Gentona-ExtraBold.eot');
+  src: url('../fonts/gentona/webfonts/Gentona-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/gentona/webfonts/Gentona-ExtraBold.woff') format('woff'), url('../fonts/gentona/webfonts/Gentona-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'gentona-semibold';
+  src: url('../fonts/gentona/webfonts/Gentona-SemiBold.eot');
+  src: url('../fonts/gentona/webfonts/Gentona-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/gentona/webfonts/Gentona-SemiBold.woff') format('woff'), url('../fonts/gentona/webfonts/Gentona-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
   font-family: 'gentona-book';
   src: url('../fonts/gentona/webfonts/Gentona-Book.eot');
   src: url('../fonts/gentona/webfonts/Gentona-Book.eot?#iefix') format('embedded-opentype'), url('../fonts/gentona/webfonts/Gentona-Book.woff') format('woff'), url('../fonts/gentona/webfonts/Gentona-Book.ttf') format('truetype');
@@ -7748,13 +7762,13 @@ p {
   font-family: 'arnhem', Georgia, serif; }
 
 h1, h2, h3, .h1, .h2, .h3 {
-  font-family: 'gentona-light', 'Myriad W01 SmBd Cnd', Arial, sans-serif;
-  font-weight: 400;
+  font-family: 'gentona-semibold', 'Myriad W01 SmBd Cnd', Arial, sans-serif;
+  font-weight: 600;
   font-style: normal; }
 
 h4, h5, h6, .h4, .h5, .h6 {
-  font-family: 'gentona-light', 'Myriad W01 SmBd', Arial, sans-serif;
-  font-weight: 300;
+  font-family: 'gentona-book', 'Myriad W01 SmBd', Arial, sans-serif;
+  font-weight: 400;
   font-style: normal; }
 
 .Insights h4 {
@@ -7912,7 +7926,7 @@ select.issue {
 
 #search-bar {
   text-transform: uppercase;
-  font-family: 'gentona-light', 'Myriad W01 SmBd', Arial, sans-serif;
+  font-family: 'gentona-book', 'Myriad W01 SmBd', Arial, sans-serif;
   margin-top: 15px;
   margin-bottom: 10px; }
   #search-bar .columns {
@@ -8166,7 +8180,7 @@ article.field {
 button, .button {
   border: none;
   border-radius: 7px;
-  font-family: 'gentona-light', 'Myriad W01 SmBd', Arial, sans-serif;
+  font-family: 'gentona-book', 'Myriad W01 SmBd', Arial, sans-serif;
   color: #FFF;
   font-size: 14px;
   text-transform: uppercase;
@@ -8478,7 +8492,7 @@ body.category-exclusive .postmaterial a p, body.category-exclusive .postmaterial
   display: none; }
 
 blockquote {
-  font-family: 'gentona-light', 'Myriad W01 SmBd', Arial, sans-serif;
+  font-family: 'gentona-book', 'Myriad W01 SmBd', Arial, sans-serif;
   margin: 1.5em 0 1.5em;
   padding: 0 1em 0 2.5em;
   position: relative;
@@ -9131,7 +9145,7 @@ ul.page-numbers li {
   font-size: 1rem;
   line-height: 1rem;
   text-transform: inherit;
-  font-family: 'gentona-light', 'Myriad W01 SmBd', Arial, sans-serif;
+  font-family: 'gentona-book', 'Myriad W01 SmBd', Arial, sans-serif;
   float: inherit; }
   #sidebar .breadcrumbs > li:first-child:before {
     content: " ";
@@ -9211,46 +9225,51 @@ strong, b, .bold {
 .slide-caption h1 {
   color: #fff; }
 .slide-caption p {
-  font-size: 16px; }
+  font-size: 1.5rem;
+  font-family: 'gentona-book', 'Myriad W01 SmBd Cnd', Arial, sans-serif; }
 
 section.news {
   margin-bottom: 20px; }
 
 .home .spacer {
-  width: 75%; }
+  width: 100%;
+  float: right;
+  margin-top: 1rem; }
 
 .news h2 {
   color: #418fde;
-  font-variant: small-caps; }
+  font-family: 'gentona-semibold', 'Myriad W01 SmBd Cnd', Arial, sans-serif; }
 .news .spacer {
   background: #418fde; }
 
 .big-ideas h2, .bigideas h2 {
   color: #007a53;
-  font-variant: small-caps; }
+  font-family: 'gentona-semibold', 'Myriad W01 SmBd Cnd', Arial, sans-serif; }
 .big-ideas .spacer, .bigideas .spacer {
   background: #007a53; }
 
 .bluejays h2 {
   color: #005eb8;
-  font-variant: small-caps; }
+  font-family: 'gentona-semibold', 'Myriad W01 SmBd Cnd', Arial, sans-serif; }
 .bluejays .spacer {
   background: #005eb8; }
 
 .alumni h2 {
   color: #ff6900;
-  font-variant: small-caps; }
+  font-family: 'gentona-semibold', 'Myriad W01 SmBd Cnd', Arial, sans-serif; }
 .alumni .spacer {
   background: #ff6900; }
 
 .item {
   text-align: center; }
   .item h5 {
-    font-family: 'gentona-light', 'Myriad W01 SmBd Cnd', Arial, sans-serif; }
+    font-family: 'gentona-semibold', 'Myriad W01 SmBd Cnd', Arial, sans-serif;
+    letter-spacing: 1.1px; }
   .item p {
     font-size: .9em;
     margin: -10px 0 20px 0;
-    color: #6a6f73; }
+    color: #6a6f73;
+    font-family: 'gentona-book', 'Myriad W01 SmBd', Arial, sans-serif; }
 
 @media only screen and (max-width: 64em) {
   body, html, main {
@@ -9282,7 +9301,7 @@ section.news {
   margin: -100px 2em auto 1em;
   zoom: 1; }
   .full-width-fixed-bg .caption p {
-    font-family: 'gentona-light', 'Myriad W01 SmBd', Arial, sans-serif;
+    font-family: 'gentona-book', 'Myriad W01 SmBd', Arial, sans-serif;
     font-size: 1.125em;
     color: #fff;
     margin: 1em;
@@ -9513,11 +9532,11 @@ h2.toc_header {
     padding-left: 20px; }
   .orbit-container .orbit-slides-container > * .slide-caption {
     padding: 0px; }
-  .orbit-next, .orbit-prev {
-    display: inherit;
-    position: absolute !important;
-    bottom: 0 !important;
-    background: rgba(0, 0, 0, 0.75); }
+  .touch .orbit-bullets {
+    display: inherit; }
+  .orbit-bullets li {
+    height: 1rem;
+    width: 1rem; }
   .quote p {
     padding-left: 20px; }
   ul.button-group {
@@ -9571,23 +9590,8 @@ h2.toc_header {
   .orbit-caption {
     background-color: inherit !important;
     width: 75% !important; }
-  .orbit-container .orbit-slides-container > * .slide-caption {
-    bottom: 0;
-    position: absolute;
-    color: #FFFFFF;
-    font-size: 0.875rem;
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 70px;
-    font-size: 30px;
-    text-align: center;
-    box-sizing: border-box;
-    left: 15%;
-    right: 15%;
-    bottom: 20px;
-    z-index: 10;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+  .orbit-bullets {
+    display: none; }
   ul[data-orbit] {
     margin: 0;
     padding-left: 0;
@@ -9628,13 +9632,53 @@ h2.toc_header {
     left: 25%;
     width: 300px; } }
 
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .orbit-bullets-container {
+    display: none; }
+  .slide-caption {
+    margin-top: 1em;
+    font-size: 0.875rem;
+    max-width: 400px;
+    padding: 0 35px;
+    left: 5%;
+    right: 5%;
+    text-align: left;
+    bottom: 0;
+    position: absolute;
+    color: #FFFFFF;
+    margin: 0 auto;
+    box-sizing: border-box;
+    z-index: 10;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+  .orbit-container .orbit-slides-container > * .slide-caption {
+    width: 80%;
+    max-width: 800px; } }
+
+@media only screen and (min-width: 64.063em) {
+  .slide-caption h1 {
+    font-size: 4.5rem; }
+  .orbit-container .orbit-slides-container > * .slide-caption {
+    position: absolute;
+    color: #FFFFFF;
+    width: 80%;
+    max-width: 1000px;
+    padding: 0 70px;
+    left: 15%;
+    right: 15%;
+    bottom: 20px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); } }
+
 @media only screen and (max-width: 64.063em) {
   .feature-intro {
     float: left !important; }
   .top-bar ul li a {
-    font-family: 'gentona-light', 'Myriad W01 SmBd', Arial, sans-serif; }
+    font-family: 'gentona-book', 'Myriad W01 SmBd', Arial, sans-serif; }
   .top-bar-section ul li > a {
-    font-family: 'gentona-light', 'Myriad W01 SmBd', Arial, sans-serif; } }
+    font-family: 'gentona-book', 'Myriad W01 SmBd', Arial, sans-serif; }
+  .slide-caption p {
+    font-size: 16px; }
+  .featurelisting p {
+    font-size: 14px; } }
 
 @media only screen and (max-width: 1277px) {
   .full-width .caption p {

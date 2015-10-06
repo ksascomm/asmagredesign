@@ -27,6 +27,22 @@
 }
 
 @font-face {
+  font-family: 'gentona-extrabold';
+  src: url('../fonts/gentona/webfonts/Gentona-ExtraBold.eot');
+  src: url('../fonts/gentona/webfonts/Gentona-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/gentona/webfonts/Gentona-ExtraBold.woff') format('woff'), url('../fonts/gentona/webfonts/Gentona-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gentona-semibold';
+  src: url('../fonts/gentona/webfonts/Gentona-SemiBold.eot');
+  src: url('../fonts/gentona/webfonts/Gentona-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/gentona/webfonts/Gentona-SemiBold.woff') format('woff'), url('../fonts/gentona/webfonts/Gentona-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'gentona-book';
   src: url('../fonts/gentona/webfonts/Gentona-Book.eot');
   src: url('../fonts/gentona/webfonts/Gentona-Book.eot?#iefix') format('embedded-opentype'), url('../fonts/gentona/webfonts/Gentona-Book.woff') format('woff'), url('../fonts/gentona/webfonts/Gentona-Book.ttf') format('truetype');

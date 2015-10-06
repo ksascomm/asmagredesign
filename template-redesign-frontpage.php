@@ -56,7 +56,7 @@ Template Name: Redesign Front Page
 <section class="features">
 <div class="slideshow-wrapper">
   <div class="preloader"></div>
-	<ul class="slider" data-orbit data-options="animation: fade; animation_speed:1000; timer:false; timer_speed:10000; navigation_arrows:true; bullets:false; slide_number:false;">
+	<ul class="slider" data-orbit data-options="animation: fade; animation_speed:1000; timer:false; timer_speed:10000; navigation_arrows:true; bullets:true; slide_number:false;">
 	<?php if ( $asmag_features_query->have_posts() ) : while ($asmag_features_query->have_posts()) : $asmag_features_query->the_post(); ?>
 	  <li>
 	  	<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field">
@@ -65,7 +65,8 @@ Template Name: Redesign Front Page
 		    <div class="slide-caption">
 				<h1><?php the_title(); ?></h1>
 				<hr class="hide-for-small-only">
-				<p><?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) { echo get_post_meta($post->ID, 'ecpt_tagline', true); } else { the_excerpt(); } ?></p>			
+				<p><?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) { echo get_post_meta($post->ID, 'ecpt_tagline', true); } else { the_excerpt(); } ?></p>
+				<p>By <?php $author = get_the_author(); echo $author ;?> </p>		
 		    </div>
 		 </div>
 	    </a>
@@ -80,14 +81,17 @@ Template Name: Redesign Front Page
 <section class="news home">
 <div class="row">
 	<div class="small-12 columns">
-		<h2>News
-		<span class="spacer"></div></h2>
-	</div>
+		<div class="medium-3 columns">
+			<h2>News</h2>
+		</div>
+		<div class="medium-9 columns">
+			<h2><span class="spacer"></span></h2>
+		</div>
 </div>
 <div class="row">
 <?php if ( $asmag_news_query->have_posts() ) :	while ($asmag_news_query->have_posts()) : $asmag_news_query->the_post(); ?>
 	<article class="small-12 medium-4 large-3 columns end news item">
-		<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php echo the_post_thumbnail('filterthumbbig', array('class'=>'no-margin home-img img-responsive')); ?>
+		<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php echo the_post_thumbnail('filterthumb', array('class'=>'no-margin home-img img-responsive')); ?>
 		<h5><?php the_title(); ?></h5>
 		<?php the_excerpt(); ?>
 		</a>
@@ -101,8 +105,12 @@ Template Name: Redesign Front Page
 <section class="bigideas home">
 <div class="row">
 	<div class="small-12 columns">
-		<h2>Big Ideas
-		<span class="spacer"></div></h2>
+		<div class="medium-3 columns">
+			<h2>Big Ideas</h2>
+		</div>
+		<div class="medium-9 columns">
+			<h2><span class="spacer"></span></h2>
+		</div>
 	</div>
 </div>
 <div class="row">
@@ -121,8 +129,12 @@ Template Name: Redesign Front Page
 <section class="bluejays home">
 <div class="row">
 	<div class="small-12 columns">
-		<h2>#BlueJays
-		<span class="spacer"></div></h2>
+		<div class="medium-3 columns">
+			<h2>#BlueJays</h2>
+		</div>
+		<div class="medium-9 columns">
+			<h2><span class="spacer"></span></h2>
+		</div>
 	</div>
 </div>
 <div class="row">
@@ -141,8 +153,12 @@ Template Name: Redesign Front Page
 <section class="alumni home">
 <div class="row">
 	<div class="small-12 columns">
-		<h2>Alumni
-		<span class="spacer"></div></h2>
+		<div class="medium-3 columns">
+			<h2>Alumni</h2>
+		</div>
+		<div class="medium-9 columns">
+			<h2><span class="spacer"></span></h2>
+		</div>
 	</div>
 </div>
 <div class="row">

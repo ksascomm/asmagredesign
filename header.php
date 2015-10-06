@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<?php $volume = get_the_volume($post); ?>
+
 		<!-- CSS -->
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/app.min.css">
 		<script async type="text/javascript" src="http://fast.fonts.net/jsapi/1db25190-910a-4ab7-bd9b-5582bf1b2833.js"></script>
@@ -25,10 +26,13 @@
 			<script async type="text/javascript" src="http://fast.fonts.net/jsapi/a5273dfb-2de2-4945-99ec-e9d381669740.js"></script>		
 		<?php } ?>
 		
+		<!-- JS -->
 		<?php wp_enqueue_script('jquery'); ?>
 		<script async src="<?php echo get_template_directory_uri() ?>/assets/js/modernizr.foundation.js"></script>
 		<script async src="<?php echo get_template_directory_uri() ?>/assets/js/app.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.6.0/headroom.min.js"></script>
+
+		<!-- ETC -->
 		<?php wp_head(); ?>
 		
   <!-- Make IE a modern browser -->
