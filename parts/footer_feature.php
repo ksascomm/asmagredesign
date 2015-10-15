@@ -35,7 +35,7 @@
 				
 				while ($features_query->have_posts()) : $features_query->the_post(); ?>
 		
-	    			<div class="small-12 medium-3 columns">
+	    			<div class="small-12 medium-3 columns end">
 	    			<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
 	    			    <?php the_post_thumbnail('filterthumb'); ?>
 	    			    <h5><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h5>

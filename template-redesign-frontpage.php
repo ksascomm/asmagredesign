@@ -26,7 +26,7 @@ Template Name: Redesign Front Page
 				'order' => 'DESC',
 				'posts_per_page' => '-1'));
 
-			$asmag_bluejays_query = new WP_Query(array(
+			$asmag_students_query = new WP_Query(array(
 				'post_type' => 'post',
 				'volume' => $volume,
 				'category__in' => array(85),
@@ -79,99 +79,111 @@ Template Name: Redesign Front Page
 
 								
 <section class="news home">
-<div class="row">
-	<div class="small-12 columns">
-		<div class="medium-3 columns">
-			<h2>News</h2>
+	<div class="row">
+		<div class="small-12 columns">
+			<div class="small-5 medium-3 columns">
+				<h2>News</h2>
+			</div>
+			<div class="small-7 medium-9 columns">
+				<h2><span class="spacer"></span></h2>
+			</div>
 		</div>
-		<div class="medium-9 columns">
-			<h2><span class="spacer"></span></h2>
-		</div>
-</div>
-<div class="row">
-<?php if ( $asmag_news_query->have_posts() ) :	while ($asmag_news_query->have_posts()) : $asmag_news_query->the_post(); ?>
-	<article class="small-12 medium-4 large-3 columns end news item">
-		<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php echo the_post_thumbnail('filterthumb', array('class'=>'no-margin home-img img-responsive')); ?>
-		<h5><?php the_title(); ?></h5>
-		<?php the_excerpt(); ?>
-		</a>
-	</article>
-
-	<?php endwhile; wp_reset_postdata(); ?>	
-	<?php endif; ?>
-</div>
+	</div>
+	<div class="row">
+		<?php if ( $asmag_news_query->have_posts() ) : ?>	
+			<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+				<?php while ($asmag_news_query->have_posts()) : $asmag_news_query->the_post(); ?>
+				<li class="news item">
+					<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php echo the_post_thumbnail('filterthumb', array('class'=>'no-margin home-img img-responsive')); ?>
+					<h5><?php the_title(); ?></h5>
+					<?php the_excerpt(); ?>
+					</a>
+				</li>
+				<?php endwhile; wp_reset_postdata(); ?>	
+			</ul>
+			<?php endif; ?>
+	</div>
 </section>
 
 <section class="bigideas home">
-<div class="row">
-	<div class="small-12 columns">
-		<div class="medium-3 columns">
-			<h2>Big Ideas</h2>
-		</div>
-		<div class="medium-9 columns">
-			<h2><span class="spacer"></span></h2>
+	<div class="row">
+		<div class="small-12 columns">
+			<div class="small-5 medium-3 columns">
+				<h2>Big Ideas</h2>
+			</div>
+			<div class="small-7 medium-9 columns">
+				<h2><span class="spacer"></span></h2>
+			</div>
 		</div>
 	</div>
-</div>
-<div class="row">
-<?php if ( $asmag_bigideas_query->have_posts() ) :	while ($asmag_bigideas_query->have_posts()) : $asmag_bigideas_query->the_post(); ?>
-	<article class="small-12 medium-4 large-3 columns end bigideas item">
-		<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php echo the_post_thumbnail('filterthumbbig', array('class'=>'no-margin home-img img-responsive')); ?>
-		<h5><?php the_title(); ?></h5>
-		<p><?php the_excerpt(); ?></p>
-		</a>
-	</article>
-	<?php endwhile; wp_reset_postdata(); ?>	
-	<?php endif; ?>
-</div>
+	<div class="row">
+		<?php if ($asmag_bigideas_query->have_posts() ) : ?>	
+			<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+				<?php while ($asmag_bigideas_query->have_posts()) : $asmag_bigideas_query->the_post(); ?>
+					<li class=" bigideas item">
+						<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php echo the_post_thumbnail('filterthumb', array('class'=>'no-margin home-img img-responsive')); ?>
+						<h5><?php the_title(); ?></h5>
+						<p><?php the_excerpt(); ?></p>
+						</a>
+					</li>
+				<?php endwhile; wp_reset_postdata(); ?>	
+			</ul>
+		<?php endif; ?>
+	</div>
 </section>
 
-<section class="bluejays home">
-<div class="row">
-	<div class="small-12 columns">
-		<div class="medium-3 columns">
-			<h2>#BlueJays</h2>
-		</div>
-		<div class="medium-9 columns">
-			<h2><span class="spacer"></span></h2>
+<section class="students home">
+	<div class="row">
+		<div class="small-12 columns">
+			<div class="small-6 medium-4 columns">
+				<h2>Student Digest</h2>
+			</div>
+			<div class="small-6 medium-8 columns">
+				<h2><span class="spacer"></span></h2>
+			</div>
 		</div>
 	</div>
-</div>
-<div class="row">
-<?php if ( $asmag_bluejays_query->have_posts() ) :	while ($asmag_bluejays_query->have_posts()) : $asmag_bluejays_query->the_post(); ?>
-	<article class="small-12 medium-4 large-3 columns end bluejays item">
-		<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php echo the_post_thumbnail('filterthumbbig', array('class'=>'no-margin home-img img-responsive')); ?>
-		<h5><?php the_title(); ?></h5>
-		<p><?php the_excerpt(); ?></p>
-		</a>
-	</article>
-	<?php endwhile; wp_reset_postdata(); ?>	
-	<?php endif; ?>
-</div>
+	<div class="row">
+		<?php if ( $asmag_students_query->have_posts() ) : ?>
+			<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+				<?php while ($asmag_students_query->have_posts()) : $asmag_students_query->the_post(); ?>
+					<li class="students item">
+						<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php echo the_post_thumbnail('filterthumb', array('class'=>'no-margin home-img img-responsive')); ?>
+						<h5><?php the_title(); ?></h5>
+						<p><?php the_excerpt(); ?></p>
+						</a>
+					</li>
+				<?php endwhile; wp_reset_postdata(); ?>	
+			</ul>
+		<?php endif; ?>
+	</div>
 </section>
 
 <section class="alumni home">
-<div class="row">
-	<div class="small-12 columns">
-		<div class="medium-3 columns">
-			<h2>Alumni</h2>
-		</div>
-		<div class="medium-9 columns">
-			<h2><span class="spacer"></span></h2>
+	<div class="row">
+		<div class="small-12 columns">
+			<div class="small-5 medium-3 columns">
+				<h2>Alumni</h2>
+			</div>
+			<div class="small-7 medium-9 columns">
+				<h2><span class="spacer"></span></h2>
+			</div>
 		</div>
 	</div>
-</div>
-<div class="row">
-<?php if ( $asmag_alumni_query->have_posts() ) :	while ($asmag_alumni_query->have_posts()) : $asmag_alumni_query->the_post(); ?>
-	<article class="small-12 medium-4 large-3 columns end alumni item">
-		<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php echo the_post_thumbnail('filterthumbbig', array('class'=>'no-margin home-img img-responsive')); ?>
-		<h5><?php the_title(); ?></h5>
-		<p><?php the_excerpt(); ?></p>
-		</a>
-	</article>
-	<?php endwhile; wp_reset_postdata(); ?>	
-	<?php endif; ?>
-</div>
+	<div class="row">
+		<?php if ( $asmag_alumni_query->have_posts() ) : ?>	
+			<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+				<?php while ($asmag_alumni_query->have_posts()) : $asmag_alumni_query->the_post(); ?>
+					<li class="alumni item">
+						<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php echo the_post_thumbnail('filterthumb', array('class'=>'no-margin home-img img-responsive')); ?>
+						<h5><?php the_title(); ?></h5>
+						<p><?php the_excerpt(); ?></p>
+						</a>
+					</li>
+				<?php endwhile; wp_reset_postdata(); ?>
+			</ul>
+		<?php endif; ?>
+	</div>
 </section>
 
 

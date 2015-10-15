@@ -5,7 +5,7 @@
 	    <?php if ( have_posts() ) : while ( have_posts() ) : the_post();  ?>
 			<?php /* add per post custom CSS */ if ( get_post_meta($post->ID, 'ecpt_asmag_css', true) ) { echo '<style>' . get_post_meta($post->ID, 'ecpt_asmag_css', true) . '</style>'; } ?> 
 			<div class="postmaterial">
-				<h3><?php the_title(); ?></h3>
+				<h2><?php the_title(); ?></h2>
 				<p class="author">By&nbsp;<?php the_author(); ?></p>
 				<?php if ( get_post_meta($post->ID, 'ecpt_other_credits', true) ) { echo '<p class="othercredits">' . get_post_meta($post->ID, 'ecpt_other_credits', true) . '</p>'; } ?>
 					<?php if  (has_tag('snapshot')) { 

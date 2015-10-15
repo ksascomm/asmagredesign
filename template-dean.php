@@ -18,7 +18,7 @@ Template Name: From the Dean
 						'posts_per_page' => '1')); ?>
 		
 						<?php while ($dean_query->have_posts()) : $dean_query->the_post(); ?>
-						    	<h3><?php the_title(); ?></h3>	
+						    	<h2><?php the_title(); ?></h2>	
 						    		<?php the_post_thumbnail('full', array('class'=>'floatleft'));
 						    		 the_content(); ?>
 						<?php $volume = get_the_volume($post); $volume_name = get_the_volume_name($post); endwhile; wp_reset_query() ?>

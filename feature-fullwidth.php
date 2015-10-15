@@ -40,10 +40,17 @@ $hero_sm = $sm_hero_array[0]; // Mobile Hero
                 <div class="small-12 medium-10 medium-offset-1 large-8 large-offset-2 columns">
                     <div class="post-heading">
                         <h2><?php the_title(); ?></h2>
-                        
-					<?php if (!is_mobile()) : ?>
-                        <?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) : ?>  <h4 class="small-12 columns"><?php echo get_post_meta($post->ID, 'ecpt_tagline', true); ?></h4><?php endif; ?>
-                    <?php endif ;?>
+							<?php if (!is_handheld()) : ?>
+							<div class="show-for-large-up">
+		                        <?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) : ?> 
+		                        	<div id="tagline">
+		                        		<h4>
+		                        			<?php echo get_post_meta($post->ID, 'ecpt_tagline', true); ?>
+		                        		</h4>
+		                        	</div>
+		                        <?php endif; ?>
+		                    </div>   
+		                    <?php endif ;?>
                     </div>
                 </div>
         </div>
@@ -55,12 +62,12 @@ $hero_sm = $sm_hero_array[0]; // Mobile Hero
 <div class="cd-scrolling-bg">
 	<div id="container-mid">
 		<div id="feature story">
-			<?php if (is_mobile()) : ?>
-                  <?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) : ?>  <h4 class="small-12 columns"><?php echo get_post_meta($post->ID, 'ecpt_tagline', true); ?></h4><?php endif; ?>
-            <?php endif ;?>
 		<?php if (is_handheld()) { ?>	
-		  	<div class="row">	
+		  	<div class="row">
 				<div class="small-12 medium-10 medium-offset-1 columns">
+					<?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) : ?> 
+		  				<h5 class="feature-tag"><?php echo get_post_meta($post->ID, 'ecpt_tagline', true); ?></h5>
+		  			<?php endif; ?>
 					<p class="othercredits"><?php if ( get_post_meta($post->ID, 'ecpt_other_credits', true) ) : ?> <?php echo get_post_meta($post->ID, 'ecpt_other_credits', true); ?><?php endif; ?></p>
 				</div>
 			</div>
@@ -72,6 +79,9 @@ $hero_sm = $sm_hero_array[0]; // Mobile Hero
 		<?php } else { ?>
 			<div class="row">
 				<div class="small-12 columns hide-for-large-up">
+					<?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) : ?> 
+		  				<h5 class="feature-tag"><?php echo get_post_meta($post->ID, 'ecpt_tagline', true); ?></h5>
+		  			<?php endif; ?>
 					<p class="othercredits"><?php if ( get_post_meta($post->ID, 'ecpt_other_credits', true) ) : ?> <?php echo get_post_meta($post->ID, 'ecpt_other_credits', true); ?><?php endif; ?></p>
 		    	</div>
 		    	<div class="small-12 large-8 large-offset-2 columns feature-intro">

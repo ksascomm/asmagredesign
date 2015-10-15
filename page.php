@@ -4,7 +4,7 @@
 	    <article class="small-12 medium-8 columns" id="article">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> <!--Start the loop -->
 				<div class="postmaterial">
-					<h3><?php the_title(); ?></h3>
+					<h2><?php the_title(); ?></h2>
 					<?php the_content(); ?>
 				</div><!--End postmaterial -->
 			<?php $volume = get_the_volume($post); $volume_name = get_the_volume_name($post); endwhile; endif; wp_reset_query();?>

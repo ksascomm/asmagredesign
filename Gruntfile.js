@@ -66,7 +66,19 @@ module.exports = function(grunt) {
             flatten: true,
             src: ['assets/bower_components/font-awesome/fonts/*'],
             dest: 'assets/fonts'
-        }
+        },
+        headroom: {
+            cwd: 'assets/bower_components/headroom.js/dist/',  // set working folder / root to copy
+            src: 'headroom.js',           // copy all files and subfolders
+            dest: 'assets/js/',    // destination folder
+            expand: true           // required when using cwd
+        },
+         fastclick: {
+            cwd: 'assets/bower_components/fastclick/lib/',  // set working folder / root to copy
+            src: 'fastclick.js',           // copy all files and subfolders
+            dest: 'assets/js/',    // destination folder
+            expand: true           // required when using cwd
+        },
     },
 
     //browserSync

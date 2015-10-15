@@ -2,6 +2,7 @@
   "name": "foundation-libsass-template",
   "dependencies": {
     "font-awesome": "~4.4.0",
-    "foundation": "zurb/bower-foundation"
+    "foundation": "zurb/bower-foundation",
+    "headroom.js": "~0.7.0"
   }
 }
