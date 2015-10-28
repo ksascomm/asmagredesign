@@ -37,7 +37,7 @@
 		
 	    			<div class="small-12 medium-3 columns end">
 	    			<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
-	    			    <?php the_post_thumbnail('filterthumb'); ?>
+	    			    <?php the_post_thumbnail('filterthumb'); ?></a>
 	    			    <h5><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h5>
 							<?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) :  echo '<p>' . get_post_meta($post->ID, 'ecpt_tagline', true) . '</p>'; else : echo '<p>' . get_the_excerpt() . '</p>'; endif; ?>
 	    			</div><!--End snippet -->
