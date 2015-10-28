@@ -18,7 +18,22 @@
 					} ; ?>
 
 				<?php the_content(); ?>
-				<?php //Get data for sidebar
+			</div><!--End postmaterial -->
+
+		<?php if (is_single('Of Biology and Daylilies')) {
+				locate_template('parts/photo-mosiac.php', true, false);
+				} ;?>	
+
+		<?php locate_template('parts/related-tags.php', true, false);	?>		
+
+		<?php comments_template( '/comments.php' ); ?> 
+
+		</article> 
+
+
+	<?php $home_url = home_url() ?>	
+
+	<?php //Get data for sidebar
 					$categories = get_the_category();
 					$thiscat = $categories[0]->cat_ID;
 					if ($thiscat == 31) { $thiscat = ''; $catname = '';} else {
@@ -27,14 +42,6 @@
 					
 					//End and reset query
 				$volume = get_the_volume($post); $volume_name = get_the_volume_name($post); endwhile; endif; wp_reset_query();?>
-			</div><!--End postmaterial -->
-		<?php if (is_single('Of Biology and Daylilies')) {
-				locate_template('parts/photo-mosiac.php', true, false);
-				} ;?>	
-		<?php comments_template( '/comments.php' ); ?> 
-		</article> 
-	
-	<?php $home_url = home_url(); $categories = get_the_category(); ?>	
 		<section class="small-12 large-4 columns" id="sidebar">
 			<div class="small-12 columns">
 				<ul class="breadcrumbs">
@@ -42,7 +49,8 @@
 				  <li><a href="<?php echo $home_url; ?>"><?php echo the_category(' '); ?></a></li>
 				  <li><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></li>
 				</ul>
-			</div>		
+			</div>	
+
 				<?php $sidebar_query = new WP_Query(array(
 					'cat' => $thiscat,
 					'volume' => $volume,
@@ -69,8 +77,10 @@
 				    			<?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) :  echo '<p>' . get_post_meta($post->ID, 'ecpt_tagline', true) . '</p>'; else : echo '<p>' . get_the_excerpt() . '</p>'; endif; ?>
 		    			</a>
 		    		</div><!-- End subtext -->
-	   			<?php endwhile; wp_reset_query() ?> 
+	   			<?php endwhile; wp_reset_query() ?>		
+				   			 
 			<?php locate_template('parts/in-latest-issue.php', true, false);	?>	
+
 		</section>
 	</div> <!--End content -->
 </div> <!--End container-mid -->
