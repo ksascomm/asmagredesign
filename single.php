@@ -43,11 +43,14 @@
 					//End and reset query
 				$volume = get_the_volume($post); $volume_name = get_the_volume_name($post); endwhile; endif; wp_reset_query();?>
 		<section class="small-12 large-4 columns" id="sidebar">
-			<div class="small-12 columns">
+			<div class="small-12 columns <?php echo $catslug; ?>">
+			<h4>Navigation <span class="spacer"></span></h4>
 				<ul class="breadcrumbs">
-				  <li><a href="<?php echo $home_url; ?>/<?php echo $volume; ?>"><?php echo $volume_name; ?> Issue</a></li>
-				  <li><a href="<?php echo $home_url; ?>"><?php echo the_category(' '); ?></a></li>
-				  <li><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></li>
+				  <li>Issue: <a href="<?php echo $home_url; ?>/<?php echo $volume; ?>"><?php echo $volume_name; ?></a></li>
+				  <li>Department: <?php if ( ! empty( $categories ) ) {
+    echo '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';
+}?> </li>
+				  <li class="active"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></li>
 				</ul>
 			</div>	
 
@@ -60,7 +63,7 @@
 				));
 				?>
 			<div class="small-12 columns <?php echo $catslug; ?>">	 
-				<h4>Other <?php echo $catname; ?> articles<span class="spacer"></span></h4>
+				<h4>Also In <?php echo $catname; ?> <span class="spacer"></span></h4>
 			</div>
 				<?php while ($sidebar_query->have_posts()) : $sidebar_query->the_post();
 					$issues = get_the_terms($post->ID, 'volume');
@@ -73,7 +76,7 @@
 		    		<div class="small-12 columns">
 		    			<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
 			    			<h5><?php the_title(); ?><br>
-			    			<span class="<?php echo $catname; ?>"><?php echo $issue_name; ?></span></h5>
+			    			<span class="<?php echo $catslug; ?>"><?php echo $issue_name; ?></span></h5>
 				    			<?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) :  echo '<p>' . get_post_meta($post->ID, 'ecpt_tagline', true) . '</p>'; else : echo '<p>' . get_the_excerpt() . '</p>'; endif; ?>
 		    			</a>
 		    		</div><!-- End subtext -->
