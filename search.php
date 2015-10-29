@@ -42,7 +42,7 @@ try {
            
         <?php if (empty($sponsored_result) == false) { ?>
 	        <div class="panel callout radius10" id="sponsored">
-	        	<h6 class="black">Sponsored Result</h6>
+	        	<h6 class="black">Featured Result</h6>
 	        	<a href="<?php echo $sponsored_result['sponsored_url']; ?>"><h3><?php echo $sponsored_result['sponsored_title']; ?><small class="italic">-- <?php echo $sponsored_result['sponsored_url']; ?></small></h3></a>
 	        </div>
          <?php } ?>   
