@@ -198,6 +198,19 @@ ul[data-clearing] li.gallery-item {
   }
 }
 
+#related-tags {
+  .spacer {
+    width: 115%;
+    float: right;
+    margin-top: .5rem;
+    margin-right: -15px;
+  }
+}
+
+.related {
+  margin-bottom: 15px;
+}
+
 /* ================ The Timeline ================ */
 
 .timeline {

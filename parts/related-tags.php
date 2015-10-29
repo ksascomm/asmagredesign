@@ -14,9 +14,14 @@
 				
 					if( $related_tags_query->have_posts() ) { ?>
 
-	<div class="small-12 columns table"> 
-		<h4>Related <?php echo $tagname; ?> Articles<span class="spacer"></span></h4>
-	</div>	
+		<div class="small-12 columns">
+			<div class="small-8 medium-6 columns">
+				<h4>Related <?php echo $tagname; ?> Articles</h4>
+			</div>
+			<div class="small-4 medium-6 columns">
+				<h2><span class="spacer"></span></h2>
+			</div>
+		</div>		
 
 		<?php while ($related_tags_query->have_posts()) : $related_tags_query->the_post(); 
 
@@ -29,13 +34,15 @@
 			$issue_name = join(" ", $issue_names); endif; ?>
 
 			<div class="small-12 medium-4 columns end">
-    			<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
-    			   <?php the_post_thumbnail('filterthumb'); ?>
-    			   <h5><?php the_title(); ?><br>
-				    	<span class="<?php echo $catname; ?>"><?php echo $issue_name; ?></span>
-				   </h5>
-				 </a>
-				<?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) :  echo '<p>' . get_post_meta($post->ID, 'ecpt_tagline', true) . '</p>'; else : echo '<p>' . get_the_excerpt() . '</p>'; endif; ?>
+    			<div class="related">
+	    			<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
+	    			   <?php the_post_thumbnail('filterthumb'); ?>
+	    			   <h5><?php the_title(); ?><br>
+					    	<span class="<?php echo $catname; ?>"><?php echo $issue_name; ?></span>
+					   </h5>
+					 </a>
+					<?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) :  echo '<p>' . get_post_meta($post->ID, 'ecpt_tagline', true) . '</p>'; else : echo '<p>' . get_the_excerpt() . '</p>'; endif; ?>
+				</div>	
 			</div><!--End snippet -->
 
 		<?php endwhile; } wp_reset_query(); } ?>

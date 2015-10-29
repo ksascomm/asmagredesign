@@ -7,6 +7,9 @@ footer {
   margin-top: 1.5em;
   a {
     color: $silver;
+    &:hover {
+      color: #ccc;
+    }
   }
 }
 

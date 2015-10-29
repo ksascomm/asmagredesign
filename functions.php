@@ -495,7 +495,6 @@ if ( !function_exists( 'wpex_pagination' ) ) {
 	
 }
 
-
 /**
  * Create Custom Image Sizes for Responsive 
  * Based on Foundations breakpoints for SM, MD, LG

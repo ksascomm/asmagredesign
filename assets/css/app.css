@@ -7771,6 +7771,11 @@ h4, h5, h6, .h4, .h5, .h6 {
   font-weight: 400;
   font-style: normal; }
 
+.button.blue_bg {
+  background: #005eb8; }
+  .button.blue_bg:hover, .button.blue_bg:focus {
+    background: #005eb8; }
+
 .Insights h4 {
   color: #993366; }
 .Insights .spacer {
@@ -7796,14 +7801,14 @@ h4, h5, h6, .h4, .h5, .h6 {
 .Research .spacer {
   background: #dbb003; }
 
-.bigideas h4, .Big.Ideas h4, .big-ideas h4 {
+.bigideas .breadcrumbs, .bigideas h4, .Big.Ideas .breadcrumbs, .Big.Ideas h4, .big-ideas .breadcrumbs, .big-ideas h4 {
   color: #007a53; }
 .bigideas .spacer, .Big.Ideas .spacer, .big-ideas .spacer {
   background: #007a53; }
 
-.students h4 {
+.students h4, .students.digest h4, .student-digest h4 {
   color: #005eb8; }
-.students .spacer {
+.students .spacer, .students.digest .spacer, .student-digest .spacer {
   background: #005eb8; }
 
 .alumni h4 {
@@ -8361,6 +8366,15 @@ ul[data-clearing] li.gallery-item {
   margin-bottom: 40px; }
   .books p {
     font-size: 14px; }
+
+#related-tags .spacer {
+  width: 115%;
+  float: right;
+  margin-top: .5rem;
+  margin-right: -15px; }
+
+.related {
+  margin-bottom: 15px; }
 
 /* ================ The Timeline ================ */
 .timeline {
@@ -9261,7 +9275,7 @@ ul.page-numbers li {
     width: 90px;
     margin: 4px 5px 0 5px; }
   #sidebar h5 {
-    font-size: 15px;
+    font-size: 1rem;
     margin-top: 0;
     margin-bottom: 4px; }
   #sidebar p {
@@ -9278,11 +9292,11 @@ ul.page-numbers li {
       color: #993366; }
     #sidebar .Insights .spacer {
       background: #993366; }
-  #sidebar .Alumni {
+  #sidebar .Alumni, #sidebar .alumni {
     color: #ff6900; }
-    #sidebar .Alumni h4 {
+    #sidebar .Alumni h4, #sidebar .alumni h4 {
       color: #ff6900; }
-    #sidebar .Alumni .spacer {
+    #sidebar .Alumni .spacer, #sidebar .alumni .spacer {
       background: #ff6900; }
   #sidebar .News, #sidebar .news {
     color: #418fde; }
@@ -9302,20 +9316,49 @@ ul.page-numbers li {
       color: #dbb003; }
     #sidebar .Research .spacer {
       background: #dbb003; }
-  #sidebar .bigideas, #sidebar .Big.Ideas {
+  #sidebar .bigideas, #sidebar .Big.Ideas, #sidebar .big-ideas {
     color: #007a53; }
-    #sidebar .bigideas h4, #sidebar .Big.Ideas h4 {
+    #sidebar .bigideas h4, #sidebar .Big.Ideas h4, #sidebar .big-ideas h4 {
       color: #007a53; }
-    #sidebar .bigideas .spacer, #sidebar .Big.Ideas .spacer {
+    #sidebar .bigideas .spacer, #sidebar .Big.Ideas .spacer, #sidebar .big-ideas .spacer {
       background: #007a53; }
-  #sidebar .students {
+  #sidebar .students, #sidebar .Students.Digest {
     color: #005eb8; }
-    #sidebar .students h4 {
+    #sidebar .students h4, #sidebar .Students.Digest h4 {
       color: #005eb8; }
-    #sidebar .students .spacer {
+    #sidebar .students .spacer, #sidebar .Students.Digest .spacer {
       background: #005eb8; }
   #sidebar .table h4 {
     color: #333; }
+  #sidebar .breadcrumbs {
+    background: none;
+    border-style: none;
+    margin-left: -14px;
+    margin-top: -25px; }
+    #sidebar .breadcrumbs > li {
+      font-size: 1rem;
+      line-height: 1rem;
+      text-transform: inherit;
+      font-family: 'gentona-book', 'Myriad W01 SmBd', Arial, sans-serif;
+      float: inherit;
+      color: #2C2C33; }
+      #sidebar .breadcrumbs > li:first-child:before {
+        content: " ";
+        margin: 0; }
+      #sidebar .breadcrumbs > li:before {
+        content: ">"; }
+      #sidebar .breadcrumbs > li a {
+        color: #68ace5; }
+        #sidebar .breadcrumbs > li a:link, #sidebar .breadcrumbs > li a:visited, #sidebar .breadcrumbs > li a:hover, #sidebar .breadcrumbs > li a:active {
+          text-decoration: none; }
+  #sidebar .big-ideas .breadcrumbs > * a {
+    color: #007a53; }
+  #sidebar .news .breadcrumbs > * a {
+    color: #418fde; }
+  #sidebar .alumni .breadcrumbs > * a {
+    color: #ff6900; }
+  #sidebar .students .breadcrumbs > * a {
+    color: #005eb8; }
 
 .button {
   color: #fff !important; }
@@ -9325,7 +9368,7 @@ ul.page-numbers li {
   padding: 6px; }
 
 .news.button {
-  background-color: #418def; }
+  background-color: #418fde; }
 
 .bigideas.button, .big-ideas.button {
   background-color: #007a53; }
@@ -9348,19 +9391,15 @@ ul.page-numbers li {
 #disqus_thread {
   margin: 40px; }
 
-#sidebar .breadcrumbs > li {
-  font-size: 1rem;
-  line-height: 1rem;
-  text-transform: inherit;
-  font-family: 'gentona-book', 'Myriad W01 SmBd', Arial, sans-serif;
-  float: inherit; }
-  #sidebar .breadcrumbs > li:first-child:before {
-    content: " ";
-    margin: 0; }
-  #sidebar .breadcrumbs > li:before {
-    content: ">"; }
-  #sidebar .breadcrumbs > li a {
-    color: #005eb8; }
+.also-in .spacer {
+  background: #68ace5;
+  width: 50%;
+  text-align: right; }
+.also-in h3 {
+  color: #418fde;
+  font-variant: small-caps; }
+.also-in .button-group {
+  margin-left: 17px; }
 
 /* 1.0 Special Classes
 ___________________________________________________________*/
@@ -9548,14 +9587,6 @@ section.news {
   color: #8a2a2b;
   font-variant: small-caps; }
 
-.also-in .spacer {
-  background: #68ace5;
-  width: 50%;
-  text-align: right; }
-.also-in h3 {
-  color: #418fde;
-  font-variant: small-caps; }
-
 .spacer {
   background: #333;
   height: 18px;
@@ -9614,6 +9645,8 @@ footer {
   margin-top: 1.5em; }
   footer a {
     color: #E5E2E0; }
+    footer a:hover {
+      color: #ccc; }
 
 .inline-list li a {
   color: #E5E2E0; }
@@ -9730,10 +9763,16 @@ h2.toc_header {
     font-weight: 300;
     font-style: normal; }
   .item {
+    text-align: center;
     margin: 0 auto;
     margin-bottom: 16px; }
     .item h5 {
-      font-family: 'gentona-book', 'Myriad W01 SmBd Cnd', Arial, sans-serif; }
+      font-family: 'gentona-book', 'Myriad W01 SmBd Cnd', Arial, sans-serif;
+      margin-left: 20px;
+      margin-right: 20px;
+      line-height: 21px; }
+    .item p {
+      margin: -10px 30px 20px; }
   .pullquote p {
     padding-left: 20px; }
   .orbit-container .orbit-slides-container > * .slide-caption {
@@ -9777,7 +9816,18 @@ h2.toc_header {
   .intro-hero {
     max-width: 100%;
     height: auto;
-    display: block; } }
+    display: block; }
+  .related {
+    text-align: center;
+    margin-bottom: 50px; }
+    .related p {
+      padding: 0 10px;
+      text-align: center;
+      font-size: 1rem; }
+  .home .spacer {
+    margin-top: .5rem; }
+  #related-tags .spacer {
+    margin-top: .25rem; } }
 
 @media only screen and (min-width: 40.0625em) {
   .top-bar-section li:not(.has-form) a:not(.button) {

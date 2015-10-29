@@ -4,7 +4,6 @@ body {
   font-style: normal;
 }
 
-
 p {
   font-size: 17.5px;
   font-family: $font-stack;
@@ -25,71 +24,78 @@ h4, h5, h6,
   font-style: normal;
 }
 
- .Insights {
-    h4 {
-      color: #993366;
-    }
-    .spacer {
-      background: #993366;
-    }
-  }
-  .Alumni {
-
-    h4 {
-      color: $orange;
-    }
-    .spacer {
-      background:$orange;
-    }
-  }
-  .News {
-      h4 {
-      color: $ksasblue;
-    }
-    .spacer {
-      background: $ksasblue;
-    }
-  }
-  .features, .featurelisting {
-    h4 {
-      color: $red;
-    }
-    .spacer {
-      background: $red;
-    }
-  }
-  .Research {
-    h4 {
-      color: #dbb003;
-    }
-    .spacer {
-      background: #dbb003;
-    }
-  }
-  .bigideas,.Big.Ideas, .big-ideas {
-   h4 {
-      color: $green;
-    }
-    .spacer {
-      background: $green;
-    }
-  }
-  .students {
-   h4 {
-      color: $jhublue;
-    }
-    .spacer {
+.button.blue_bg {
+  background: $jhublue;
+    &:hover, &:focus {
       background: $jhublue;
     }
+}
+
+
+.Insights {
+  h4 {
+    color: #993366;
   }
-  .alumni {
-   h4 {
-      color: $orange;
-    }
-    .spacer {
-      background: $orange;
-    }
+  .spacer {
+    background: #993366;
   }
+}
+.Alumni {
+  h4 {
+    color: $orange;
+  }
+  .spacer {
+    background:$orange;
+  }
+}
+.News {
+    h4 {
+    color: $ksasblue;
+  }
+  .spacer {
+    background: $ksasblue;
+  }
+}
+.features, .featurelisting {
+  h4 {
+    color: $red;
+  }
+  .spacer {
+    background: $red;
+  }
+}
+.Research {
+  h4 {
+    color: #dbb003;
+  }
+  .spacer {
+    background: #dbb003;
+  }
+}
+.bigideas,.Big.Ideas, .big-ideas {
+ .breadcrumbs, h4 {
+    color: $green;
+  }
+  .spacer {
+    background: $green;
+  }
+}
+.students, .students.digest, .student-digest {
+ h4 {
+    color: $jhublue;
+  }
+  .spacer {
+    background: $jhublue;
+  }
+}
+.alumni {
+ h4 {
+    color: $orange;
+  }
+  .spacer {
+    background: $orange;
+  }
+}
 
 hr.style15 {
   border-top: 4px double #8c8b8b;

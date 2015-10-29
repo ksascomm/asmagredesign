@@ -91,7 +91,7 @@ Template Name: Redesign Front Page
 	</div>
 	<div class="row">
 		<?php if ( $asmag_news_query->have_posts() ) : ?>	
-			<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+			<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
 				<?php while ($asmag_news_query->have_posts()) : $asmag_news_query->the_post(); ?>
 				<li class="news item">
 					<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php echo the_post_thumbnail('filterthumb', array('class'=>'no-margin home-img img-responsive')); ?>
@@ -118,7 +118,7 @@ Template Name: Redesign Front Page
 	</div>
 	<div class="row">
 		<?php if ($asmag_bigideas_query->have_posts() ) : ?>	
-			<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+			<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
 				<?php while ($asmag_bigideas_query->have_posts()) : $asmag_bigideas_query->the_post(); ?>
 					<li class=" bigideas item">
 						<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php echo the_post_thumbnail('filterthumb', array('class'=>'no-margin home-img img-responsive')); ?>
@@ -135,17 +135,17 @@ Template Name: Redesign Front Page
 <section class="students home">
 	<div class="row">
 		<div class="small-12 columns">
-			<div class="small-6 medium-4 columns">
+			<div class="small-7 medium-4 columns">
 				<h2>Student Digest</h2>
 			</div>
-			<div class="small-6 medium-8 columns">
+			<div class="small-5 medium-8 columns">
 				<h2><span class="spacer"></span></h2>
 			</div>
 		</div>
 	</div>
 	<div class="row">
 		<?php if ( $asmag_students_query->have_posts() ) : ?>
-			<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+			<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
 				<?php while ($asmag_students_query->have_posts()) : $asmag_students_query->the_post(); ?>
 					<li class="students item">
 						<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php echo the_post_thumbnail('filterthumb', array('class'=>'no-margin home-img img-responsive')); ?>
@@ -172,7 +172,7 @@ Template Name: Redesign Front Page
 	</div>
 	<div class="row">
 		<?php if ( $asmag_alumni_query->have_posts() ) : ?>	
-			<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+			<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
 				<?php while ($asmag_alumni_query->have_posts()) : $asmag_alumni_query->the_post(); ?>
 					<li class="alumni item">
 						<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php echo the_post_thumbnail('filterthumb', array('class'=>'no-margin home-img img-responsive')); ?>

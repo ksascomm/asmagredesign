@@ -14,7 +14,7 @@
     margin: 4px 5px 0 5px;
   }
   h5 {
-    font-size: 15px;
+    font-size: 1rem;
     margin-top: 0;
     margin-bottom: 4px;
   }
@@ -37,7 +37,7 @@
       background: #993366;
     }
   }
-  .Alumni {
+  .Alumni, .alumni {
     color: $orange;
     h4 {
       color: $orange;
@@ -73,7 +73,7 @@
       background: #dbb003;
     }
   }
-  .bigideas,.Big.Ideas {
+  .bigideas,.Big.Ideas, .big-ideas {
   color: $green;
    h4 {
       color: $green;
@@ -82,7 +82,7 @@
       background: $green;
     }
   }
-  .students {
+  .students,.Students.Digest {
   color: $jhublue;
    h4 {
       color: $jhublue;
@@ -94,6 +94,53 @@
   .table h4 {
     color: #333;
   }
+  .breadcrumbs {
+    background: none;
+    border-style: none;
+    margin-left: -14px;
+    margin-top: -25px;
+      > li {
+        font-size: 1rem;
+        line-height: 1rem;
+        text-transform: inherit;
+        font-family: $font-subhead;
+        float: inherit;
+        color: $black;
+          &:first-child:before {
+          content: " ";
+          margin: 0;
+          }
+          &:before {
+            content: ">";
+          }
+          a {
+             color: $ksassky;
+             &:link, &:visited, &:hover, &:active {
+              text-decoration: none;
+             }
+      }
+  }
+}
+  .big-ideas {
+    .breadcrumbs>* a {
+      color: $green;
+    }
+  }
+  .news {
+    .breadcrumbs>* a {
+      color: $ksasblue;
+    }
+  }
+  .alumni {
+    .breadcrumbs>* a {
+      color: $orange;
+    }
+  }
+  .students {
+    .breadcrumbs>* a {
+      color: $jhublue;
+    }
+  }  
 }
 
 .button {
@@ -104,7 +151,7 @@
     padding: 6px;
 }
 .news.button{
-  background-color:#418def;
+  background-color:$ksasblue;
 }
 .bigideas.button, .big-ideas.button {
   background-color:$green;
@@ -132,22 +179,17 @@
   margin: 40px;
 }
 
-#sidebar {
-  .breadcrumbs > li {
-    &:first-child:before {
-    content: " ";
-    margin: 0;
-    }
-    &:before {
-      content: ">";
-    }
-  font-size: 1rem;
-  line-height: 1rem;
-  text-transform: inherit;
-  font-family: $font-subhead;
-  float: inherit;
-    a {
-     color: $jhublue;
-    }
+.also-in {
+  .spacer {
+    background: $ksassky;
+    width: 50%;
+    text-align: right;
+  }
+  h3 {
+    color: $ksasblue;
+    font-variant: small-caps;
+  }
+  .button-group {
+    margin-left: 17px;
   }
 }
