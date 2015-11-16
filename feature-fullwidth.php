@@ -58,7 +58,7 @@ $hero_sm = $sm_hero_array[0]; // Mobile Hero
   </section>
 
 
-	<div class="headerbreak"></div>
+	<div class="headerbreak hide-for-small"></div>
 <div class="cd-scrolling-bg">
 	<div id="container-mid">
 		<div id="feature story">
