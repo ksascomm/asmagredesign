@@ -48,10 +48,9 @@ Template Name: Redesign Front Page
 				'post_parent' => $parent,
 				'orderby' => 'menu_order',
 				'order' => 'ASC',
-				'posts_per_page' => '10'));			
+				'posts_per_page' => '5'));			
 
 	?>
-
 
 <section class="features">
 <div class="slideshow-wrapper">
@@ -61,12 +60,20 @@ Template Name: Redesign Front Page
 	  <li>
 	  	<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field">
 	  	<div class="slide">
-		    <?php echo the_post_thumbnail('fullbleed', array('class'=>'no-margin')); ?>
+		    <?php echo the_post_thumbnail('fullbleed', array('class'=>'no-margin no-lazy')); ?>
 		    <div class="slide-caption">
 				<h1><?php the_title(); ?></h1>
-				<hr class="hide-for-small-only">
 				<p><?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) { echo get_post_meta($post->ID, 'ecpt_tagline', true); } else { the_excerpt(); } ?></p>
-				<p>By <?php $author = get_the_author(); echo $author ;?> </p>		
+				<p>	
+					<?php
+						$author_id = $post->post_author;
+						$author = get_the_author();
+						if ( $author_id != 1 ) {
+							//dont show byline for "ksascomm"
+						  echo 'By&nbsp;' . $author ;
+						}
+						?>
+				</p>		
 		    </div>
 		 </div>
 	    </a>
@@ -79,15 +86,8 @@ Template Name: Redesign Front Page
 
 								
 <section class="news home">
-	<div class="row">
-		<div class="small-12 columns">
-			<div class="small-5 medium-3 columns">
-				<h2>News</h2>
-			</div>
-			<div class="small-7 medium-9 columns">
-				<h2><span class="spacer"></span></h2>
-			</div>
-		</div>
+	<div class="row section-header">
+		<h2 class="white">News</h2>
 	</div>
 	<div class="row">
 		<?php if ( $asmag_news_query->have_posts() ) : ?>	
@@ -106,15 +106,8 @@ Template Name: Redesign Front Page
 </section>
 
 <section class="bigideas home">
-	<div class="row">
-		<div class="small-12 columns">
-			<div class="small-5 medium-3 columns">
-				<h2>Big Ideas</h2>
-			</div>
-			<div class="small-7 medium-9 columns">
-				<h2><span class="spacer"></span></h2>
-			</div>
-		</div>
+	<div class="row section-header">
+		<h2 class="white">Big Ideas</h2>
 	</div>
 	<div class="row">
 		<?php if ($asmag_bigideas_query->have_posts() ) : ?>	
@@ -133,15 +126,8 @@ Template Name: Redesign Front Page
 </section>
 
 <section class="students home">
-	<div class="row">
-		<div class="small-12 columns">
-			<div class="small-7 medium-4 columns">
-				<h2>Student Digest</h2>
-			</div>
-			<div class="small-5 medium-8 columns">
-				<h2><span class="spacer"></span></h2>
-			</div>
-		</div>
+	<div class="row section-header">
+		<h2 class="white">Student Digest</h2>
 	</div>
 	<div class="row">
 		<?php if ( $asmag_students_query->have_posts() ) : ?>
@@ -160,15 +146,8 @@ Template Name: Redesign Front Page
 </section>
 
 <section class="alumni home">
-	<div class="row">
-		<div class="small-12 columns">
-			<div class="small-5 medium-3 columns">
-				<h2>Alumni</h2>
-			</div>
-			<div class="small-7 medium-9 columns">
-				<h2><span class="spacer"></span></h2>
-			</div>
-		</div>
+	<div class="row section-header">
+		<h2 class="white">Alumni</h2>
 	</div>
 	<div class="row">
 		<?php if ( $asmag_alumni_query->have_posts() ) : ?>	
