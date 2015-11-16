@@ -115,7 +115,7 @@
 		
 //Change Excerpt Length -- Add to functions.php
 function asmag_new_excerpt_length($length) {
-	return 10; //Change word count
+	return 20; //Change word count
 }
 add_filter('excerpt_length', 'asmag_new_excerpt_length');
 
