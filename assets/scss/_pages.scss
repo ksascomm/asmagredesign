@@ -57,24 +57,28 @@ blockquote {
     top: 0.3em;
     line-height: 0.1em;
   }
-  &:after {
-    color: $ksasblue;
-    content: "\201D";
-    font-size: 5em;
-    position: absolute;
-    right: 3px;
-    bottom: 0em;
-    line-height: 0.1em;
-  }
   cite {
     display: block;
+    font-family: $font-subhead;
+    font-style: normal;
+    font-weight: bold;
     font-size: 1.1rem;
     color: $jhublue;
-    font-weight: bold;
+    line-height: 1.35rem;
+    a {
+      font-family: $font-subhead;
+    }
+    
   }
   p {
     font-family: $font-subhead-italic;
+    font-size: 1.5rem;
+    line-height: 34px;
   }
+}
+
+blockquote.seen {
+    margin-bottom: 50px;
 }
 
 .listing p {

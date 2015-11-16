@@ -41,7 +41,6 @@ p {
 
 .postmaterial img, .feature-copy img {
   margin: 0;
-  box-shadow: 1px 1px 3px rgba(50, 50, 50, 0.64);
   max-width: 55%;
 }
 
@@ -83,37 +82,29 @@ p {
 .imageblockleft {
   float: left;
   width: 55%;
-  background: #f5f4f1;
   margin-right: 1em;
   margin-bottom: 5px;
-  box-shadow: 1px 1px 3px rgba(50, 50, 50, 0.64);
 }
 
 .imageblockright {
   float: right;
   width: 55%;
-  background: #f5f4f1;
   margin-left: 1em;
   margin-bottom: 5px;
-  box-shadow: 1px 1px 3px rgba(50, 50, 50, 0.64);
 }
 
 .imageblockfull {
   float: none;
   width: 95%;
-  background: #f5f4f1;
   margin-bottom: 5px;
-  box-shadow: 1px 1px 3px rgba(50, 50, 50, 0.64);
   padding-bottom: 10px;
 }
 
 .imageblockrightsmall {
   float: right;
   width: 30%;
-  background: #f5f4f1;
   margin-left: 1em;
   margin-bottom: 5px;
-  box-shadow: 1px 1px 3px rgba(50, 50, 50, 0.64);
 }
 
 .imageblockleft img, .imageblockright img, .imageblockrightsmall img, .imageblockfull img {
@@ -147,10 +138,6 @@ p {
     padding-right: 10px;
     margin: 0;
   }
-}
-
-blockquote.seen {
-    margin-bottom: 50px;
 }
 
 .aside {

@@ -1,10 +1,25 @@
+
+ .section-header {
+    height: 2.25rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    > h2 {
+    padding-left: 10px;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-bottom: 1.4rem;
+    font-size:1.25rem;
+    letter-spacing: 1px;
+}
+}
+
 .slide-caption {
 	h1 {
 		color: #fff;
 	}
 	p {
 		font-size: 1.5rem;
-		font-family: $font-header-mobile;
+		font-family: $font-subhead;
 	}
 }
 
@@ -19,41 +34,37 @@ section.news {
 }
 .news {
 	h2 {
-	color: $ksasblue;
 	font-family: $font-frontpage-header;
 	}
-	.spacer {
+	.section-header {
 		background: $ksasblue;
 	}
 }
 
 .big-ideas, .bigideas {
 	h2 {
-	color: $green;
 	font-family: $font-frontpage-header;
 	
 	}
-	.spacer {
+	.section-header {
 		background: $green;
 	}
 }
 
 .students {
     h2 {
-    color: $jhublue;
     font-family: $font-frontpage-header;
     }
-    .spacer {
+   .section-header {
         background: $jhublue;
     }
 }
 
 .alumni {
     h2 {
-    color: $orange;
     font-family: $font-frontpage-header;
     }
-    .spacer {
+    .section-header {
         background: $orange;
     }
 }
@@ -61,8 +72,7 @@ section.news {
 .item {
 	h5 {
     font-family: $font-frontpage-header;
-    letter-spacing: 1.1px;
-	}
+    	}
 	p {
 		font-size: .9em;
 		margin: -10px 0 20px 0;
