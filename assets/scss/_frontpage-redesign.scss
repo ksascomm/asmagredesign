@@ -1,5 +1,4 @@
-
- .section-header {
+.section-header {
     height: 2.25rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -32,6 +31,17 @@ section.news {
     float: right;
     margin-top: 1rem;
 }
+
+.features {
+    h2 {
+    font-family: $font-frontpage-header;
+    }
+    .section-header {
+        background: $red;
+    }
+}
+
+
 .news {
 	h2 {
 	font-family: $font-frontpage-header;

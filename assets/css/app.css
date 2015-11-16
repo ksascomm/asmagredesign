@@ -9487,6 +9487,11 @@ section.news {
   float: right;
   margin-top: 1rem; }
 
+.features h2 {
+  font-family: 'gentona-semibold', 'Myriad W01 SmBd Cnd', Arial, sans-serif; }
+.features .section-header {
+  background: #8a2a2b; }
+
 .news h2 {
   font-family: 'gentona-semibold', 'Myriad W01 SmBd Cnd', Arial, sans-serif; }
 .news .section-header {
@@ -9521,14 +9526,13 @@ section.news {
 
 .intro-hero {
   background-repeat: no-repeat;
-  background-position: center;
-  margin-top: -20px; }
+  background-position: center; }
 
 .post-heading {
   padding: 100px 0 50px; }
   .post-heading h2 {
-    font-size: 5em;
-    color: white; }
+    color: white;
+    line-height: 1; }
   .post-heading h3 {
     font-size: 2.5em; }
   .post-heading h4 {
@@ -9749,6 +9753,8 @@ h2.toc_header {
     font-size: 20px; }
 
 @media only screen and (max-width: 40em) {
+  .post-heading h2 {
+    font-size: 1.5rem; }
   .post-heading h4 {
     color: #2C2C33; }
   p {
@@ -9796,9 +9802,6 @@ h2.toc_header {
     max-width: 100%;
     height: auto;
     display: block; }
-  section.features {
-    background: #fff;
-    border: 1px solid #cccccc; }
   .slide-caption h1 {
     width: 100%;
     margin: 0 auto;
@@ -9856,9 +9859,6 @@ h2.toc_header {
       display: none; }
   .orbit-container ul[data-orbit] li, .orbit-container ul[data-orbit] .orbit-caption {
     display: block; }
-  section.features {
-    background: #000;
-    height: auto; }
   .intro-hero {
     height: auto; } }
 
@@ -9868,7 +9868,7 @@ h2.toc_header {
 
 @media only screen and (max-width: 767px) {
   .intro-hero .post-heading h2 {
-    font-size: 2.5rem; } }
+    font-size: 2rem; } }
 
 @media only screen and (min-width: 641px) and (max-width: 960px) {
   .top-bar ul li a {
@@ -9925,7 +9925,9 @@ h2.toc_header {
     left: 15%;
     right: 15%;
     bottom: 20px;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); } }
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+  .intro-hero .post-heading h2 {
+    font-size: 3rem; } }
 
 @media only screen and (max-width: 64.063em) {
   .feature-intro {
@@ -9940,6 +9942,14 @@ h2.toc_header {
 @media only screen and (max-width: 1277px) {
   .full-width .caption p {
     display: none; } }
+
+@media only screen and (min-width: 1440px) {
+  section.cover-story {
+    background: #000;
+    height: auto;
+    margin-top: 20px; }
+  .post-heading h2 {
+    font-size: 5em; } }
 
 @media only screen and (min-width: 120.063em) {
   .intro-header {
