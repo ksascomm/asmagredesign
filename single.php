@@ -8,13 +8,11 @@
 				<h2><?php the_title(); ?></h2>
 				<p class="author">By&nbsp;<?php the_author(); ?></p>
 				<?php if ( get_post_meta($post->ID, 'ecpt_other_credits', true) ) { echo '<p class="othercredits">' . get_post_meta($post->ID, 'ecpt_other_credits', true) . '</p>'; } ?>
-					<?php if  (has_tag('snapshot')) { 
-					$lightbox_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'fullbleed' );
-						 echo '<ul class="clearing-thumbs" data-clearing><li><a href="' . $lightbox_image_url[0] .'">'; 
-						 the_post_thumbnail() ; echo '</a></li></ul>';
-					} elseif (!has_tag(array('seen-heard', 'tell-me-about', 'alumni-briefs'))){ 
+					<?php if (!has_tag(array('seen-heard', 'tell-me-about', 'alumni-briefs'))){ 
 					//don't show featured image if post has >1 person's image
-						 echo '<div class="topimage">'; the_post_thumbnail('full', array('class'=>'floatleft')); echo '</div>'; 	
+						 echo '<div class="topimage imageblockleft">'; the_post_thumbnail('full', array('class'=>'floatleft'));
+						 echo '<p class="photocredit">' . get_post(get_post_thumbnail_id())->post_excerpt . '</p>';
+						 echo '</div>'; 	
 					} ; ?>
 
 				<?php the_content(); ?>
