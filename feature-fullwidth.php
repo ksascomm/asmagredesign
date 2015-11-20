@@ -37,7 +37,7 @@ $hero_sm = $sm_hero_array[0]; // Mobile Hero
  <section class="intro-header">
  	<div class="intro-hero" data-interchange="[<?php echo $hero_xlg; ?>, (default)], [<?php echo $hero_sm; ?>, (small)], [<?php echo $hero_md; ?>, (medium)], [<?php echo $hero_lg; ?>, (large)] [<?php echo $hero_xlg; ?>, (xlarge)]">
  	 		<div class="row">
-                <div class="small-12 medium-10 medium-offset-1 large-8 large-offset-2 columns">
+                <div class="small-7 small-offset-5 medium-6 medium-offset-6 large-7 large-offset-6 columns">
                     <div class="post-heading">
                         <h2><?php the_title(); ?></h2>
 							<?php if (!is_handheld()) : ?>
@@ -93,21 +93,25 @@ $hero_sm = $sm_hero_array[0]; // Mobile Hero
 			</div><!--End first section -->
 		<?php } ?>			
 		<?php if (!is_handheld()) { ?>
-			<div class="full-width-fixed-bg" style="background-image: url('<?php echo get_post_meta($post->ID, 'ecpt_fullimage', true); ?>')">
-		 		<div class="show-for-large-up caption">
-		 			<p><?php if ( get_post_meta($post->ID, 'ecpt_pull_quote', true) ) : ?>  <?php echo get_post_meta($post->ID, 'ecpt_pull_quote', true); ?><?php endif; ?></p>
-		 		</div>
-		 	</div>
-		 	<div class="row hide-for-large-up">
-		 			<div class="small-12 medium-8 medium-offset-2 columns">
-		 				<p><blockquote><?php if ( get_post_meta($post->ID, 'ecpt_pull_quote', true) ) : ?>  <?php echo get_post_meta($post->ID, 'ecpt_pull_quote', true); ?><?php endif; ?></blockquote></p>
-		 			</div>
-		 	</div>
+			<?php if ( get_post_meta($post->ID, 'ecpt_fullimage', true) ) : ?> 
+				<div class="full-width-fixed-bg" style="background-image: url('<?php echo get_post_meta($post->ID, 'ecpt_fullimage', true); ?>')">
+			 		<?php if ( get_post_meta($post->ID, 'ecpt_pull_quote', true) ) : ?>  
+			 			<div class="show-for-large-up caption">
+			 				<p><?php echo get_post_meta($post->ID, 'ecpt_pull_quote', true); ?></p>
+			 			</div>
+			 		<?php endif; ?>	
+			 	</div>
+			 	<div class="row hide-for-large-up">
+			 			<div class="small-12 medium-8 medium-offset-2 columns">
+			 				<?php if ( get_post_meta($post->ID, 'ecpt_pull_quote', true) ) : ?> <p><blockquote> <?php echo get_post_meta($post->ID, 'ecpt_pull_quote', true); ?></blockquote></p><?php endif; ?>
+			 			</div>
+			 	</div>
+			 <?php endif ?>
 		<?php } else { ?>
 			<div class="row">
 				<img src="<?php echo get_post_meta($post->ID, 'ecpt_fullimage', true); ?>">
 			 		<div class="small-12 medium-8 medium-offset-2 columns">
-			 			<p><blockquote><?php if ( get_post_meta($post->ID, 'ecpt_pull_quote', true) ) : ?>  <?php echo get_post_meta($post->ID, 'ecpt_pull_quote', true); ?><?php endif; ?></blockquote></p>
+			 			<?php if ( get_post_meta($post->ID, 'ecpt_pull_quote', true) ) : ?> <p><blockquote> <?php echo get_post_meta($post->ID, 'ecpt_pull_quote', true); ?></blockquote></p><?php endif; ?>
 					</div>
 			</div>
 		<?php } ?>	

@@ -2,12 +2,15 @@
   	<div class="row" role="navigation">
 
   	    <div class="small-12 medium-4 columns">
-			<a href="http://www.jhu.edu">
+			<a href="http://www.krieger.jhu.edu">
 				<img src="<?php echo get_template_directory_uri() ?>/assets/images/ksas-logo-horizontal.png" alt="Johns Hopkins University logo" />
 			</a>
 		</div>
 		
 		<div class="small-12 medium-3 medium-offset-1 columns">
+			<div class="row" role="contact"> 
+				<h5><a href="<?php echo get_site_url(); ?>/contact/">Contact Us</a></h5>
+   			</div>
 			<div class="row" id="search-bar">
 				<form method="GET" action="<?php echo site_url('/search'); ?>">
 						<input type="text" name="q" placeholder="Search this site" />

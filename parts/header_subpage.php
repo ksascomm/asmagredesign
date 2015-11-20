@@ -48,7 +48,7 @@
         </ul>
       </li>
       <li class="divider"></li>
-      <li><a style="font-size: 1.0625rem;" href="/archive/">Archives <i class="fa fa-archive"></i></a></li>
+      <li><a style="font-size: 1.0625rem;" href="<?php echo get_site_url(); ?>/archive/">Archives <i class="fa fa-archive"></i></a></li>
     </ul>
   </section>
 </nav>
