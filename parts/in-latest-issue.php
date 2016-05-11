@@ -6,7 +6,7 @@
 					<?php $departments = get_terms('category', array(
 				          'orderby'     => 'ID',
 				          'post_type' => 'post',
-				          'include' => array(4, 80, 28, 85,), //get IDs for News, Alumni, Student Digest, Big Ideas
+				          'include' => array(1, 69, 76, 70,), //get IDs for News, Alumni, Student Digest, Big Ideas
 				          'order'     => 'ASC',
 				          'hide_empty'  => true,
 				          //'parent'      => '81',

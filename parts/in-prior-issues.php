@@ -8,7 +8,7 @@
 					<?php $olddepartments = get_terms('category', array(
 				          'orderby'     => 'ID',
 				          'post_type' => 'post',
-				          'exclude' => array(4, 80, 28, 85, 76,), //get IDs for News, Alumni, Student Digest, Big Ideas
+				          'exclude' => array(1, 69, 76, 70, 76, 77, 60,), //get IDs for News, Alumni, Student Digest, Big Ideas, Uncategorized, Faculty Books
 				          'order'     => 'ASC',
 				          'hide_empty'  => true,
 				          //'parent'      => '81',

@@ -24,7 +24,7 @@
 	    	$toc_dropdown_query = new WP_Query(array(
 	    		'post_type' => 'post',
 	    		'volume' => $volume,
-	    		'category__not_in' => array( 28, 31 ),
+	    		'category__not_in' => array( 76, 69 ), //exclude alumni & web exclusives
 	    		'orderby' => 'menu_order',
 	    		'order' => 'ASC',
 	    		'posts_per_page' => '-1')); 
@@ -36,7 +36,7 @@
 	    	$alumni_query = new WP_Query(array(
 	    		'post_type' => 'post',
 	    		'volume' => $volume,
-	    		'category__in' => array( 28 ),
+	    		'category__in' => array( 69 ),
 	    		'orderby' => 'menu_order',
 	    		'order' => 'ASC',
 	    		'posts_per_page' => '-1')); 
@@ -48,7 +48,7 @@
 	    	$exclusive_query = new WP_Query(array(
 	    		'post_type' => 'post',
 	    		'volume' => $volume,
-	    		'category__in' => array( 31 ),
+	    		'category__in' => array( 76 ),
 	    		'orderby' => 'menu_order',
 	    		'order' => 'ASC',
 	    		'posts_per_page' => '-1')); 

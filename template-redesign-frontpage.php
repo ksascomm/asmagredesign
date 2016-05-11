@@ -13,7 +13,7 @@ Template Name: Redesign Front Page
 			$asmag_news_query = new WP_Query(array(
 				'post_type' => 'post',
 				'volume' => $volume,
-				'category__in' => array(4),
+				'category__in' => array(1),
 				'orderby' => 'modified',
 				'order' => 'DESC',
 				'posts_per_page' => '-1'));
@@ -21,7 +21,7 @@ Template Name: Redesign Front Page
 			$asmag_bigideas_query = new WP_Query(array(
 				'post_type' => 'post',
 				'volume' => $volume,
-				'category__in' => array(80),
+				'category__in' => array(70),
 				'orderby' => 'modified',
 				'order' => 'DESC',
 				'posts_per_page' => '-1'));
@@ -29,7 +29,7 @@ Template Name: Redesign Front Page
 			$asmag_students_query = new WP_Query(array(
 				'post_type' => 'post',
 				'volume' => $volume,
-				'category__in' => array(85),
+				'category__in' => array(76),
 				'orderby' => 'modified',
 				'order' => 'DESC',
 				'posts_per_page' => '-1'));
@@ -37,7 +37,7 @@ Template Name: Redesign Front Page
 			$asmag_alumni_query = new WP_Query(array(
 				'post_type' => 'post',
 				'volume' => $volume,
-				'category__in' => array(28),
+				'category__in' => array(69),
 				'orderby' => 'modified',
 				'order' => 'DESC',
 				'posts_per_page' => '-1'));
@@ -46,10 +46,10 @@ Template Name: Redesign Front Page
 				'post_type' => 'page',
 				'volume' => $volume,
 				'post_parent' => $parent,
-				'page_id' => 6243,			
+				'page_id' => 7015,			
 				));
 
-			$exclude_ids = array( 6243 );
+			$exclude_ids = array( 7015 );
 			$asmag_features_query = new WP_Query(array(
 				'post_type' => 'page',
 				'volume' => $volume,
@@ -57,7 +57,7 @@ Template Name: Redesign Front Page
 				'post__not_in' => $exclude_ids,
 				'orderby' => 'menu_order',
 				'order' => 'ASC',
-				'posts_per_page' => '5'));			
+				'posts_per_page' => '5'));				
 
 	?>
 
