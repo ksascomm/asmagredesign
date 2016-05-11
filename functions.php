@@ -1,46 +1,4 @@
 <?php
-/*****************1.0 SECURITY AND PERFORMANCE FUNCTIONS*****************************/
-	// 1.1 Prevent login errors - attacker prevention
-		add_filter('login_errors', create_function('$a', "return null;"));
-	
-	// 1.2 Block malicious queries - Based on http://perishablepress.com/press/2009/12/22/protect-wordpress-against-malicious-url-requests/
-		global $user_ID;
-		
-		if($user_ID) {
-		  if(!current_user_can('level_10')) {
-		    if (strlen($_SERVER['REQUEST_URI']) > 255 ||
-		      strpos($_SERVER['REQUEST_URI'], "eval(") ||
-		      strpos($_SERVER['REQUEST_URI'], "CONCAT") ||
-		      strpos($_SERVER['REQUEST_URI'], "UNION+SELECT") ||
-		      strpos($_SERVER['REQUEST_URI'], "base64")) {
-		        @header("HTTP/1.1 414 Request-URI Too Long");
-			@header("Status: 414 Request-URI Too Long");
-			@header("Connection: Close");
-			@exit;
-		    }
-		  }
-		}
-	// 1.3 remove junk from head
-		remove_action('wp_head', 'rsd_link');
-		remove_action('wp_head', 'wp_generator');
-		remove_action('wp_head', 'feed_links', 2);
-		remove_action('wp_head', 'index_rel_link');
-		remove_action('wp_head', 'wlwmanifest_link');
-		remove_action('wp_head', 'feed_links_extra', 3);
-		remove_action('wp_head', 'start_post_rel_link', 10, 0);
-		remove_action('wp_head', 'parent_post_rel_link', 10, 0);
-		remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
-		remove_action('wp_head', 'print_emoji_detection_script', 7);
-		remove_action('admin_print_scripts', 'print_emoji_detection_script');
-		remove_action('wp_print_styles', 'print_emoji_styles');
-		remove_action('admin_print_styles', 'print_emoji_styles');
-	
-		//remove version info from head and feeds
-		    function complete_version_removal() {
-		    	return '';
-		    }
-		    add_filter('the_generator', 'complete_version_removal');
-			
 
 //add menu support
 	add_theme_support( 'menus' );
@@ -263,96 +221,9 @@ function get_the_volume_name($post) {
 	
 	return $volume_name;
 }
-	//***9.1 Menu Walker to add Foundation CSS classes
-		class foundation_navigation extends Walker_Nav_Menu
-		{
-		      function start_el(&$output, $item, $depth = 0, $args = array(), $current_object_id = 0)
-		      {
-					global $wp_query;
-					$indent = ( $depth ) ? str_repeat( "", $depth ) : '';
-					
-					$class_names = $value = '';
-					
-					// If the item has children, add the dropdown class for bootstrap
-					if ( $args->has_children ) {
-						$class_names = "has-flyout ";
-					}
-					$classes = empty( $item->classes ) ? array() : (array) $item->classes;
-					
-					$class_names .= join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item ) );
-					$class_names = ' class="'. esc_attr( $class_names ) . ' page-id-' . esc_attr( $item->object_id ) .'"';
-		           
-					$output .= $indent . '<li id="menu-item-'. $item->ID . '"' . $value . $class_names .'>';
-		           
-		
-		           	$attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
-		           	$attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
-		           	$attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
-		           	$attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
-		           	// if the item has children add these two attributes to the anchor tag
-		           	if ( $args->has_children ) {
-						$attributes .= 'data-toggle="dropdown"';
-					}
-		
-		            $item_output = $args->before;
-		            $item_output .= '<a'. $attributes .'>';
-		            $item_output .= $args->link_before .apply_filters( 'the_title', $item->title, $item->ID );
-		            $item_output .= $args->link_after;
-		            $item_output .= '</a>';
-		            $item_output .= $args->after;
-		
-		            $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
-		            }
-		            
-		function start_lvl(&$output, $depth = 0, $args = array()) {
-			$output .= "\n<ul class=\"flyout up\">\n";
-		}
-		            
-		      	function display_element( $element, &$children_elements, $max_depth, $depth=0, $args, &$output )
-		      	    {
-		      	        $id_field = $this->db_fields['id'];
-		      	        if ( is_object( $args[0] ) ) {
-		      	            $args[0]->has_children = ! empty( $children_elements[$element->$id_field] );
-		      	        }
-		      	        return parent::display_element( $element, $children_elements, $max_depth, $depth, $args, $output );
-		      	    }
-		      	
-		            
-		}
-		
-		// Add a class to the wp_page_menu fallback
-		function foundation_page_menu_class($ulclass) {
-			return preg_replace('/<ul>/', '<ul class="nav-bar">', $ulclass, 1);
-		}
-		
-		add_filter('wp_page_menu','foundation_page_menu_class');
-
-
-	//***9.2 Menu Walker to create a dropdown menu for mobile devices	
-		class mobile_select_menu extends Walker_Nav_Menu{
-		    function start_lvl(&$output, $depth = 0, $args = array()){
-		      $indent = str_repeat("\t", $depth); // don't output children opening tag (`<ul>`)
-		    }
-		
-		    function end_lvl(&$output, $depth = 0, $args = array()){
-		      $indent = str_repeat("\t", $depth); // don't output children closing tag
-		    }
-		
-		    function start_el(&$output, $item, $depth = 0, $args = array(), $current_object_id = 0){
-		      // add spacing to the title based on the depth
-		      $item->title = str_repeat("&nbsp;", $depth * 4).$item->title;
 	
-				//deleted '&' on $output; TG 8-13-2014
-		      parent::start_el($output, $item, $depth, $args);
-		
-		      // no point redefining this method too, we just replace the li tag...
-		      $output = str_replace('<li', '<option value="'. esc_attr( $item->url        ) .'"', $output);
-		    }
-		
-		    function end_el(&$output, $item, $depth = 0, $args= array(), $current_object_id = 0){
-		      $output .= "</option>\n"; // replace closing </li> with the option tag
-		    }
-		}
+
+	
 		
 function delete_magazine_transients($post_id) {
 	global $post;
@@ -389,59 +260,6 @@ function delete_magazine_transients($post_id) {
 } 
 add_action('save_post','delete_magazine_transients');
 
-	//***8.8 Create Title for <head> section
-		function create_page_title() {
-			if ( is_front_page() )  { 
-				$page_title = bloginfo('description');
-				$page_title .= print(' '); 
-				$page_title .= bloginfo('name');
-				$page_title .= print(' | Johns Hopkins University'); 
-				} 
-			
-			elseif ( is_category() ) { 
-				$page_title = single_cat_title();
-				$page_title .= print(' | ');
-				$page_title .= bloginfo('description');
-				$page_title .= print(' '); 
-				$page_title .= bloginfo('name');
-				$page_title .= print(' | Johns Hopkins University'); 
-		 
-				}
-		
-			elseif (is_single() ) { 
-				$page_title = single_post_title(); 
-				$page_title .= print(' | ');
-				$page_title .= bloginfo('description');
-				$page_title .= print(' '); 
-				$page_title .= bloginfo('name');
-				$page_title .= print(' | Johns Hopkins University'); 
-				}
-		
-			elseif (is_page() ) { 
-				$page_title = single_post_title();
-				$page_title .= print(' | ');
-				$page_title .= bloginfo('description');
-				$page_title .= print(' '); 
-				$page_title .= bloginfo('name');
-				$page_title .= print(' | Johns Hopkins University'); 
-			}
-			elseif (is_404()) {
-				$page_title = print('Page Not Found'); 
-				$page_title .= print(' | ');
-				$page_title .= bloginfo('description');
-				$page_title .= print(' '); 
-				$page_title .= bloginfo('name');
-				$page_title .= print(' | Johns Hopkins University'); 
-			}
-
-			else { 
-				$page_title = bloginfo('description');
-				$page_title .= print(' '); 
-				$page_title .= bloginfo('name');
-				$page_title .= print(' | Johns Hopkins University'); 
-				} 
-			return $page_title;
-		}
 
 function add_category_to_pages() {  
 // Add tag metabox to page
