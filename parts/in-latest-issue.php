@@ -21,7 +21,7 @@
 			            }
 			            echo $department_list;
 			        } ?>
-			    <li><a href="/volume/feature" class="button features">Features</a>
+			    <li><a href="<?php echo site_url(); ?>/volume/feature" class="button features">Features</a>
 	    		</ul>
 	        </div>
 	</div>
