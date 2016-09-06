@@ -95,7 +95,7 @@ module.exports = function(grunt) {
             },
             options: {
                 watchTask: true,
-                proxy: "fanzine.dev"
+                proxy: "bicycle.dev/magazine"
             }
         }
     },

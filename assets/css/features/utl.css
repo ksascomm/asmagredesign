@@ -491,3 +491,7 @@ ul.facts li {
 ul[data-clearing] li {
 	float: left;
 }
+
+.reveal-modal-bg {
+	background: none;
+}

@@ -146,11 +146,11 @@ echo '<div class="small-12 medium-7 medium-offset-5 columns">';
 <?php
 if (is_page( 'In Plain Air' ) ){
 echo '<script>
-  jQuery.backstretch("http://krieger.jhu.edu/magazine/wp-content/themes/asmagflex/assets/images/v12n1/plain-air_JHU6240_a.jpg");
+  jQuery.backstretch("http://krieger.jhu.edu/magazine/wp-content/themes/asmagredesign/assets/images/v12n1/plain-air_JHU6240_a.jpg");
 </script>';
 }elseif (is_page('Past in the Present') ){ 
 echo '<script>
-  jQuery.backstretch("http://krieger.jhu.edu/magazine/wp-content/themes/asmagflex/assets/images/v12n1/retrospective.jpg");
+  jQuery.backstretch("http://krieger.jhu.edu/magazine/wp-content/themes/asmagredesign/assets/images/v12n1/retrospective.jpg");
 </script>';
 }
 ?>

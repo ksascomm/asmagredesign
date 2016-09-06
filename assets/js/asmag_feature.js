@@ -37,7 +37,7 @@ var $z = jQuery.noConflict();
       'largeImage'    : '',
       'magnification' : 1.0,
       'hideCursor'    : true,
-      'blankCursor'   : 'http://fanzine.dev/app/themes/asmagflex/assets/js/blank.png',
+      'blankCursor'   : 'http://krieger.jhu.edu/magazine/wp-content/themes/asmagredesign/assets/js/blank.png',
       'debug'         : false
     };
     options = $z.extend(defaults, options);

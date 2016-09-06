@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
 	function makePins(){
 			
 		$(".points .point").each(function(index, domEle){
-			$(this).html("<div class='info'><img src='/magazine/wp-content/themes/asmagflex/parts/blc/marker.png'></div>");
+			$(this).html("<div class='info'><img src='/magazine/wp-content/themes/asmagredesign/parts/blc/marker.png'></div>");
 		});
 			
 			if( $(this).data("x") > 1100 ) {
