@@ -79,6 +79,24 @@ module.exports = function(grunt) {
             dest: 'assets/js/',    // destination folder
             expand: true           // required when using cwd
         },
+        foundation: {
+            expand: true,
+            flatten: true,
+            src: ['assets/bower_components/foundation/js/*'],
+            dest: 'assets/js'
+        },
+        foundation_plugins: {
+            expand: true,
+            flatten: true,
+            src: ['assets/bower_components/foundation/js/foundation/*'],
+            dest: 'assets/js/foundation'
+        },        
+        modernizr: {
+            expand: true,
+            flatten: true,
+            src: ['assets/bower_components/modernizr/modernizr.js'],
+            dest: 'assets/js/'
+        }
     },
 
     //browserSync
@@ -88,7 +106,6 @@ module.exports = function(grunt) {
                     src : [
                         'assets/css/*.css',
                         '**/*.php',
-                        'assets/js/vendor/*.js',
                         'assets/js/*.js',
                         'assets/images/**/*.{png,jpg,jpeg,gif,webp,svg}'
                     ]
@@ -98,6 +115,23 @@ module.exports = function(grunt) {
                 proxy: "bicycle.dev/magazine"
             }
         }
+    },
+
+    //minify js with uglify
+     uglify: {
+        dist: {
+        options: {
+          mangle: false,
+          compress: true
+        },
+        files: {
+          "assets/js/modernizr.min.js": ["assets/js/modernizr.js"],
+          "assets/js/foundation.min.js": ["assets/js/foundation.js"],
+          "assets/js/asmag_custom.min.js": ["assets/js/asmag_custom.js"],
+          "assets/js/asmag_feature.min.js": ["assets/js/asmag_feature.js"],
+          "assets/js/asmag_front.min.js": ["assets/js/asmag_front.js"],
+        }
+      },
     },
 
     watch: {
@@ -121,7 +155,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-contrib-copy');
-
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.registerTask('build', ['sass']);
   grunt.registerTask('default', ['sass','browserSync','copy','watch']);
 }

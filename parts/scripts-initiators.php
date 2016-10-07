@@ -119,19 +119,17 @@
 </div>	
 
 		 <!***********ALL PAGES**************>
- <script src="<?php echo get_template_directory_uri() ?>/assets/bower_components/jquery/dist/jquery.min.js"></script>
- <script src="<?php echo get_template_directory_uri() ?>/assets/bower_components/foundation/js/foundation.min.js"></script>
- <script src="<?php echo get_template_directory_uri() ?>/assets/js/app.js"></script>
+ <script src="<?php echo get_template_directory_uri() ?>/assets/js/foundation.min.js"></script>
 
 		<!-- JavaScript -->
-		<script async src="<?php echo get_template_directory_uri(); ?>/assets/js/asmag_custom.js"></script>
+		<script async src="<?php echo get_template_directory_uri(); ?>/assets/js/asmag_custom.min.js"></script>
 		
 		<?php if (is_front_page() || is_page_template( 'template-tableofcontents.php' || 'template-tableofcontents-features.php' ) ){ ?>
-			<script async src="<?php echo get_template_directory_uri(); ?>/assets/js/asmag_front.js"></script>
+			<script async src="<?php echo get_template_directory_uri(); ?>/assets/js/asmag_front.min.js"></script>
 		<?php } ?>
 		
 		<?php if (is_page() && !is_front_page()) { ?>
-			<script async src="<?php echo get_template_directory_uri(); ?>/assets/js/asmag_feature.js"></script>
+			<script async src="<?php echo get_template_directory_uri(); ?>/assets/js/asmag_feature.min.js"></script>
 		<?php } ?>
 		<!--[if lt IE 9]>
 		<script>
@@ -167,3 +165,9 @@
 });
 </script>
 <?php } ?>
+
+
+<script defer>
+jQuery.noConflict();
+jQuery(document).foundation();
+</script>

@@ -4,13 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		
-		<title><?php create_page_title(); ?></title>
-
 		<?php $volume = get_the_volume($post); ?>
 
 		<!-- CSS -->
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/app.min.css">
-		<script async type="text/javascript" src="http://fast.fonts.net/jsapi/1db25190-910a-4ab7-bd9b-5582bf1b2833.js"></script>
 		
 		<?php if (is_page('on-display')) { ?>
 			<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/features/on-display.css">
@@ -18,15 +15,10 @@
 		
 		<?php if (is_page_template( 'lifespan-adult.php' ) || is_page_template( 'lifespan-baby.php' ) || is_page_template( 'lifespan-elder.php' ) || is_page_template( 'lifespan-expert.php' ) || is_page_template( 'lifespan-home.php' ) || is_page_template( 'lifespan-teen.php' ) ){ ?><link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/features/learning-along-the-lifespan.css"> <?php } ?>
 		
-		<?php if(is_page() && is_page_template('template-tableofcontents.php') || is_page_template('template-tableofcontents-features.php') == false) { ?>
-			<script async type="text/javascript" src="http://fast.fonts.net/jsapi/a5273dfb-2de2-4945-99ec-e9d381669740.js"></script>		
-		<?php } ?>
-		
 		<!-- JS -->
 		<?php wp_enqueue_script('jquery'); ?>
-		<script async src="<?php echo get_template_directory_uri() ?>/assets/js/modernizr.foundation.js"></script>
-		<script async src="<?php echo get_template_directory_uri() ?>/assets/js/app.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.6.0/headroom.min.js"></script>
+		<script async src="<?php echo get_template_directory_uri() ?>/assets/js/modernizr.js"></script>
+		<script src="<?php echo get_template_directory_uri() ?>/assets/js/headroom.js">></script>
 
 		<!-- ETC -->
 		<?php wp_head(); ?>
@@ -45,7 +37,10 @@
 <?php include_once("analytics.php") ?>	
 
 <header>
-		<?php if (is_page_template('template-tableofcontents.php') || is_page_template('template-tableofcontents-features.php')) {locate_template('/parts/header_homepage.php', true, false);} 
-		else { locate_template('/parts/header_subpage.php', true, false); } ?>
+		<?php if (is_page_template('template-tableofcontents.php') || is_page_template('template-tableofcontents-features.php')) :
+				locate_template('/parts/header_homepage.php', true, false);
+			else: 
+				locate_template('/parts/header_subpage.php', true, false);  
+		endif; ?>
 </header>
 

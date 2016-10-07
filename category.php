@@ -1,42 +1,57 @@
 <?php get_header(); ?>
-<?php $categories = get_the_category();
-					$thiscat = $categories[0]->cat_ID;
-					if ($thiscat == 31) { $thiscat = ''; $catname = '';} else {
-					$catname = $categories[0]->name;
-					$catslug = $categories[0]->slug; }
-					?>
+<?php 
+	$categories = get_the_category();
+	$thiscat = $categories[0]->cat_ID;
+	if ($thiscat == 31) { 
+		$thiscat = ''; $catname = ''; 
+	} else {
+		$catname = $categories[0]->name;
+		$catslug = $categories[0]->slug; 
+	} ?>
 <div id="container-mid">
 	<div class="row" id="content">
 	    <article class="small-12 large-8 columns" id="article">
 	    <div class="postmaterial">
-	    <h3>Department: <?php single_cat_title(); ?> Archive</h3>
-	    <hr class="style15w">
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> <!--Start the loop -->
-				
-	    		<div class="small-12 columns listing <?php echo $catslug; ?>">
-	    			<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
+		    <h3>Department: <?php single_cat_title(); ?> Archive</h3>
+		    <hr class="style15w">
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
+					<!--Start the loop -->
+					
+		    		<div class="small-12 columns listing <?php echo $catslug; ?>">
 
-<?php if (!is_category(array('editors-note', 'letters-to-the-editor', 'dean'))) { //don't show featured image for these categories
-						 the_post_thumbnail('homethumb', array('class'=>'floatleft')); 
-					} ; ?>
+							<?php if (!is_category(array('editors-note', 'letters-to-the-editor', 'dean'))) : 
+								//don't show featured image for these categories
+								the_post_thumbnail('homethumb', array('class'=>'floatleft')); 
+							endif; ?>
 
-	    			  
-	    				<h4><?php the_title(); ?> <span class="spacer"></span></h4>
-	    			</a>
-						<?php $issues = get_the_terms( $post->ID, 'volume' );				
-							if ( $issues && ! is_wp_error( $issues ) ) : 
-							$issue_list = array();
-							foreach ( $issues as $issue ) {
-								$issue_list[] = $issue->name;
-							}				
-							$issue_name = join( ", ", $issue_list );
-							?>
-	    			<h5>Issue: <?php echo $issue_name; ?></h5>
-	    	<?php endif; ?>
-			    		<?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) :  echo '<p>' . get_post_meta($post->ID, 'ecpt_tagline', true) . '</p>'; else : echo '<p>' . get_the_excerpt() . '</p>'; endif; ?>
-	    		</div>
-	
-	<?php $volume = get_the_volume($post); $volume_name = get_the_volume_name($post); endwhile; endif; wp_reset_query() ?>
+		    			  
+		    				
+		    					<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
+		    					<h4><?php the_title(); ?> <span class="spacer"></span></h4>
+		    					</a>
+		    				
+		    			
+							<?php $issues = get_the_terms( $post->ID, 'volume' );				
+								if ( $issues && ! is_wp_error( $issues ) ) : 
+								$issue_list = array();
+								foreach ( $issues as $issue ) {
+									$issue_list[] = $issue->name;
+								}				
+								$issue_name = join( ", ", $issue_list );
+								?>
+
+		    					<h5>Issue: <?php echo $issue_name; ?></h5>
+			  				<?php endif; ?>
+					<?php 
+						if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) :
+						echo '<p>' . get_post_meta($post->ID, 'ecpt_tagline', true) . '</p>'; else :
+						echo '<p>' . get_the_excerpt() . '</p>';
+						endif;
+						?>
+		    		</div>
+		
+				<!--End the loop -->
+			<?php endwhile; endif; ?>
 
 		</div>
 		<div class="pagination">
@@ -45,6 +60,7 @@
 	</article> <!--article -->
 
 <!--start sidebar -->
+	<?php $volume = get_the_volume($post); $volume_name = get_the_volume_name($post);?> 
 	<?php if ( false === ( $features_query = get_transient( 'features' . $volume . '_query' ) ) ) { 
 
 				$features_query = new WP_Query(array(

@@ -1,6 +1,7 @@
-# Foundation libsass template
+Responsive wordpress theme built for the biannual Arts & Sciences Magazine.
 
-This is a template to start your own project that uses Grunt and libsass!
+It runs off the Foundation v5 libsass template.
+
 
 ## Requirements
 
@@ -10,20 +11,21 @@ You'll need to have the following items installed before continuing.
   * [Grunt](http://gruntjs.com/): Run `[sudo] npm install -g grunt-cli`
   * [Bower](http://bower.io): Run `[sudo] npm install -g bower`
 
-## Quickstart
+## Installation
+  * Clone this repository
+  * cd into repo and run `npm install`
+  * Run `cd assets && bower install` to install the latest version of Foundation
+  
+Then when you're working on your project, just run the following command:
 
 ```bash
-git clone git@github.com:zurb/foundation-libsass-template.git
-npm install && bower install
+grunt
 ```
 
-While you're working on your project, run:
+## Upgrading
 
-`grunt`
+If you'd like to upgrade to a newer version of Foundation down the road just run:
 
-And you're set!
-
-## Directory Structure
-
-  * `scss/_settings.scss`: Foundation configuration settings go in here
-  * `scss/app.scss`: Application styles go here
+```bash
+bower update
+```

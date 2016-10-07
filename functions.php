@@ -326,6 +326,11 @@ function namespace_add_image_sizes(){
 }
 add_action( 'init', 'namespace_add_image_sizes');
 
+/**********GET PAGE TITLE TO APPEAR IN <title> TAG******************/
+function theme_slug_setup() {
+   add_theme_support( 'title-tag' );
+}
+add_action( 'after_setup_theme', 'theme_slug_setup' );
 
 include_once (TEMPLATEPATH . '/assets/functions/asmag-metabox.php');
 ?>
