@@ -129,10 +129,12 @@ $hero_sm = $sm_hero_array[0]; // Mobile Hero
 			<ul class="small-block-grid-1 medium-block-grid-3">
 				<?php while ($asmag_features_query->have_posts()) : $asmag_features_query->the_post(); ?>
 				<li class="features item">
-					<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php echo the_post_thumbnail('filterthumbbig', array('class'=>'no-margin home-img img-responsive')); ?>
-					<h5><?php the_title(); ?></h5>
+					<?php echo the_post_thumbnail('filterthumbbig', array('class'=>'no-margin home-img img-responsive')); ?>
+					<h5>
+						<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php the_title(); ?></a>
+					</h5>
 					<p><?php echo get_post_meta($post->ID, 'ecpt_tagline', true); ?></p>
-					</a>
+					
 				</li>
 				<?php endwhile; wp_reset_postdata(); ?>	
 			</ul>
@@ -150,8 +152,10 @@ $hero_sm = $sm_hero_array[0]; // Mobile Hero
 			<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
 				<?php while ($asmag_news_query->have_posts()) : $asmag_news_query->the_post(); ?>
 				<li class="news item">
-					<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php echo the_post_thumbnail('filterthumb', array('class'=>'no-margin home-img img-responsive')); ?>
-					<h5><?php the_title(); ?></h5>
+					<?php echo the_post_thumbnail('filterthumb', array('class'=>'no-margin home-img img-responsive')); ?>
+					<h5>
+						<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php the_title(); ?></a>
+					</h5>
 					<?php the_excerpt(); ?>
 					</a>
 				</li>
@@ -170,10 +174,11 @@ $hero_sm = $sm_hero_array[0]; // Mobile Hero
 			<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
 				<?php while ($asmag_bigideas_query->have_posts()) : $asmag_bigideas_query->the_post(); ?>
 					<li class=" bigideas item">
-						<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php echo the_post_thumbnail('filterthumb', array('class'=>'no-margin home-img img-responsive')); ?>
-						<h5><?php the_title(); ?></h5>
+						<?php echo the_post_thumbnail('filterthumb', array('class'=>'no-margin home-img img-responsive')); ?>
+					<h5>
+						<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php the_title(); ?></a>
+					</h5>
 						<p><?php the_excerpt(); ?></p>
-						</a>
 					</li>
 				<?php endwhile; wp_reset_postdata(); ?>	
 			</ul>
@@ -190,10 +195,11 @@ $hero_sm = $sm_hero_array[0]; // Mobile Hero
 			<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
 				<?php while ($asmag_students_query->have_posts()) : $asmag_students_query->the_post(); ?>
 					<li class="students item">
-						<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php echo the_post_thumbnail('filterthumb', array('class'=>'no-margin home-img img-responsive')); ?>
-						<h5><?php the_title(); ?></h5>
+						<?php echo the_post_thumbnail('filterthumb', array('class'=>'no-margin home-img img-responsive')); ?>
+					<h5>
+						<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php the_title(); ?></a>
+					</h5>
 						<p><?php the_excerpt(); ?></p>
-						</a>
 					</li>
 				<?php endwhile; wp_reset_postdata(); ?>	
 			</ul>
@@ -210,10 +216,11 @@ $hero_sm = $sm_hero_array[0]; // Mobile Hero
 			<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
 				<?php while ($asmag_alumni_query->have_posts()) : $asmag_alumni_query->the_post(); ?>
 					<li class="alumni item">
-						<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php echo the_post_thumbnail('filterthumb', array('class'=>'no-margin home-img img-responsive')); ?>
-						<h5><?php the_title(); ?></h5>
+						<?php echo the_post_thumbnail('filterthumb', array('class'=>'no-margin home-img img-responsive')); ?>
+					<h5>
+						<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php the_title(); ?></a>
+					</h5>
 						<p><?php the_excerpt(); ?></p>
-						</a>
 					</li>
 				<?php endwhile; wp_reset_postdata(); ?>
 			</ul>

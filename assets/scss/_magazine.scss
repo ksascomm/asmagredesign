@@ -115,3 +115,13 @@ hr.style15:after {
   color: #8c8b8b;
   font-size: 18px;
 }
+
+a {
+  color: $jhublue;
+  border-bottom: .125em dotted;
+  border-bottom-color: rgba(0,0,0,.2);
+  &:hover, &:active {
+    color: $black;
+    border-bottom-style: solid;
+  }
+}

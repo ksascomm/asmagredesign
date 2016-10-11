@@ -8092,6 +8092,14 @@ hr.style15:after {
   color: #8c8b8b;
   font-size: 18px; }
 
+a {
+  color: #005eb8;
+  border-bottom: .125em dotted;
+  border-bottom-color: rgba(0, 0, 0, 0.2); }
+  a:hover, a:active {
+    color: #2C2C33;
+    border-bottom-style: solid; }
+
 /* 5.0 Header Content
 ---------------------------------------------*/
 /* 5.1 Logo

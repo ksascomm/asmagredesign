@@ -1,5 +1,5 @@
 <footer>
-  	<div class="row" role="navigation">
+  	<div class="row">
 
   	    <div class="small-12 medium-4 columns">
 			<a href="http://www.krieger.jhu.edu">
@@ -8,7 +8,7 @@
 		</div>
 		
 		<div class="small-12 medium-3 medium-offset-1 columns">
-			<div class="row" role="contact"> 
+			<div class="row"> 
 				<h5><a href="<?php echo get_site_url(); ?>/contact/">Contact Us</a></h5>
    			</div>
 			<div class="row" id="search-bar">
@@ -22,18 +22,18 @@
 		<div class="small-12 medium-3 columns">
 			<div class="row">
 				<div class="small-4 columns">
-	                <a href="http://www.youtube.com/user/jhuksas" title="YouTube"><i class="fa fa-3x fa-fw fa-youtube-square"></i></a>
+	                <a href="http://www.youtube.com/user/jhuksas" title="YouTube"><span class="fa fa-3x fa-fw fa-youtube-square"></span></a>
 	            </div>
 	            <div class="small-4 columns">
-	                <a href="http://facebook.com/jhuksas" title="Facebook"><i class="fa fa-3x fa-fw fa-facebook-square"></i></a>
+	                <a href="http://facebook.com/jhuksas" title="Facebook"><span class="fa fa-3x fa-fw fa-facebook-square"></span></a>
 	            </div>
 	            <div class="small-4 columns">
-	            <a href="<?php echo home_url(); ?>/feed"><i class="fa fa-3x fa-fw fa-rss-square"></i></a>
+	            <a href="<?php echo home_url(); ?>/feed"><span class="fa fa-3x fa-fw fa-rss-square"></span></a>
 	            </div>
             </div>
          </div>
 	</div>
-  	<div class="row" id="copyright" role="content-info">
+  	<div class="row" id="copyright">
   		<p>&copy; <?php print date('Y'); ?> Johns Hopkins University, Zanvyl Krieger School of Arts & Sciences, 3400 N. Charles St, Baltimore, MD 21218</p>
   	</div>
   	
