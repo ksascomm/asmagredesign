@@ -14,7 +14,7 @@
 <nav class="top-bar" data-topbar role="navigation">
   <div class="row">
        <div class="show-for-small-only">
-            <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/EZineMasthead.png"></a>
+            <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/EZineMasthead.png" alt="arts & sciences magazine logo"></a>
         </div>
   </div>
   <ul class="title-area">
@@ -25,9 +25,9 @@
     <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
   </ul>
 
-  <section class="top-bar-section">
+  <div class="top-bar-section">
    <div class="navbar-brand-centered hide-for-small">
-            <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/EZineMasthead.png"></a>
+            <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/EZineMasthead.png" alt="arts & sciences magazine"></a>
    </div>
     <!-- Right Nav Section -->
     <ul class="right">
@@ -50,6 +50,6 @@
       <li class="divider"></li>
       <li><a style="font-size: 1.0625rem;" href="<?php echo get_site_url(); ?>/archive/">Archives <i class="fa fa-archive"></i></a></li>
     </ul>
-  </section>
+  </div>
 </nav>
 <?php } ?>

@@ -84,7 +84,7 @@ $hero_md = $md_hero_array[0]; // Medium Hero
 $hero_sm = $sm_hero_array[0]; // Mobile Hero
 
  ?>
- <div class="intro-hero" data-interchange="[<?php echo $hero_xlg; ?>, (default)], [<?php echo $hero_sm; ?>, (small)], [<?php echo $hero_md; ?>, (medium)], [<?php echo $hero_lg; ?>, (large)] [<?php echo $hero_xlg; ?>, (xlarge)]" style="margin-top: -20px;">
+ <div class="intro-hero" data-interchange="[<?php echo $hero_xlg; ?>, (default)], [<?php echo $hero_sm; ?>, (small)], [<?php echo $hero_md; ?>, (medium)], [<?php echo $hero_lg; ?>, (large)] [<?php echo $hero_xlg; ?>, (xlarge)]" style="margin-top: -20px;" alt="cover-story">
  	 		<div class="row">
                 <div class="small-7 small-offset-5 medium-6 medium-offset-6 large-7 large-offset-6 columns">
                     <div class="post-heading">
