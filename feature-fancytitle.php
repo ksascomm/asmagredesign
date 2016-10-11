@@ -4,12 +4,13 @@ Template Name: Feature - Fancy Title
 */
 ?>
 <?php get_header(); ?>
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+	<?php if ( have_posts() ) :
 		$page = get_queried_object();
 		$page_name = $page->post_name; 
 		 ?>
 	
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/features/<?php echo $page_name; ?>.css">
+	<?php while ( have_posts() ) : the_post(); ?>
 				<div class="titlesection">
 				<?php if ( get_post_meta($post->ID, 'fancy_title', true) ) : ?><div class="fancytitle"><?php echo get_post_meta($post->ID, 'fancy_title', true); ?></div><?php endif; ?>
 				<h4 class="tagline"><?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) : ?><?php echo get_post_meta($post->ID, 'ecpt_tagline', true); ?><?php endif; ?></h4>

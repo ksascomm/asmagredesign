@@ -59,7 +59,7 @@ module.exports = function(grunt) {
        }
     },
 
-      //Copy Font-Awesome
+      //Copy js files
     copy: {
         fontawesome: {
             expand: true,

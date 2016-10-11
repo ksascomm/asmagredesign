@@ -4,12 +4,13 @@ Template Name: Feature - Generic
 */
 ?>
 <?php get_header(); ?>
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+	<?php if ( have_posts() ) : 
 		$page = get_queried_object();
 		$page_name = $page->post_name; 
 		 ?>
 	
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/features/<?php echo $page_name; ?>.css">
+	<?php while ( have_posts() ) : the_post(); ?>
 	<div id="feature-head">
 		<div class="intro-container row">
 		<div class="feature-intro">

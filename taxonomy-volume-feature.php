@@ -1,9 +1,4 @@
 <?php get_header(); ?>
-<?php $categories = get_the_category();
-		$thiscat = $categories[0]->cat_ID;
-		if ($thiscat == 31) { $thiscat = ''; $catname = '';} else {
-			$catname = $categories[0]->name;
-			$catslug = $categories[0]->slug; } ?>
 <div id="container-mid">
 	<div class="row" id="content">
 	    <article class="small-12 large-7 columns" id="article">
