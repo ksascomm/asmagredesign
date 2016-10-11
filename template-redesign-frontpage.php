@@ -62,7 +62,7 @@ Template Name: Redesign Front Page
 	?>
 
 <?php if ( $asmag_cover_story_query->have_posts() ) : ?>
-<section class="cover-story home">
+<div class="cover-story home">
  <?php while ($asmag_cover_story_query->have_posts()) : $asmag_cover_story_query->the_post(); ?>
  	<?php $image = wp_get_attachment_url( get_post_thumbnail_id($post->ID));
 $img_size_lg = 'large-hero'; 
@@ -118,9 +118,9 @@ $hero_sm = $sm_hero_array[0]; // Mobile Hero
 	            </div>
 		    </div>  
 <?php endwhile; ?>
-</section>
+</div>
 <?php endif; ?>
-<section class="features home">
+<div class="features home">
 	<div class="row section-header">
 		<h2 class="white">Features</h2>
 	</div>
@@ -138,10 +138,10 @@ $hero_sm = $sm_hero_array[0]; // Mobile Hero
 			</ul>
 			<?php endif; ?>
 	</div>
-</section>
+</div>
 
 								
-<section class="news home">
+<div class="news home">
 	<div class="row section-header">
 		<h2 class="white">News</h2>
 	</div>
@@ -159,9 +159,9 @@ $hero_sm = $sm_hero_array[0]; // Mobile Hero
 			</ul>
 			<?php endif; ?>
 	</div>
-</section>
+</div>
 
-<section class="bigideas home">
+<div class="bigideas home">
 	<div class="row section-header">
 		<h2 class="white">Big Ideas</h2>
 	</div>
@@ -179,9 +179,9 @@ $hero_sm = $sm_hero_array[0]; // Mobile Hero
 			</ul>
 		<?php endif; ?>
 	</div>
-</section>
+</div>
 
-<section class="students home">
+<div class="students home">
 	<div class="row section-header">
 		<h2 class="white">Student Digest</h2>
 	</div>
@@ -199,9 +199,9 @@ $hero_sm = $sm_hero_array[0]; // Mobile Hero
 			</ul>
 		<?php endif; ?>
 	</div>
-</section>
+</div>
 
-<section class="alumni home">
+<div class="alumni home">
 	<div class="row section-header">
 		<h2 class="white">Alumni</h2>
 	</div>
@@ -219,7 +219,7 @@ $hero_sm = $sm_hero_array[0]; // Mobile Hero
 			</ul>
 		<?php endif; ?>
 	</div>
-</section>
+</div>
 
 
 <?php get_footer(); ?>
