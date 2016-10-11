@@ -181,7 +181,7 @@ function get_the_volume($post) {
 						$term_slugs[] = $term->slug;
 					}
 					$volume = implode('', $term_slugs); } 
-				} else { $volume = $terms->slug; }
+				} else { $volume = $terms['volume']; }
 			if(isset($_GET['volume'])) {
 				$volume = $_GET['volume'];
 			}
@@ -205,7 +205,7 @@ function get_the_volume_name($post) {
 			 $volume_name = implode('', $term_names);
 		} 
 		
-		else { $volume_name = $terms->name; }
+		else { $volume_name = $terms; }
 		
 		if(isset($_GET['volume'])) {
 			$new_volume = $_GET['volume'];
