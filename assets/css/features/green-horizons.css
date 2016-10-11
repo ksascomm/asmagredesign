@@ -38,7 +38,7 @@ background-image: url('../../images/features/feature1header.jpg');
 }
 
 .feature-intro h3 {
-	font-family: 'Museo Slab W01 900', Georgia, serif;
+	font-family: 'gentona-semibold', Georgia, serif;
 	font-size: 4em;
 	margin-top:0.8em;
 	margin-bottom: 0;
@@ -46,7 +46,7 @@ background-image: url('../../images/features/feature1header.jpg');
 }
 
 .feature-intro h4 {
-	font-family: 'Museo Slab W01 900', Georgia, serif;
+	font-family: 'gentona-semibold', Georgia, serif;
 	font-size: 1.25em;
 	margin-bottom: 0; 
 	color: #FFF;
@@ -85,11 +85,11 @@ p.othercredits {
 	padding-top: 0; 
 	padding-right: 8px; 
 	padding-left: 3px; 
-	font-family: 'Museo Slab W01 900', Georgia, serif;
+	font-family: 'gentona-semibold', Georgia, serif;
 }
 
 #feature h2 {
-	font-family: 'Museo Slab W01 900', Georgia, serif;
+	font-family: 'gentona-semibold', Georgia, serif;
 	font-size:1.875em;
 	font-weight:bold;
 	margin-bottom:1em;

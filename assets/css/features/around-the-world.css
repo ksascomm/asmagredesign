@@ -23,7 +23,7 @@ body {
 	}
 
 .textblock h3 {
-	font-family: 'Museo Slab W01 900', Georgia, serif;
+	font-family: 'gentona-semibold', Georgia, serif;
 	font-size: 4.3em;
 	line-height: 1.25em;
 	margin-bottom:.5em;
@@ -31,7 +31,7 @@ body {
 	}
 
 h4.tagline {
-	font-family: 'Museo Slab W01 900', Georgia, serif;
+	font-family: 'gentona-semibold', Georgia, serif;
 	font-size: 2em;
 	line-height: 1.5em;
 	margin-bottom:10px;
@@ -40,7 +40,7 @@ h4.tagline {
 }
 
 p.credit {
-	font-family: 'Museo Slab W01 500', Georgia, serif;
+	font-family: 'gentona-book', Georgia, serif;
 	font-size: 1.875em;
 	font-variant: small-caps;
 	margin-bottom:0;
@@ -48,7 +48,7 @@ p.credit {
 
 
 p.othercredits {
-	font-family: 'Museo Slab W01 500', Georgia, serif;
+	font-family: 'gentona-book', Georgia, serif;
 	font-size: 0.875em;
 	text-transform: uppercase;
 	margin-bottom:0;
@@ -63,7 +63,7 @@ p.opener { }
 }
 
 .dropcap {
-	font-family: 'Museo Slab W01 900', Georgia, serif;
+	font-family: 'gentona-semibold', Georgia, serif;
 	color:#06c;
 	font-size:5.5em;
 	margin-top:10px;
@@ -88,12 +88,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ffffff', e
 
 #feature .postmaterial h3 {
 	color:#0066cc;
-	font-family: 'Museo Slab W01 500', Georgia, serif;
+	font-family: 'gentona-book', Georgia, serif;
 	font-size: 1.5em;
 }
 
 #feature .postmaterial p {
-	font-family: 'MuseoSans500Regular', sans-serif;
+	font-family: 'gentona-book', sans-serif;
 	font-size: 1.2em;
 	line-height: 1.7em;
 }
@@ -139,7 +139,7 @@ p.opener {
 }
 	
 .blogcaption p {
-	font-family: 'MuseoSans500Regular', sans-serif;
+	font-family: 'gentona-book', sans-serif;
 	font-size: 0.875em;
 	line-height:1.7em;
 	color: #000;
@@ -163,7 +163,7 @@ p.opener {
 
 .subhead {
 	color:#0066cc;
-	font-family: "Museo Sans W01 900", sans-serif;
+	font-family: 'gentona-semibold', sans-serif;
 }
 
 #comments, .featurelisting {

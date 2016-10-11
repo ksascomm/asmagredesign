@@ -55,7 +55,7 @@ margin-right: 200px;
 
 h3.featuretitle {
 font-size: 75px;
-font-family: 'Myriad W01 Regular', sans-serif;
+font-family:'gentona-thin', Arial, sans-serif;
 margin-bottom: .3em;
 color: #fff;
 }
@@ -74,20 +74,20 @@ h4.tagline{
 p.credit, 
 p.othercredits {
 	font-variant: small-caps;
-	font-family: 'Museo Sans W01 500', sans-serif;
+	font-family: 'gentona-semibold', sans-serif;
 }
 
 .feature-intro {
 	margin:0px 30px;
 	padding: 25px;
-	font-family: 'Museo Sans W01 500', sans-serif;
+	font-family: 'gentona-semibold', sans-serif;
 	color: #fff;
 background: rgba(0,0,0,0.8);
 }
 
 .fancytitle h3 {
 	font-size: 9.5em;
-	font-family: 'Museo Sans W01 900', sans-serif;
+	font-family: 'gentona-semibold', sans-serif;
 	margin-bottom: .3em;
 	color: #ffe4b1
 
@@ -119,7 +119,7 @@ a.video {
 	font-size: 18px;
 	float: right;
 	width: auto;
-	font-family: 'Museo Sans W01 900' sans-serif;
+	font-family: 'gentona-semibold' sans-serif;
 	text-transform: uppercase;
 	color: #ff6700;
 	height:20px;

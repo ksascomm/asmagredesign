@@ -58,7 +58,7 @@ p.othercredits {
 	padding-top: 0; 
 	padding-right: 8px; 
 	padding-left: 3px; 
-	font-family: 'Museo Slab W01 900', Georgia, serif;
+	font-family: 'gentona-semibold', Georgia, serif;
 }
 
 h4.tagline {
@@ -79,7 +79,7 @@ h4.tagline {
 }
 
 .feature-intro h3 {
-	font-family: 'Museo Slab W01 300', Georgia, serif;
+	font-family: 'gentona-thin', Georgia, serif;
 	font-size: 2em;
 	margin-bottom: 0;
 	margin-top:2em;
@@ -96,12 +96,12 @@ h4.tagline {
 }
 
 .aside h3 {
-	font-family: 'Museo Slab W01 900', Georgia, serif;
+	font-family: 'gentona-semibold', Georgia, serif;
 	color: #efbd53;
 }
 
 .wysiwyg-read-more-link {
-	font-family: 'Museo Slab W01 300', Georgia, serif;
+	font-family: 'gentona-thin', Georgia, serif;
 }
 
 .imageblockleft {

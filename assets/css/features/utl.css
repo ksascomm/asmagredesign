@@ -11,7 +11,7 @@ body.v11n1 {
 }
 
 section.utl h1 {
-font-family:'Myriad W01 Regular';
+font-family:'gentona-thin', Arial, sans-serif;
 font-size: 72px;
 line-height: 1.2em;
 margin: 0;
@@ -24,7 +24,7 @@ section.utl {
 }
 .utl-mobile h1{
 	font-size: 90px;
-font-family:'Myriad W01 Regular';
+font-family:'gentona-thin', Arial, sans-serif;
 color: #fff;
 }
 section.utl article {
@@ -144,7 +144,7 @@ section#seven {
 .mobile li {
 	display: inline;
 	text-transform: uppercase;
-	font-family:'Myriad W01 SmBd';
+	font-family:''gentona-book', Arial, sans-serif;';
 	font-size: 18px;
 	margin-right: 7px;
 }
@@ -173,7 +173,7 @@ section article {
 .utl p,
 .utl-mobile p {
 	color: #fff;
-	font-family:'Myriad W01 SmBd';
+	font-family:''gentona-book', Arial, sans-serif;';
 	font-size: 16px;
 	margin: 15px;
 }
@@ -421,7 +421,7 @@ a:hover {
 	font-size: 14px;
 }
 .dropcap {
-	font-family:'Myriad W01 SmBd';
+	font-family:''gentona-book', Arial, sans-serif;';
 	font-size: 44px;
 	margin: 0;
 	padding: 0;
@@ -436,7 +436,7 @@ ul.facts li {
 	margin-bottom: 10px;
 	display: block;
 	text-transform: none;
-	font-family:'Myriad W01 Regular';
+	font-family:'gentona-thin', Arial, sans-serif;
 	font-size: 14px;
 }
 .reveal-modal.two .dropcap {

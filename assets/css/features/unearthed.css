@@ -47,19 +47,19 @@ h4.tagline,
 p.credit, 
 p.othercredits {
 	font-variant: small-caps;
-	font-family: 'Museo Sans W01 500', sans-serif;
+	font-family: 'gentona-semibold', sans-serif;
 }
 
 .feature-intro {
 	margin:0px 100px;
 	padding: 25px 0px;
-	font-family: 'Museo Sans W01 500', sans-serif;
+	font-family: 'gentona-semibold', sans-serif;
 	font-size: 1.5em;
 }
 
 .fancytitle h3 {
 	font-size: 9.5em;
-	font-family: 'Museo Sans W01 900', sans-serif;
+	font-family: 'gentona-semibold', sans-serif;
 	margin-bottom: .3em;
 	color: #ffe4b1
 
@@ -91,7 +91,7 @@ a.video {
 	font-size: 18px;
 	float: right;
 	width: auto;
-	font-family: 'Museo Sans W01 900' sans-serif;
+	font-family: 'gentona-semibold' sans-serif;
 	text-transform: uppercase;
 	color: #ff6700;
 	height:20px;

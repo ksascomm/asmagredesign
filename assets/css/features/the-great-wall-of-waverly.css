@@ -28,7 +28,7 @@ p.credit {
 
 .dropcap {
 	color:#ffcc33;
-	font-family: 'Museo Slab W01 900', Georgia, serif;
+	font-family: 'gentona-semibold', Georgia, serif;
 }
 
 .fancytitle {
@@ -36,7 +36,7 @@ p.credit {
 }
 
 .fancytitle h3 {
-	font-family: 'Museo Slab W01 300', Georgia, serif;
+	font-family: 'gentona-thin', Georgia, serif;
 	padding:0;
 	margin:0;
 	color:#ffffff;
@@ -49,7 +49,7 @@ h3.floatright {
 	float: right;
 }
 .large {
-	font-family: 'Museo Slab W01 900', Georgia, serif;
+	font-family: 'gentona-semibold', Georgia, serif;
 }
 
 .overlay {
@@ -85,12 +85,12 @@ h3.floatright {
 
 .pullquote ul li a {
 	color: #ffcc33;
-	font-family: 'Myriad W01 SmBd Cnd', sans serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;, sans serif;
 }
 
 h4.tagline,
 p.othercredits {
-	font-family: 'Museo Slab W01 900', Georgia, serif;
+	font-family: 'gentona-semibold', Georgia, serif;
 	color: #003366;
 	font-size: 1,2em;
 }
@@ -112,7 +112,7 @@ p.othercredits {
 }
 
 .postmaterial p {
-	font-family: Myriad W01 SmBd Cnd, sans serif;
+	font-family: 'gentona-book', Arial, sans-serif;
 	color:#ffffff;
 	font-size: 1.5em;
 	line-height: 1.875em;
@@ -120,7 +120,7 @@ p.othercredits {
 
 .postmaterial h3 {
 	color:#FC3;
-	font-family: 'Museo Slab W01 900', Georgia, serif;
+	font-family: 'gentona-semibold', Georgia, serif;
 	}
 
 .postmaterial img {

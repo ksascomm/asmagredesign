@@ -20,7 +20,7 @@ small {
 
 .fancytitle h1 {
 	color: #fff;
-	font-family: 'Myriad W01 SmBd Cnd', sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 	font-size: 140px;
 	letter-spacing: -4px;
 	position:relative;
@@ -91,7 +91,7 @@ h4.tagline {
 p.creditalt,
 p.othercreditsalt,
 .pullquote {
-	font-family: 'Myriad W01 SmBd Cnd', sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 }
 .textblock {
 	color: #FFF;
@@ -136,7 +136,7 @@ padding: 4px 33px;
 }
 
 .postmaterial {
-	font-family: 'Myriad W01 Regular', sans-serif;
+	font-family:'gentona-thin', Arial, sans-serif;
 }
 
 #feature p {
@@ -182,7 +182,7 @@ padding: 4px 33px;
 }
 
 .dropcap {
-	font-family: myriad-pro,"Myriad Pro",calibri,helvetica,arial,sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 	font-weight: bold;
 	color: #3366cc;
 	margin-top: 26px;
@@ -237,13 +237,13 @@ margin-bottom:15px;
 }
 
 .right p {
-	font-family:'Myriad W01 Regular';
+	font-family:''gentona-thin', Arial, sans-serif;';
 }
 
 .left h4 {
 	margin-top:20px;
 	color: #06c;
-	font-family: 'Museo Sans W01 900', Verdana, sans-serif;
+	font-family: 'gentona-semibold', Verdana, sans-serif;
 	font-weight: normal;
 	font-size: 1.5em;
 }
@@ -267,7 +267,7 @@ margin: 0 -15px;
 	
 	
 .imagesection1 .caption p{
-	font-family: 'Museo Sans W01 500', Verdana, sans-serif;
+	font-family: 'gentona-semibold', Verdana, sans-serif;
 	font-size: 1.125em;
 	line-height:2em;
 	color: #fff;
@@ -281,7 +281,7 @@ color: white;
 }
 
 .description p{
-	font-family: 'Museo Sans W01 500', Verdana, sans-serif;
+	font-family: 'gentona-semibold', Verdana, sans-serif;
 	font-size: 1em!important;
 	text-shadow: 2px 2px 3px rgba(0,0,0,.9);
 }
@@ -292,7 +292,7 @@ color: white;
 } 
 
 #feature h4 {
-	font-family: myriad-pro,"Myriad Pro",calibri,helvetica,arial,sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 	font-weight: bold;
 	color: #3366CC;
 	font-size: 24px;
@@ -339,7 +339,7 @@ color: white;
 	color: #000;
 	margin-left:40px;
 	padding-right: 20px;
-	font-family: myriad-pro,"Myriad Pro",calibri,helvetica,arial,sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 	font-size: 120%;
 	line-height: 1.6em;
 }
@@ -380,7 +380,7 @@ img.quote {
 	max-width: 1000px;
 	width: 100%;
 	height: 50px;
-	font-family: 'Myriad W01 SmBd Cnd', sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 	color: #fff;
 	font-size: 1em;
 	margin: 0 auto;

@@ -38,7 +38,7 @@ header {
 	}
 
 .textblock h3 {
-	font-family: 'Museo Sans W01 900', Verdana, sans-serif;
+	font-family: 'gentona-semibold', Verdana, sans-serif;
 	font-size: 9.5em;
 	line-height: .83em;
 	margin-bottom:.5em;
@@ -47,7 +47,7 @@ header {
 	}
 
 h4.tagline {
-	font-family: 'Museo Sans W01 900', Verdana, sans-serif;
+	font-family: 'gentona-semibold', Verdana, sans-serif;
 	line-height: 1.67em;
 	margin-bottom:10px;
 	font-weight: normal;
@@ -63,7 +63,7 @@ h4.tagline p {
 }
 
 p.credit {
-	font-family: 'Museo Sans W01 900', Verdana, sans-serif;
+	font-family: 'gentona-semibold', Verdana, sans-serif;
 	font-size: 1.5em;
 	font-variant: uppercase;
 	margin-bottom:0;
@@ -71,7 +71,7 @@ p.credit {
 
 
 p.othercredits {
-	font-family: 'Museo Sans W01 900', Verdana, sans-serif;
+	font-family: 'gentona-semibold', Verdana, sans-serif;
 	font-size: 0.875em;
 	text-transform: uppercase;
 	margin-bottom:0;
@@ -80,14 +80,14 @@ p.othercredits {
 
 
 .dropcap {
-	font-family: 'Museo Sans W01 900', Verdana, sans-serif;
+	font-family: 'gentona-semibold', Verdana, sans-serif;
 	color:#0099ff;
 	font-size:5.5em;
 	margin-top:10px;
 }
 
 .smalldropcap {
-	font-family: 'Museo Sans W01 900', Verdana, sans-serif;
+	font-family: 'gentona-semibold', Verdana, sans-serif;
 	color:#006699;
 	font-size:2em;
 	margin-top:5px;
@@ -101,7 +101,7 @@ p.othercredits {
 }
 
 #feature .postmaterial {
-	font-family: 'Museo Sans W01 300', Verdana, sans-serif;
+	font-family: 'gentona-thin', Verdana, sans-serif;
 	border-top: #0099ff 15px solid;
 	position:relative;
 	line-height:1.5em;
@@ -120,7 +120,7 @@ p.othercredits {
 
 #feature .postmaterial h3 {
 	color:#0099ff;
-	font-family: 'Museo Sans W01 900', Verdana, sans-serif;
+	font-family: 'gentona-semibold', Verdana, sans-serif;
 	font-size: 1.75em;
 	margin: 0;
 }
@@ -138,7 +138,7 @@ p.othercredits {
 }
 
 blockquote {
-	font-family: 'Museo Sans W01 900', Verdana, sans-serif;
+	font-family: 'gentona-semibold', Verdana, sans-serif;
 	color:#0099ff;
 	float: right;
 	width:20%;
@@ -160,7 +160,7 @@ blockquote {
 	zoom:1;
 	}
 .caption h4 {
-	font-family: 'Museo Sans W01 900', Verdana, sans-serif;
+	font-family: 'gentona-semibold', Verdana, sans-serif;
 	color: #006699;
 	font-size:1.3em;
 	padding-top:1em;
@@ -172,7 +172,7 @@ blockquote {
 }
 
 #feature .postmaterial .caption p {
-	font-family: 'Museo Sans W01 500', Verdana, sans-serif;
+	font-family: 'gentona-semibold', Verdana, sans-serif;
 	font-size: 0.9em;
 	color: #333;
 	margin-right:8%;

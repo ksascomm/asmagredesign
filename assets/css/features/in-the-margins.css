@@ -44,7 +44,7 @@ p.creditalt,
 p.othercreditsalt,
 .pullquote,
 .fancytitle h1 {
-	font-family: 'Myriad W01 SmBd Cnd', sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 }
 .textblock,
 .pullquote {
@@ -65,21 +65,21 @@ p.othercreditsalt,
 }
 
 .pullquote p.tagline {
-	font-family:'Myriad W01 SmBd';
+	font-family:'gentona-book', Arial, sans-serif;
 	margin: 0 300px 70px 300px;
 	font-size: 30px;
 	line-height: 36px;
 	color: #2a3349;
 }
 .pullquote p.creditalt {
-	font-family:'Myriad W01 SmBd';
+	font-family:'gentona-book', Arial, sans-serif;
 	color: #6e0505;
 	font-size: 24px;
 	margin-bottom: 50px;
 }
 
 .pullquote p.identify {
-	font-family:'Myriad W01 SmBd';
+	font-family:'gentona-book', Arial, sans-serif;
 	margin: 0 235px;
 	font-size: 18px;
 	color: #2a3349;
@@ -96,7 +96,7 @@ span.red {
 
 
 .postmaterial {
-	font-family: 'Myriad W01 Regular', sans-serif;
+	font-family:'gentona-thin', Arial, sans-serif;
 }
 
 #feature p {
@@ -120,14 +120,14 @@ span.red {
 	margin-top: 80px;
 }
 .dropcap {
-		font-family: 'Myriad W01 SmBd Cnd', sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 	color: #2a3349;
 	margin-top: 15px;
 
 }
 
 #feature h4 {
-	font-family: 'Myriad W01 SmBd Cnd', sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 	color: #2a3349;
 	font-size: 24px;
 	margin-bottom: 4px;
@@ -149,7 +149,7 @@ span.red {
 	color: #FFF;
 	font-size: 16px;
 	padding-left: 20px;
-	font-family: 'Myriad W01 SmBd Cnd', sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 }
 
 /*************Comments and Feature Listing************/
@@ -180,7 +180,7 @@ span.red {
 	width: 100%;
 	background: #2a3349;
 	height: 50px;
-	font-family: 'Myriad W01 SmBd Cnd', sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 	color: #fff;
 	font-size: 1em;
 	margin: -100px auto 0 auto;

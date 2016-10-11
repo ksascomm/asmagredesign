@@ -35,7 +35,7 @@ body,
 	}
 
 .textblock h3 {
-	font-family: 'Museo Sans W01 500', sans-serif;
+	font-family: 'gentona-semibold', sans-serif;
 	font-size: 2.5em;
 	line-height: 1.25em;
 	margin-bottom:.5em;
@@ -44,7 +44,7 @@ body,
 
 .introcopy {
 	width:35%;
-	font-family: 'Museo Sans W01 500', sans-serif;
+	font-family: 'gentona-semibold', sans-serif;
 	font-size: 1em;
 	line-height: 1.5em;
 	margin-bottom:10px;
@@ -62,7 +62,7 @@ p.credit {
 
 
 p.othercredits {
-	font-family: 'Museo Sans W01 500', sans-serif;
+	font-family: 'gentona-semibold', sans-serif;
 	font-size: 1em;
 	text-transform: uppercase;
 	font-style: normal;
@@ -70,14 +70,14 @@ p.othercredits {
 
 .pullquote p {
 	font-size: 19px;
-	font-family: 'Museo Sans W01 500', sans-serif;
+	font-family: 'gentona-semibold', sans-serif;
 }
 
 #feature {
 	background: none;
 }
 #feature .postmaterial h3 {
-	font-family: 'Museo Slab W01 500', Georgia, serif;
+	font-family: 'gentona-book', Georgia, serif;
 	font-size: 1.5em;
 }
 .galleryholder {

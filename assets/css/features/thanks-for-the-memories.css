@@ -25,7 +25,7 @@ body, #footer-top {
 	}
 
 .textblock h3 {
-	font-family: 'Museo Slab W01 500', Georgia, serif;
+	font-family: 'gentona-book', Georgia, serif;
 	font-size: 4.5em;
 	line-height: .83em;
 	margin-bottom:.5em;
@@ -33,7 +33,7 @@ body, #footer-top {
 	}
 
 h4.tagline {
-	font-family: 'Museo Slab W01 900', Georgia, serif;
+	font-family: 'gentona-semibold', Georgia, serif;
 	font-size: 1.125em;
 	line-height: 1.67em;
 	margin-bottom:10px;
@@ -42,7 +42,7 @@ h4.tagline {
 }
 
 p.credit {
-	font-family: 'Museo Slab W01 500', Georgia, serif;
+	font-family: 'gentona-book', Georgia, serif;
 	font-size: 1.5em;
 	font-variant: small-caps;
 	margin-bottom:0;
@@ -50,7 +50,7 @@ p.credit {
 
 
 p.othercredits {
-	font-family: 'Museo Slab W01 500', Georgia, serif;
+	font-family: 'gentona-book', Georgia, serif;
 	font-size: 0.875em;
 	text-transform: uppercase;
 	margin-bottom:0;
@@ -59,7 +59,7 @@ p.othercredits {
 
 .pullquote	{
 	float:right;
-	font-family: 'Museo Slab W01 900', Georgia, serif;
+	font-family: 'gentona-semibold', Georgia, serif;
 	text-transform: uppercase;
 	margin-right:15px;
 	margin-top:40px;
@@ -83,7 +83,7 @@ p.othercredits {
 	font-size: 16px;
 }
 .dropcap {
-	font-family: 'Museo Slab W01 900', Georgia, serif;
+	font-family: 'gentona-semibold', Georgia, serif;
 	color:#06c;
 	font-size:5.5em;
 	margin-top:10px;
@@ -111,7 +111,7 @@ p.othercredits {
 
 #feature .postmaterial h3 {
 	color:#06c;
-	font-family: 'Museo Slab W01 500', Georgia, serif;
+	font-family: 'gentona-book', Georgia, serif;
 	font-size: 1.5em;
 	margin: 0;
 }
@@ -170,13 +170,13 @@ margin-bottom:15px;
 }
 
 .right p {
-	font-family:'Myriad W01 Regular';
+	font-family:''gentona-thin', Arial, sans-serif;';
 }
 
 .left h4 {
 	margin-top:20px;
 	color: #06c;
-	font-family: 'Museo Slab W01 900', Georgia, serif;
+	font-family: 'gentona-semibold', Georgia, serif;
 	font-weight: normal;
 	font-size: 1.5em;
 }
@@ -219,7 +219,7 @@ margin-bottom:15px;
 	
 .imagesection1 .caption p,
 .imagesection2 .caption p {
-	font-family: 'Museo Slab W01 500', Georgia, serif;
+	font-family: 'gentona-book', Georgia, serif;
 	font-size: 1.125em;
 	line-height:2em;
 	color: #fff;

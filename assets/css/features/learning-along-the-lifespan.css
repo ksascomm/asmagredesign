@@ -1,4 +1,4 @@
-body.page-template-lifespan-baby-php {
+ody.page-template-lifespan-baby-php {
 	background: #f4e1a3;
 }
 
@@ -68,7 +68,7 @@ nav#lifespan li ul li {
 }
 
 nav#lifespan li a {
-	font-family:"Museo Sans W01 900";
+	font-family: 'gentona-semibold', Arial, sans-serif;
 	font-size: 18px;
 	vertical-align: middle;
 	padding: 50px 0 50px 138px;
@@ -189,13 +189,13 @@ nav#lifespan li.expert ul {
 	padding-top: 125px;
 }
 .lifespan #story {
-	font-family:"Myriad W01 Regular";
+	font-family:"'gentona-thin', Arial, sans-serif;";
 	font-size: 16px;
 	line-height: 24px;
 }
 .lifespan h3,
 .lifespan h4 {
-	font-family:"Myriad W01 SmBd Cnd";
+	font-family:'gentona-book', Arial, sans-serif;;
 	color: #315e79
 }
 

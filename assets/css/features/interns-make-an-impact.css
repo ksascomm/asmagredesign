@@ -21,7 +21,7 @@ body {
 h3.thin {
 	font-size: 4.875em;
 	color:#fff;
-	font-family: 'Myriad W01 Regular', sans-serif;
+	font-family: 'gentona-thin', Arial, sans-serif;
 	font-weight: 400;
 	padding-top:40px;
 	margin-bottom:0;
@@ -33,7 +33,7 @@ h3.impact {
 	color:#fc0;
 	margin-top:0;
 	margin-bottom:20px;
-	font-family: 'Myriad W01 Regular', sans-serif;
+	font-family: 'gentona-thin', Arial, sans-serif;
 	font-weight: 400;
 	font-weight: bold;
 	line-height: .65em;
@@ -44,7 +44,7 @@ h3.impact {
 p.credit,
 p.othercredits {
 	color:#FFF;
-	font-family: 'Myriad W01 Regular', sans-serif;
+	font-family: 'gentona-thin', Arial, sans-serif;
 	font-weight: 400;
 	text-align: justify;
 	font-weight: bold;
@@ -176,7 +176,7 @@ margin-top: 5px;
 	margin-left:15px;
 	width: 75%;
 	font-size: 1.2em;
-	font-family: 'Myriad W01 Regular', sans-serif;
+	font-family:'gentona-thin', Arial, sans-serif;
 	font-weight: 400;
 	line-height: 1.5em;
 }
@@ -191,7 +191,7 @@ margin-top: 5px;
 }
 
 .sidequote p {
-font-family: 'Myriad W01 SmBd Cnd', sans-serif;
+font-family: 'gentona-semibold', Arial, sans-serif;
 	color: #003366;
 	border-left: 15px solid #fc0;
 	padding:15px;
@@ -200,7 +200,7 @@ font-family: 'Myriad W01 SmBd Cnd', sans-serif;
 }
 
 .sidequote ul {
-font-family: 'Myriad W01 SmBd Cnd', sans-serif;
+font-family: 'gentona-semibold', Arial, sans-serif;
 	color: #003366;
 	border-left: 15px solid #fc0;
 	padding:15px;
@@ -293,7 +293,7 @@ font-family: 'Myriad W01 SmBd Cnd', sans-serif;
 .footmaterial {
 	padding-top: 20px;
 	padding-bottom:30px;
-font-family: 'Myriad W01 SmBd Cnd', sans-serif;
+font-family: 'gentona-semibold', Arial, sans-serif;
 	margin: 0 auto;
 }
 
@@ -328,7 +328,7 @@ font-family: 'Myriad W01 SmBd Cnd', sans-serif;
 
 .storyjump {
 	float:right;
-	font-family: 'MuseoSlab900', Georgia, serif;
+	font-family: 'gentona-semibold', Georgia, serif;
 	margin-right:15px;
 	font-size: .5em;
 	padding-top: 6px;
@@ -344,7 +344,7 @@ font-family: 'Myriad W01 SmBd Cnd', sans-serif;
 }
 
 #intern5 p {
-	font-family: 'Myriad W01 Regular', sans-serif;
+	font-family:'gentona-thin', Arial, sans-serif;
 	font-weight: 400;
 	font-size: 1em;
 }
@@ -366,7 +366,7 @@ font-family: 'Myriad W01 SmBd Cnd', sans-serif;
 	font-size: 8.5em;
 	color: rgba(0, 0, 0, 0.25);
 	letter-spacing: -30px;
-	font-family: 'Myriad W01 Regular', sans-serif;
+	font-family:'gentona-thin', Arial, sans-serif;
 	font-weight: 400; 
 	line-height: 1;
 	}
@@ -396,7 +396,7 @@ font-size: 1.5em;
 
 
 .sidequote h3 {
-	font-family: 'Myriad W01 Regular', sans-serif;
+	font-family:'gentona-thin', Arial, sans-serif;
 	font-weight: 400;
 	font-size: 1.5em;
 	color: #003366;

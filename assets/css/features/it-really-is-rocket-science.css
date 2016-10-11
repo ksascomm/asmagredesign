@@ -46,7 +46,7 @@ h4.tagline {
 p.creditalt,
 p.othercreditsalt,
 .pullquote {
-	font-family: 'Myriad W01 SmBd Cnd', sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 }
 .textblock,
 .pullquote {
@@ -89,7 +89,7 @@ padding: 4px 33px;
 }
 
 .postmaterial {
-	font-family: 'Museo Sans W01 300', sans-serif;
+	font-family: 'gentona-thin', sans-serif;
 	font-size: 1.125em;
 	line-height: 1.6em;
 }
@@ -106,7 +106,7 @@ padding: 4px 33px;
 
 
 #feature h4 {
-	font-family: 'Myriad W01 SmBd Cnd', sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 	color: #2f5959;
 	font-size: 1.875em;
 }
@@ -128,7 +128,7 @@ padding: 4px 33px;
 	width: 83%;
 	color: #FFF;
 	margin-left:40px;
-	font-family: 'Myriad W01 SmBd Cnd', sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 	font-size: 18px;
 }
 
@@ -193,7 +193,7 @@ img.quote {
 	width: 100%;
 	background: rgb(117, 80, 137);;
 	height: 50px;
-	font-family: 'Myriad W01 SmBd Cnd', sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 	color: #fff;
 	font-size: 1em;
 	margin: 0 auto;

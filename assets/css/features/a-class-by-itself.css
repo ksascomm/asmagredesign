@@ -17,7 +17,7 @@ body {
 
 .fancytitle h1 {
 	color: #fff;
-	font-family: 'Myriad W01 SmBd Cnd', sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 	font-size: 140px;
 	letter-spacing: -4px;
 	position:relative;
@@ -92,7 +92,7 @@ h4.tagline {
 p.creditalt,
 p.othercreditsalt,
 .pullquote {
-	font-family: 'Myriad W01 SmBd Cnd', sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 }
 .textblock {
 	color: #FFF;
@@ -138,7 +138,7 @@ padding: 4px 33px;
 }
 
 .postmaterial {
-	font-family: 'Myriad W01 Regular', sans-serif;
+	font-family:'gentona-thin', Arial, sans-serif;
 }
 
 #feature p {
@@ -160,7 +160,7 @@ padding: 4px 33px;
 }
 
 .dropcap {
-	font-family: myriad-pro,"Myriad Pro",calibri,helvetica,arial,sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 	font-weight: bold;
 	color: #005EB8;
 	margin-top: 15px;
@@ -180,7 +180,7 @@ padding: 4px 33px;
 } 
 
 #feature h4 {
-	font-family: myriad-pro,"Myriad Pro",calibri,helvetica,arial,sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 	font-weight: bold;
 	color: #005EB8;
 	font-size: 24px;
@@ -227,7 +227,7 @@ padding: 4px 33px;
 	color: #000;
 	margin-left:40px;
 	padding-right: 20px;
-	font-family: myriad-pro,"Myriad Pro",calibri,helvetica,arial,sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 	font-size: 12px;
 	line-height: 1.6em;
 }
@@ -269,7 +269,7 @@ img.quote {
 	width: 100%;
 	background: #000033;
 	height: 50px;
-	font-family: 'Myriad W01 SmBd Cnd', sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 	color: #fff;
 	font-size: 1em;
 	margin: 0 auto;

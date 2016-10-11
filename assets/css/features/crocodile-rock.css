@@ -37,7 +37,7 @@ p.credit {
 
 .dropcap {
 	color:#fff;
-	font-family: 'Museo Sans W01 900', Verdana, sans-serif;
+	font-family: 'gentona-semibold', Verdana, sans-serif;
 }
 
 .fancytitle {
@@ -45,7 +45,7 @@ p.credit {
 }
 
 .fancytitle h3 {
-	font-family: 'Museo Sans W01 700', Verdana, sans-serif;
+	font-family: 'gentona-book', Verdana, sans-serif;
 	padding:0;
 	margin:0;
 	color:#ffffff;
@@ -58,7 +58,7 @@ h3.floatright {
 	float: right;
 }
 .large {
-	font-family: 'Museo Sans W01 900', Verdana, sans-serif;
+	font-family: 'gentona-semibold', Verdana, sans-serif;
 }
 
 .overlay {
@@ -89,12 +89,12 @@ h3.floatright {
 
 .pullquote ul li a {
 	color: #fff;
-	font-family: 'Museo Sans W01 900', Verdana, sans-serif;
+	font-family: 'gentona-semibold', Verdana, sans-serif;
 }
 
 h4.tagline,
 p.othercredits {
-	font-family: 'Museo Sans W01 900', Verdana, sans-serif;
+	font-family: 'gentona-semibold', Verdana, sans-serif;
 	color: #FFF;
 	font-size: 1.2em;
 }
@@ -125,7 +125,7 @@ p.othercredits {
 
 .postmaterial h3 {
 	color:#FC3;
-	font-family: 'Museo Sans W01 900', Verdana, sans-serif;
+	font-family: 'gentona-semibold', Verdana, sans-serif;
 	}
 
 .postmaterial img {

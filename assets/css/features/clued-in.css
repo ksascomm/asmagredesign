@@ -40,7 +40,7 @@ body {
 .textblock,
 h3.featuretitle
 .pullquote {
-	font-family: 'Myriad W01 SmBd Cnd', sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 }
 .textblock,
 .pullquote {
@@ -56,7 +56,7 @@ h3.featuretitle {
 
 h4.tagline {
 	font-size: 2em;
-	font-family: 'Museo Sans W01 300', sans-serif;
+	font-family: 'gentona-thin', sans-serif;
 	width: 65%;
 	margin: 0 auto 15px;;
 	text-align: left;
@@ -64,7 +64,7 @@ h4.tagline {
 
 p.credit,
 p.othercredits {
-		font-family: 'Museo Sans W01 300', sans-serif;
+		font-family: 'gentona-thin', sans-serif;
 }
 
 p.credit {
@@ -95,7 +95,7 @@ p.othercredit {
 }
 
 .postmaterial {
-	font-family: 'Museo Sans W01 300', sans-serif;
+	font-family: 'gentona-thin', sans-serif;
 	font-size: 1.125em;
 	line-height: 1.333em;
 }
@@ -112,7 +112,7 @@ p.othercredit {
 
 
 #feature h4 {
-	font-family: 'Museo Sans W01 900', sans-serif;
+	font-family: 'gentona-semibold', sans-serif;
 	color: #005a53;
 	font-size: 1.875em;
 }

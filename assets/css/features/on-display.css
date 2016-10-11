@@ -35,7 +35,7 @@ h3.storynav {
 .bottom-nav,
 .feature-copy,
 .lower-copy {
-	font-family: 'Museo Sans W01 500', sans-serif;
+	font-family: 'gentona-semibold', sans-serif;
 	color: #FFF;
 	font-size: 1em;
 	line-height: 1.7em;
@@ -47,7 +47,7 @@ h3.storynav {
 
 .feature-copy a,
 lower-copy a {
-	font-family: 'Museo Sans W01 900', sans-serif;
+	font-family: 'gentona-semibold', sans-serif;
 }
 
 .feature-copy h3,
@@ -63,7 +63,7 @@ lower-copy a {
 .lower-copy h3,
 .gallery h3,
 .bottom-nav h3	{
-	font-family: 'Museo Sans W01 900', sans-serif;
+	font-family: 'gentona-semibold', sans-serif;
 	color: #FFF;
 }
 

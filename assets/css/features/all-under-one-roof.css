@@ -34,7 +34,7 @@ body {
 .textblock,
 h3.featuretitle
 .pullquote {
-	font-family: 'Myriad W01 SmBd Cnd', sans-serif;
+	font-family: 'gentona-semibold', Arial, sans-serif;
 }
 
 h3.featuretitle {
@@ -47,7 +47,7 @@ h3.featuretitle {
 
 h4.tagline {
 	font-size: 2em;
-	font-family: 'Museo Sans W01 500', sans-serif;
+	font-family: 'gentona-semibold', sans-serif;
 	text-align: center;
 	color: #f5b519;
 	margin-bottom: 15px;
@@ -74,7 +74,7 @@ p.othercredits {
 
 
 #feature h4 {
-	font-family: 'Museo Sans W01 900', sans-serif;
+	font-family: 'gentona-semibold', sans-serif;
 	color: #005a53;
 	font-size: 1.875em;
 }
