@@ -8092,11 +8092,11 @@ hr.style15:after {
   color: #8c8b8b;
   font-size: 18px; }
 
-a {
+.main a, #footer-top a {
   color: #005eb8;
   border-bottom: .125em dotted;
   border-bottom-color: rgba(0, 0, 0, 0.2); }
-  a:hover, a:active {
+  .main a:hover, .main a:active, #footer-top a:hover, #footer-top a:active {
     color: #2C2C33;
     border-bottom-style: solid; }
 
@@ -9967,9 +9967,7 @@ footer {
     color: #8a2a2b;
     margin-bottom: 20px; }
   #footer-top h5 {
-    color: #333; }
-    #footer-top h5 a {
-      color: #333; }
+    color: #2C2C33; }
 
 /* 7.3 - Table of Contents
 ----------------------------------*/

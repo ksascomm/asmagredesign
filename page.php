@@ -61,7 +61,7 @@
 		</div>
 	<?php if ( false === ( $asmag_exclusives_query = get_transient( 'web_exclusives_query' ) ) ) {
 			$asmag_exclusives_query = new WP_Query(array(
-				'cat' => '31',
+				'cat' => '78',
 				'posts_per_page' => '5'));
 		set_transient( 'web_exclusives_query', $asmag_exclusives_query, 86400 ); }	 
 		while ($asmag_exclusives_query->have_posts()) : $asmag_exclusives_query->the_post(); ?>

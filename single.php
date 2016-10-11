@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="container-mid">
+<div class="main" id="container-mid" role="main">
 	<div class="row" id="content">
 	    <article class="small-12 large-8 columns" id="article">
 	    <?php if ( have_posts() ) : while ( have_posts() ) : the_post();  ?>
@@ -40,7 +40,7 @@
 					
 					//End and reset query
 				$volume = get_the_volume($post); $volume_name = get_the_volume_name($post); endwhile; endif; wp_reset_query();?>
-		<section class="small-12 large-4 columns" id="sidebar">
+		<aside class="small-12 large-4 columns" id="sidebar">
 			<div class="small-12 columns <?php echo $catslug; ?>">
 			<h4>Navigation <span class="spacer"></span></h4>
 				<ul class="breadcrumbs">
@@ -82,7 +82,7 @@
 				   			 
 			<?php locate_template('parts/in-latest-issue.php', true, false);	?>	
 
-		</section>
+		</aside>
 	</div> <!--End content -->
 </div> <!--End container-mid -->
 

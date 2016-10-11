@@ -33,7 +33,7 @@ $hero_sm = $sm_hero_array[0]; // Mobile Hero
 
 <?php /* add per post custom CSS */ if ( get_post_meta($post->ID, 'ecpt_asmag_css', true) ) { echo '<style>' . get_post_meta($post->ID, 'ecpt_asmag_css', true) . '</style>'; } ?> 
 
-<main> 
+<div class="main" role="main"> 
 <?php while ( have_posts() ) : the_post(); ?>
 	<div class="intro-header">
 	 	<div class="intro-hero" data-interchange="[<?php echo $hero_xlg; ?>, (default)], [<?php echo $hero_sm; ?>, (small)], [<?php echo $hero_md; ?>, (medium)], [<?php echo $hero_lg; ?>, (large)] [<?php echo $hero_xlg; ?>, (xlarge)]">
