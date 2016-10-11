@@ -2,7 +2,8 @@
 <?php 
 	$categories = get_the_category();
 	$thiscat = $categories[0]->cat_ID;
-	if ($thiscat == 31) { 
+	//if ($thiscat == 31) { //old web exclusive ID
+	if ($thiscat == 78) { //new web exclusive ID
 		$thiscat = ''; $catname = ''; 
 	} else {
 		$catname = $categories[0]->name;
