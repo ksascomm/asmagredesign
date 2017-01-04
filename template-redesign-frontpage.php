@@ -46,10 +46,10 @@ Template Name: Redesign Front Page
 			'post_type' => 'page',
 			'volume' => $volume,
 			'post_parent' => $parent,
-			'page_id' => 7015,			
+			'page_id' => 7271,			
 			));
 
-		$exclude_ids = array( 7015 );
+		$exclude_ids = array( 7271 );
 		$asmag_features_query = new WP_Query(array(
 			'post_type' => 'page',
 			'volume' => $volume,
@@ -61,66 +61,71 @@ Template Name: Redesign Front Page
 
 	?>
 
-	<?php if ( $asmag_cover_story_query->have_posts() ) : ?>
+	<?php if (is_front_page()) : ?>
 
-	<div class="cover-story home">
+		<?php if ( $asmag_cover_story_query->have_posts() ) : ?>
 
-	 <?php while ($asmag_cover_story_query->have_posts()) : $asmag_cover_story_query->the_post(); ?>
-	 <?php $image = wp_get_attachment_url( get_post_thumbnail_id($post->ID));
-		$img_size_lg = 'large-hero'; 
-		$img_size_md = 'medium-hero';
-		$img_size_sm = 'mobile-hero';
-		 
-		$feat_img_id = get_post_thumbnail_id();
-		 
-		/* Use ID to get the attachment object */
-		$xlg_hero_array = wp_get_attachment_image_src( $feat_img_id, 'xtra-large-hero', true ); //X-Large Hero
-		$lg_hero_array = wp_get_attachment_image_src( $feat_img_id, 'large-hero', true ); //Large Hero
-		$md_hero_array = wp_get_attachment_image_src( $feat_img_id, 'medium-hero', true ); // Medium Hero
-		$sm_hero_array = wp_get_attachment_image_src( $feat_img_id, 'mobile-hero', true ); // Mobile Hero
-		 
-		/* Grab the url from the attachment object */
-		$hero_xlg = $xlg_hero_array[0]; //X-Large Hero
-		$hero_lg = $lg_hero_array[0]; //Large Hero
-		$hero_md = $md_hero_array[0]; // Medium Hero
-		$hero_sm = $sm_hero_array[0]; // Mobile Hero
+		<div class="cover-story home">
 
-		?>
-		<div class="intro-hero" data-interchange="[<?php echo $hero_xlg; ?>, (default)], [<?php echo $hero_sm; ?>, (small)], [<?php echo $hero_md; ?>, (medium)], [<?php echo $hero_lg; ?>, (large)] [<?php echo $hero_xlg; ?>, (xlarge)]" style="margin-top: -20px;" alt="cover-story">
-	 	 		<div class="row">
-	                <div class="small-7 small-offset-5 medium-6 medium-offset-6 large-7 large-offset-6 columns">
-	                    <div class="post-heading">
-	                    	<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field">
-	                        <h2><?php the_title(); ?></h2>
-								<div class="show-for-large-up">
-			                        <?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) : ?> 
-			                        	<div id="tagline">
-			                        		<h4>
-			                        			<?php echo get_post_meta($post->ID, 'ecpt_tagline', true); ?>
-			                        		</h4>
-			                        	</div>
-			                        <?php endif; ?>
-			                    </div>
-	                    	</a>
-	                    </div>
-	                </div>
-	        	</div> 	
-		</div>
-		<div class="hide-for-large-up">
-			<div class="row">
-				<div class="small-12 columns">
-	            <?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) : ?> 
-	            	<div id="tagline">
-	            		<h5>
-	            			<?php echo get_post_meta($post->ID, 'ecpt_tagline', true); ?>
-	            		</h5>
-	            	</div>
-	            <?php endif; ?>
+		 <?php while ($asmag_cover_story_query->have_posts()) : $asmag_cover_story_query->the_post(); ?>
+		 <?php $image = wp_get_attachment_url( get_post_thumbnail_id($post->ID));
+			$img_size_lg = 'large-hero'; 
+			$img_size_md = 'medium-hero';
+			$img_size_sm = 'mobile-hero';
+			 
+			$feat_img_id = get_post_thumbnail_id();
+			 
+			/* Use ID to get the attachment object */
+			$xlg_hero_array = wp_get_attachment_image_src( $feat_img_id, 'xtra-large-hero', true ); //X-Large Hero
+			$lg_hero_array = wp_get_attachment_image_src( $feat_img_id, 'large-hero', true ); //Large Hero
+			$md_hero_array = wp_get_attachment_image_src( $feat_img_id, 'medium-hero', true ); // Medium Hero
+			$sm_hero_array = wp_get_attachment_image_src( $feat_img_id, 'mobile-hero', true ); // Mobile Hero
+			 
+			/* Grab the url from the attachment object */
+			$hero_xlg = $xlg_hero_array[0]; //X-Large Hero
+			$hero_lg = $lg_hero_array[0]; //Large Hero
+			$hero_md = $md_hero_array[0]; // Medium Hero
+			$hero_sm = $sm_hero_array[0]; // Mobile Hero
+
+			?>
+
+			<div class="intro-hero" data-interchange="[<?php echo $hero_xlg; ?>, (default)], [<?php echo $hero_sm; ?>, (small)], [<?php echo $hero_md; ?>, (medium)], [<?php echo $hero_lg; ?>, (large)] [<?php echo $hero_xlg; ?>, (xlarge)]" style="margin-top: -20px;" alt="cover-story">
+		 	 		<div class="row">
+		                <div class="small-7 small-offset-5 medium-6 medium-offset-6 large-7 large-offset-6 columns">
+		                    <div class="post-heading">
+		                    	<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field">
+		                        <h2><?php the_title(); ?></h2>
+									<div class="show-for-large-up">
+				                        <?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) : ?> 
+				                        	<div id="tagline">
+				                        		<h4>
+				                        			<?php echo get_post_meta($post->ID, 'ecpt_tagline', true); ?>
+				                        		</h4>
+				                        	</div>
+				                        <?php endif; ?>
+				                    </div>
+		                    	</a>
+		                    </div>
+		                </div>
+		        	</div> 	
+			</div>
+			<div class="hide-for-large-up">
+				<div class="row">
+					<div class="small-12 columns">
+		            <?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) : ?> 
+		            	<div id="tagline">
+		            		<h5>
+		            			<?php echo get_post_meta($post->ID, 'ecpt_tagline', true); ?>
+		            		</h5>
+		            	</div>
+		            <?php endif; ?>
+		            </div>
 	            </div>
-            </div>
-	    </div>  
-	<?php endwhile; ?>
-	</div>
+		    </div>  
+		<?php endwhile; ?>
+		</div>
+		<?php endif; ?>
+
 	<?php endif; ?>
 	<div class="features home">
 		<div class="row section-header">
