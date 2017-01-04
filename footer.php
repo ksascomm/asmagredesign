@@ -13,9 +13,9 @@
    			</div>
 			<div class="row" id="search-bar">
 				<form method="GET" action="<?php echo site_url('/search'); ?>">
-						<input type="text" name="q" placeholder="Search this site" />
-						<input type="submit" class="icon-search" value="&#48;" />
-						<input type="hidden" name="site" value="ksas_magazine" />
+					<input type="text" name="q" placeholder="Search this site" aria-label="search"/>
+					<input type="submit" class="icon-search" value="&#48;" />
+					<input type="hidden" name="site" value="ksas_magazine" />
 				</form>
 			</div>
 		</div>
