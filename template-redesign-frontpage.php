@@ -97,11 +97,9 @@ Template Name: Redesign Front Page
 		                        <h2><?php the_title(); ?></h2>
 									<div class="show-for-large-up">
 				                        <?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) : ?> 
-				                        	<div id="tagline">
-				                        		<h4>
-				                        			<?php echo get_post_meta($post->ID, 'ecpt_tagline', true); ?>
-				                        		</h4>
-				                        	</div>
+				                        	<h4>
+				                        		<?php echo get_post_meta($post->ID, 'ecpt_tagline', true); ?>
+				                        	</h4>
 				                        <?php endif; ?>
 				                    </div>
 		                    	</a>
@@ -113,11 +111,9 @@ Template Name: Redesign Front Page
 				<div class="row">
 					<div class="small-12 columns">
 		            <?php if ( get_post_meta($post->ID, 'ecpt_tagline', true) ) : ?> 
-		            	<div id="tagline">
-		            		<h5>
-		            			<?php echo get_post_meta($post->ID, 'ecpt_tagline', true); ?>
-		            		</h5>
-		            	</div>
+		            	<h5>
+		            		<?php echo get_post_meta($post->ID, 'ecpt_tagline', true); ?>
+		            	</h5>
 		            <?php endif; ?>
 		            </div>
 	            </div>
