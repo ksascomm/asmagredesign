@@ -14,7 +14,7 @@ body, #container-mid {
 
 #feature-head {
 	background-image: url('http://krieger.jhu.edu/magazine/wp-content/uploads/sites/78/2014/05/crocodile-rock.jpg');
-	height: 1000px;
+	height: 1300px;
 	background-repeat: no-repeat;
 	background-position: center top;
 }
@@ -86,7 +86,7 @@ h3.floatright {
 
 .pullquote p {
 	font-size:
-
+}
 .pullquote ul li a {
 	color: #fff;
 	font-family: 'gentona-semibold', Verdana, sans-serif;
@@ -117,7 +117,7 @@ p.othercredits {
 }
 
 .postmaterial p {
-	font-family: Helvetica W01 Cn, sans serif;
+	font-family: 'gentona-semibold', Verdana, sans-serif;
 	color:#ffffff;
 	font-size: 1.125em;
 	line-height: 1.875em;
