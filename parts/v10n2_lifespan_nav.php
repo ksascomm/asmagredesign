@@ -2,7 +2,7 @@
 	'container' => 'nav',
 	'container_id' => 'lifespan',
 	'menu' => 'Lifespan', 
-	'menu_class' => 'accordion', 
+	'menu_class' => 'side-nav', 
 	'depth' => 2 )); ?> 
 
 
