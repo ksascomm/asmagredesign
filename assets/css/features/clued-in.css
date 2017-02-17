@@ -55,11 +55,12 @@ h3.featuretitle {
 }
 
 h4.tagline {
-	font-size: 2em;
+	font-size: 3em;
 	font-family: 'gentona-thin', sans-serif;
 	width: 65%;
 	margin: 0 auto 15px;;
 	text-align: left;
+	color: #fff;
 }
 
 p.credit,
