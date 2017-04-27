@@ -9,7 +9,7 @@
     		array( 'subpage-menu' => __( 'Subpage Menu' ), 'footer-menu' => __('Footer Menu'), 'issue-menu'=> __('Issue Menu'))
   		);
 	}
-	
+
 // initiate register menus
 	add_action( 'init', 'asmag_register_my_menus' );
 
@@ -24,7 +24,7 @@
 	add_image_size( 'filterthumbbig', 520, 280, true);
 
 //pagination function
-	function asmag_pagination($prev = 'Ç', $next = 'È') {
+	function asmag_pagination($prev = 'Ã‡', $next = 'Ãˆ') {
     	global $wp_query, $wp_rewrite;
     	$wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
     	$pagination = array(
@@ -35,15 +35,15 @@
     	    'prev_text' => __($prev),
     	    'next_text' => __($next),
     	    'type' => 'plain'
-		);		
+		);
     	if( $wp_rewrite->using_permalinks() )
     	    $pagination['base'] = user_trailingslashit( trailingslashit( remove_query_arg( 's', get_pagenum_link( 1 ) ) ) . 'page/%#%/', 'paged' );
-		
+
     	if( !empty($wp_query->query_vars['s']) )
     	    $pagination['add_args'] = array( 's' => get_query_var( 's' ) );
-		
+
     	echo paginate_links( $pagination );
-	};		
+	};
 
 //register sidebars
 	if ( function_exists('register_sidebar') )
@@ -54,23 +54,23 @@
 			'before_widget' => '<div id="homepage-widget" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h2 class="widgettitle">',
-			'after_title'   => '</h2>' 
-			));	
+			'after_title'   => '</h2>'
+			));
 //Add Theme Options Page
-	if(is_admin()){	
+	if(is_admin()){
 		require_once('assets/functions/asmag-theme-settings-basic.php');
 	}
-	
+
 	//Collect current theme option values
 		function asmag_get_global_options(){
 			$asmag_option = array();
 			$asmag_option 	= get_option('asmag_options');
 		return $asmag_option;
 		}
-	
-	//Function to call theme options in theme files 
+
+	//Function to call theme options in theme files
 		$asmag_option = asmag_get_global_options();
-		
+
 //Change Excerpt Length -- Add to functions.php
 function asmag_new_excerpt_length($length) {
 	return 20; //Change word count
@@ -114,7 +114,7 @@ if ( !function_exists( 'iframe_embed_shortcode' ) ) {
 //Add Volume/Issue Taxonomy
 function create_my_taxonomies() {
 	register_taxonomy('volume', array( 'post', 'page', 'accordion' ), array( 'hierarchical' => true, 'label' => 'Volume/Issue', 'query_var' => true, 'rewrite' => true));
-} 
+}
 
 add_action('init', 'create_my_taxonomies', 0);
 
@@ -180,13 +180,13 @@ function get_the_volume($post) {
 					if($term->slug != 'feature') {
 						$term_slugs[] = $term->slug;
 					}
-					$volume = implode('', $term_slugs); } 
+					$volume = implode('', $term_slugs); }
 				} else { $volume = $terms['volume']; }
 			if(isset($_GET['volume'])) {
 				$volume = $_GET['volume'];
 			}
-			if ($volume == null) { 
-			$volume = $asmag_option['asmag_current_issue']; } 
+			if ($volume == null) {
+			$volume = $asmag_option['asmag_current_issue']; }
 	return $volume;
 }
 
@@ -194,40 +194,40 @@ function get_the_volume_name($post) {
 	$post = get_queried_object_id();
 	$terms = get_the_terms($post, 'volume');
 	$asmag_option = asmag_get_global_options();
-	
+
 		if(is_array($terms)) {
 			$term_names = array();
-			foreach( $terms as $term) { 
+			foreach( $terms as $term) {
 				if($term->name != 'Feature') {
 					$term_names[] = $term->name;
 				}
-			 } 
+			 }
 			 $volume_name = implode('', $term_names);
-		} 
-		
+		}
+
 		else { $volume_name = $terms; }
-		
+
 		if(isset($_GET['volume'])) {
 			$new_volume = $_GET['volume'];
 			$new_volume_data = get_term_by('slug', $new_volume, 'volume');
 			$volume_name = $new_volume_data->name;
 		}
 
-		if ($volume_name == null) { 
-			$new_volume = $asmag_option['asmag_current_issue']; 
+		if ($volume_name == null) {
+			$new_volume = $asmag_option['asmag_current_issue'];
 			$new_volume_data = get_term_by('slug', $new_volume, 'volume');
 			$volume_name = $new_volume_data->name;
-		} 
-	
+		}
+
 	return $volume_name;
 }
-	
 
-	
-		
+
+
+
 function delete_magazine_transients($post_id) {
 	global $post;
-	if (isset($_GET['post_type'])) {		
+	if (isset($_GET['post_type'])) {
 		$post_type = $_GET['post_type'];
 	}
 	else {
@@ -237,11 +237,11 @@ function delete_magazine_transients($post_id) {
 		$issues = array();
 		foreach($volumes as $volume) {
 			$issues[] = $volume->slug;
-		}	
+		}
 	switch($post_type) {
 
 		case 'post' :
-		  	foreach ($issues as $issue) { 
+		  	foreach ($issues as $issue) {
 		  		delete_transient('exclusives_' . $issue . '_query');
 		  		delete_transient('alumni_' . $issue . '_query');
 		  		delete_transient('toc_dropdown_' . $issue . '_query');
@@ -249,23 +249,23 @@ function delete_magazine_transients($post_id) {
 		  	}
 		  	delete_transient('web_exclusives_query');
 		break;
-				
+
 		case 'page' :
-		  	foreach ($issues as $issue) { 
+		  	foreach ($issues as $issue) {
 		  		delete_transient('features_' . $issue . '_query');
 		  		delete_transient('front_features_' . $issue . '_query');
 		  	}
-		break;		
+		break;
 	}
-} 
+}
 add_action('save_post','delete_magazine_transients');
 
 
-function add_category_to_pages() {  
+function add_category_to_pages() {
 // Add tag metabox to page
-register_taxonomy_for_object_type('post_tag', 'page'); 
+register_taxonomy_for_object_type('post_tag', 'page');
 // Add category metabox to page
-register_taxonomy_for_object_type('category', 'page');  
+register_taxonomy_for_object_type('category', 'page');
 }
 add_action( 'admin_init', 'add_category_to_pages' );
 
@@ -281,12 +281,12 @@ return $button_markup;
 
 // Numbered Pagination
 if ( !function_exists( 'wpex_pagination' ) ) {
-	
+
 	function wpex_pagination() {
-		
+
 		$prev_arrow = is_rtl() ? '&rarr;' : '&larr;';
 		$next_arrow = is_rtl() ? '&larr;' : '&rarr;';
-		
+
 		global $wp_query;
 		$total = $wp_query->max_num_pages;
 		$big = 999999999; // need an unlikely integer
@@ -310,18 +310,18 @@ if ( !function_exists( 'wpex_pagination' ) ) {
 			 ) );
 		}
 	}
-	
+
 }
 
 /**
- * Create Custom Image Sizes for Responsive 
+ * Create Custom Image Sizes for Responsive
  * Based on Foundations breakpoints for SM, MD, LG
  */
 function namespace_add_image_sizes(){
   /* Soft proportional crops */
   add_image_size( 'xtra-large-hero', 1920 );
   add_image_size( 'large-hero', 1400 );
-  add_image_size( 'medium-hero', 1024 ); 
+  add_image_size( 'medium-hero', 1024 );
   add_image_size( 'mobile-hero', 640 );
 }
 add_action( 'init', 'namespace_add_image_sizes');
@@ -333,4 +333,7 @@ function theme_slug_setup() {
 add_action( 'after_setup_theme', 'theme_slug_setup' );
 
 include_once (TEMPLATEPATH . '/assets/functions/asmag-metabox.php');
+
+// Register scripts and stylesheets
+require_once(get_template_directory().'/assets/functions/enqueue-scripts.php');
 ?>

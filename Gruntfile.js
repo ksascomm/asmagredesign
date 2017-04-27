@@ -85,18 +85,12 @@ module.exports = function(grunt) {
             src: ['assets/bower_components/foundation/js/*'],
             dest: 'assets/js'
         },
-        foundation_plugins: {
-            expand: true,
-            flatten: true,
-            src: ['assets/bower_components/foundation/js/foundation/*'],
-            dest: 'assets/js/foundation'
-        },        
         modernizr: {
             expand: true,
             flatten: true,
             src: ['assets/bower_components/modernizr/modernizr.js'],
             dest: 'assets/js/'
-        }
+        },
     },
 
     //browserSync

@@ -163,6 +163,8 @@
 	$d('a[data-reveal-id="modal_' + filterFromQuerystring + '"]').click();
 	
 });
+	$d(document).foundation('clearing', 'reflow');
+
 </script>
 <?php } ?>
 

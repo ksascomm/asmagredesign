@@ -7,7 +7,7 @@
 		</ul>
 
 	<div class="gallery-container row">
-		<ul class="twelve columns" data-clearing>
+		<ul class="small-12 columns" data-clearing>
 			<li><a href="../../wp-content/themes/asmagredesign/parts/utl-galleries/gallery-two/1.jpg">
 			   <img src="../../wp-content/themes/asmagredesign/parts/utl-galleries/gallery-two/thumbs/thm1.jpg" data-caption="The spacious atrium offers lots of opportunities for students and professors to meet, share ideas, and grab a bite to eat. " />
 			</a></li>
@@ -79,7 +79,7 @@
 			<li><a href="#" data-reveal-id="modal_gallery_three"><span class="icon-slideshow"></span>Gallery</a></li>
 		</ul>
 	<div class="gallery-container row">
-		<ul class="twelve columns" data-clearing>
+		<ul class="small-12 columns" data-clearing>
 			<li><a href="../../wp-content/themes/asmagredesign/parts/utl-galleries/gallery-three/1.jpg">
 			   <img src="../../wp-content/themes/asmagredesign/parts/utl-galleries/gallery-three/thumbs/thm1.jpg" data-caption="Biophysics students use complex computer modeling in their research and studies. The hypotheses produced with the computational studies can then be tested experimentally in the lab." />
 			</a></li>
@@ -127,7 +127,7 @@
 			<li><a href="#" data-reveal-id="modal_gallery_four"><span class="icon-slideshow"></span>Gallery</a></li>
 		</ul>
 	<div class="gallery-container row">
-		<ul class="twelve columns" data-clearing>
+		<ul class="small-12 columns" data-clearing>
 			<li><a href="../../wp-content/themes/asmagredesign/parts/utl-galleries/gallery-four/1.jpg">
 			   <img src="../../wp-content/themes/asmagredesign/parts/utl-galleries/gallery-four/thumbs/thm1.jpg" data-caption="Neuroscience students need to see and touch the brains they study. In the new space, each station has its own video screen, so students can watch the professor’s procedures while completing their own, and then share their work with their peers on 55-inch HDTV’s mounted on the lab’s walls." />
 			</a></li>
@@ -193,7 +193,7 @@
 			<li><a href="#" data-reveal-id="modal_video_five"><span class="icon-video"></span>Video</a></li>
 		</ul>
 	<div class="gallery-container row">
-		<ul class="twelve columns" data-clearing>
+		<ul class="small-12 columns" data-clearing>
 			<li><a href="../../wp-content/themes/asmagredesign/parts/utl-galleries/gallery-five/1.jpg">
 			   <img src="../../wp-content/themes/asmagredesign/parts/utl-galleries/gallery-five/thumbs/thm1.jpg" data-caption="The new chemistry laboratories boast 96 roomy hoods and benches. The configuration—six pods of 16 hoods—allows instructors to differentiate the work students do. With different labs sharing the same floors, students can explore how other disciplines relate to their own." />
 			</a></li>
@@ -256,7 +256,7 @@
 			<li><a href="#" data-reveal-id="modal_gallery_six"><span class="icon-slideshow"></span>Gallery</a></li>
 		</ul>
 	<div class="gallery-container row">
-		<ul class="twelve columns" data-clearing>
+		<ul class="small-12 columns" data-clearing>
 			<li><a href="../../wp-content/themes/asmagredesign/parts/utl-galleries/gallery-six/1.jpg">
 			   <img src="../../wp-content/themes/asmagredesign/parts/utl-galleries/gallery-six/thumbs/thm1.jpg" data-caption="Biology students conduct a wide range of experiments in the new laboratory, including the identification and growth of phages—bacteria—gathered from soil." />
 			</a></li>
@@ -308,7 +308,7 @@
 			<li><a href="#" data-reveal-id="modal_gallery_seven"><span class="icon-slideshow"></span>Gallery</a></li>
 		</ul>
 	<div class="gallery-container row">
-		<ul class="twelve columns" data-clearing>
+		<ul class="small-12 columns" data-clearing>
 
 			<li><a href="../../wp-content/themes/asmagredesign/parts/utl-galleries/gallery-seven/1.jpg">
 			   <img src="../../wp-content/themes/asmagredesign/parts/utl-galleries/gallery-seven/thumbs/thm1.jpg" data-caption="The sweeping glass windows on the north side of the new building offer passers-by constantly changing views, filled with reflections and light." />
