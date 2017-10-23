@@ -64,7 +64,7 @@ class KSAS_GoogleSearchResults extends KSAS_SearchResults {
         if ($this->start > 0) {
             $searchParams['start'] = $this->start;
         }
-        $url = "http://search.johnshopkins.edu/search?output=xml&site=ksas_magazine&client=ksas_frontend";
+        $url = "https://search.johnshopkins.edu/search?output=xml&site=ksas_magazine&client=ksas_frontend";
         foreach ($searchParams as $key => $value) {
             $url .= "&$key=$value";
         }
@@ -73,6 +73,8 @@ class KSAS_GoogleSearchResults extends KSAS_SearchResults {
         curl_setopt($ch, CURLOPT_HEADER, false);
         curl_setopt($ch, CURLOPT_TIMEOUT, 10);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true); //when switching $url to https, cURL doesn't redirect unless you specify it to!
+        
         $xml = curl_exec($ch);
         if (!$xml) {
             $errorCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
