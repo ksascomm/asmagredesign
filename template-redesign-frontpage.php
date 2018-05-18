@@ -46,10 +46,12 @@ Template Name: Redesign Front Page
 			'post_type' => 'page',
 			'volume' => $volume,
 			'post_parent' => $parent,
-			'page_id' => 7271,			
+			'page_id' => 9078,
+			//page_id = cover story page ID!			
 			));
 
-		$exclude_ids = array( 7271 );
+		$exclude_ids = array( 9078 );
+		//make cover story main header!
 		$asmag_features_query = new WP_Query(array(
 			'post_type' => 'page',
 			'volume' => $volume,
