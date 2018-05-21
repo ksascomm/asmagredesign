@@ -20,17 +20,12 @@
 			</div>
 		</div>
 		<div class="small-12 medium-3 columns">
-			<div class="row">
-				<div class="small-4 columns">
-	                <a href="http://www.youtube.com/user/jhuksas" title="YouTube"><span class="fa fa-3x fa-fw fa-youtube-square"></span></a>
-	            </div>
-	            <div class="small-4 columns">
-	                <a href="http://facebook.com/jhuksas" title="Facebook"><span class="fa fa-3x fa-fw fa-facebook-square"></span></a>
-	            </div>
-	            <div class="small-4 columns">
-	            <a href="<?php echo home_url(); ?>/feed"><span class="fa fa-3x fa-fw fa-rss-square"></span></a>
-	            </div>
-            </div>
+			<ul class="inline-list">
+				<li><a href="http://facebook.com/JHUArtsSciences"><span class="fa fa-facebook-official fa-2x"></span><span class="show-for-sr">Facebook</span></a></li>
+				<li><a href="https://www.instagram.com/JHUArtsSciences/"><span class="fa fa-instagram fa-2x"></span><span class="show-for-sr">Instagram</span></a></li>
+				<li><a href="https://twitter.com/JHUArtsSciences"><span class="fa fa-twitter fa-2x"></span><span class="show-for-sr">Twitter</span></a></li>
+				<li><a href="https://www.youtube.com/user/jhuksas"><span class="fa fa-youtube-square fa-2x"></span><span class="show-for-sr">YouTube</span></a></li>
+			</ul>
          </div>
 	</div>
   	<div class="row" id="copyright">
