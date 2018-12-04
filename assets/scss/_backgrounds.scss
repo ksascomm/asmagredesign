@@ -180,6 +180,9 @@ button, .button {
   font-weight: normal;
   box-shadow: none;
   display: inline-block;
+  &.square {
+    border-radius: 0;
+  }
 }
 
 button:hover {

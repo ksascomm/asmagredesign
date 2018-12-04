@@ -99,6 +99,12 @@ ul.page-numbers {
   height: 0;
 }
 
+.paging-search-results {
+  .page-numbers:after {
+    display: inherit;
+  }
+}
+
 ul.page-numbers li {
   display: block;
   float: left;

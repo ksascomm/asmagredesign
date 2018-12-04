@@ -128,6 +128,15 @@ select.issue {
   .links {
     margin-top: 9px;
   }
+  button, .button {
+    border-radius: 0px;
+    background: #ccc;
+    border-top-right-radius:7px;
+    border-bottom-right-radius:7px;
+  }
+  .fa {
+    color: $black;
+  }
 }
 
 .links li {
@@ -196,13 +205,13 @@ select.issue {
 
 #search-bar input {
   &[type="text"] {
-    height: 31px;
+    //height: 31px;
     margin-bottom: 0;
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
     display: inline;
     float: left;
-    width: 75%;
+    //width: 75%;
     border: none;
   }
   &[type="submit"] {

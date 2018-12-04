@@ -12,11 +12,22 @@
 				<h5><a href="<?php echo get_site_url(); ?>/contact/">Contact Us</a></h5>
    			</div>
 			<div class="row" id="search-bar">
-				<form method="GET" action="<?php echo site_url('/search'); ?>">
-					<input type="text" name="q" placeholder="Search this site" aria-label="search"/>
-					<input type="submit" class="icon-search" value="&#48;" />
-					<input type="hidden" name="site" value="ksas_magazine" />
-				</form>
+				<form method="GET" action="<?php echo home_url( '/' ); ?>" role="search" aria-label="Utility Bar Search">
+		            <div class="row">
+		                <div class="large-7 columns">
+		                    <div class="row collapse">
+		                        <div class="small-10 columns">
+		                            <input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" placeholder="Search this site" aria-label="Search This Website"/>
+		                        </div>
+		                        <div class="small-2 columns">
+		                            <button class="button postfix">
+		                            <span class="fa fa-search" aria-hidden="true"></span>
+		                            </button>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </form>
 			</div>
 		</div>
 		<div class="small-12 medium-4 columns">
