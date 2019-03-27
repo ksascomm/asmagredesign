@@ -10,6 +10,7 @@
 		<div class="small-12 medium-3 medium-offset-1 columns">
 			<div class="row"> 
 				<h5><a href="<?php echo get_site_url(); ?>/contact/">Contact Us</a></h5>
+				<h5><a href="<?php echo get_site_url(); ?>/subscribe/">Subscribe/Update Address</a></h5>
    			</div>
 			<div class="row" id="search-bar">
 				<form method="GET" action="<?php echo home_url( '/' ); ?>" role="search" aria-label="Utility Bar Search">
