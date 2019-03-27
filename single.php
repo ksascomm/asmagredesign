@@ -41,6 +41,21 @@
 					//End and reset query
 				$volume = get_the_volume($post); $volume_name = get_the_volume_name($post); endwhile; endif; wp_reset_query();?>
 		<aside class="small-12 large-4 columns" id="sidebar">
+		
+		<div class="small-12 columns">
+			<h4 style="margin-bottom: 8px;">Share This Story <span class="spacer"></span></h4>
+			<ul class="inline-list">	
+				<li><a style="color: #005eb8" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode( get_permalink() ); ?>" target="_blank"><span class="fa fa-facebook-official fa-2x"></span><span class="show-for-sr">Facebook</span></a></li>
+				<li><a style="color: #005eb8" href="https://twitter.com/intent/tweet?text=<?php echo urlencode( get_the_title() ) ?>&amp;url=<?php echo urlencode( get_permalink() ); ?>&amp;via=JHUArtsSciences" target="_blank" title="Share this on Twitter"><span class="fa fa-twitter fa-2x"></span><span class="show-for-sr">Twitter</span></a></li>
+				<li>
+					<a style="color: #005eb8" href="#" data-reveal-id="myModal">
+						<span class="fa fa-envelope fa-2x"></span><span class="show-for-sr">Email</span>
+					</a>
+				</li>
+			</ul>
+			<?php get_template_part( 'parts/share', 'story-modal' ); ?>
+		</div>
+
 			<div class="small-12 columns <?php echo $catslug; ?>">
 			<h4>Navigation <span class="spacer"></span></h4>
 				<ul class="breadcrumbs">

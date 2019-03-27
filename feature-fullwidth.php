@@ -85,12 +85,27 @@ $hero_sm = $sm_hero_array[0]; // Mobile Hero
 			  			<?php endif; ?>
 						<p class="othercredits"><?php if ( get_post_meta($post->ID, 'ecpt_other_credits', true) ) : ?> <?php echo get_post_meta($post->ID, 'ecpt_other_credits', true); ?><?php endif; ?></p>
 			    	</div>
-			    	<div class="small-12 large-8 large-offset-2 columns feature-intro">
+			    	<div class="small-12 large-10 columns feature-intro">
 						<?php the_content(); ?>
 					</div>
 			    	<div class="small-12 large-2 columns show-for-large-up">
-						<p class="othercredits"><?php if ( get_post_meta($post->ID, 'ecpt_other_credits', true) ) : ?> <?php echo get_post_meta($post->ID, 'ecpt_other_credits', true); ?><?php endif; ?></p>
+						<?php if ( get_post_meta($post->ID, 'ecpt_other_credits', true) ) : ?>
+							<p class="othercredits">
+								<?php echo get_post_meta($post->ID, 'ecpt_other_credits', true); ?>	
+							</p>
+						<?php endif; ?>
+						<ul class="inline-list">	
+							<li><h5>Share This Story</h5></li>
+							<li><a style="color: #005eb8" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode( get_permalink() ); ?>" target="_blank"><span class="fa fa-facebook-official fa-2x"></span><span class="show-for-sr">Facebook</span></a></li>
+							<li><a style="color: #005eb8" href="https://twitter.com/intent/tweet?text=<?php echo urlencode( get_the_title() ) ?>&amp;url=<?php echo urlencode( get_permalink() ); ?>&amp;via=JHUArtsSciences" target="_blank" title="Share this on Twitter"><span class="fa fa-twitter fa-2x"></span><span class="show-for-sr">Twitter</span></a></li>
+							<li>
+								<a style="color: #005eb8" href="#" data-reveal-id="myModal">
+									<span class="fa fa-envelope fa-2x"></span><span class="show-for-sr">Email</span>
+								</a>
+							</li>
+						</ul>
 			    	</div>
+					<?php get_template_part( 'parts/share', 'story-modal' ); ?>	
 				</div>
 			<?php endif;?>	
 		<!--End first section -->		
