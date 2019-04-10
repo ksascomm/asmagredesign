@@ -106,7 +106,7 @@ module.exports = function(grunt) {
             },
             options: {
                 watchTask: true,
-                proxy: "bicycle.dev/magazine"
+                proxy: "krieger.local/magazine"
             }
         }
     },
