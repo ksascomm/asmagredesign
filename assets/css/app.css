@@ -10415,7 +10415,7 @@ table.gsc-resultsHeader {
   border-right: 1px solid #E5E2E0;
   border-bottom: 1px solid #E5E2E0; }
 
-.gsc-input-box, table#gs_id50 {
+.gsc-input-box, table#gs_id50, table.gsc-table-result {
   border: none !important; }
 
 form.gsc-search-box.gsc-search-box-tools {
@@ -10454,6 +10454,11 @@ button.gsc-search-button.gsc-search-button-v2 {
       font-size: 1.5rem !important; }
   .gs-webResult.gs-result .gsc-url-top {
     font-size: 1.25rem; }
+    .gs-webResult.gs-result .gsc-url-top .gs-bidi-start-align.gs-visibleUrl.gs-visibleUrl-long::before {
+      font-family: FontAwesome;
+      content: '\f0ac';
+      font-style: normal;
+      padding-right: .4rem; }
   .gs-webResult.gs-result .gs-bidi-start-align.gs-snippet {
     font-size: 1rem; }
   .gs-webResult.gs-result .gs-bidi-start-align.gs-visibleUrl.gs-visibleUrl-long {
@@ -10474,6 +10479,9 @@ input#gsc-i-id1 {
   font-family: "gentona-semibold", "Myriad W01 SmBd Cnd", Arial, sans-serif;
   font-weight: 600;
   font-style: normal; }
+
+.gsc-result .gs-title {
+  height: inherit !important; }
 
 @media only screen and (max-width: 40em) {
   .post-heading h2 {

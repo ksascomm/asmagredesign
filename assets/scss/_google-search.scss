@@ -13,7 +13,7 @@ table.gsc-resultsHeader {
 	border-bottom:  1px solid $silver;
 }
 
-.gsc-input-box, table#gs_id50 {
+.gsc-input-box, table#gs_id50, table.gsc-table-result {
 	border: none !important;
 }
 
@@ -61,6 +61,14 @@ button.gsc-search-button.gsc-search-button-v2 {
 	}
 	.gsc-url-top {
 		font-size: 1.25rem;
+		.gs-bidi-start-align.gs-visibleUrl.gs-visibleUrl-long {
+			&::before {
+				font-family: FontAwesome;
+				content: '\f0ac';
+				font-style: normal;
+				padding-right: .4rem;
+			}
+		}			
 	}
 	.gs-bidi-start-align.gs-snippet {
 		font-size: 1rem;
@@ -87,4 +95,8 @@ input#gsc-i-id1 {
 	font-family: $font-header;
 	font-weight: 600;
 	font-style: normal;
+}
+
+.gsc-result .gs-title {
+	height: inherit !important;
 }
