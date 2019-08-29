@@ -76,7 +76,7 @@
 					        <!--  Daily Grind Cafe -->
 					        	<div id="Q1" class="data">
 				        		<div class="banner">
-					        		<img src="<?php bloginfo('template_url'); ?>/parts/blc/headers/Q1.jpg">
+					        		<img <img alt="Daily Grind" src="<?php bloginfo('template_url'); ?>/parts/blc/headers/Q1.jpg">
 				        		</div>
 				        		
 				        		<div class="identify">
@@ -95,9 +95,9 @@
 			        			<div class="photos">
 				        			<div class="title">Photos</div>
 				        			<div class="thumbs">
-					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/1A.jpg" rel="lightbox-q1"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/1Athumb.jpg" alt=""></a>
-					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/1B.jpg" rel="lightbox-q1"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/1Bthumb.jpg" alt=""></a>
-					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/1C.jpg" rel="lightbox-q1"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/1Cthumb.jpg" alt=""></a>			
+					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/1A.jpg" rel="lightbox-q1"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/1Athumb.jpg" alt="Thumb1"></a>
+					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/1B.jpg" rel="lightbox-q1"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/1Bthumb.jpg" alt="Thumb2"></a>
+					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/1C.jpg" rel="lightbox-q1"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/1Cthumb.jpg" alt="Thumb3"></a>			
 					        		</div>
 				        		</div>
 				        		
@@ -106,7 +106,7 @@
 					        <!--  Room With a View -->
 					        	<div id="Q2" class="data">
 				        		<div class="banner">
-					        		<img src="<?php bloginfo('template_url'); ?>/parts/blc/headers/Q2.jpg">
+					        		<img alt="Room Banner" src="<?php bloginfo('template_url'); ?>/parts/blc/headers/Q2.jpg">
 				        		</div>
 				        		
 				        		<div class="identify">
@@ -125,8 +125,8 @@
 			        			<div class="photos">
 				        			<div class="title">Photos</div>
 				        			<div class="thumbs">
-					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/2C.jpg" rel="lightbox-q2"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/2Cthumb.jpg" alt=""></a>
-					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/2B.jpg" rel="lightbox-q2"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/2Bthumb.jpg" alt=""></a>
+					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/2C.jpg" rel="lightbox-q2"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/2Cthumb.jpg" alt="Photo Thumbnail"></a>
+					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/2B.jpg" rel="lightbox-q2"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/2Bthumb.jpg" alt="Photo Thumbnail"></a>
 					        		</div>
 				        		</div>
 				        	</div>
@@ -134,7 +134,7 @@
 				        	<!--  Study Room -->
 					        	<div id="Q3" class="data">
 				        		<div class="banner">
-					        		<img src="<?php bloginfo('template_url'); ?>/parts/blc/headers/Q3.jpg">
+					        		<img alt="Study Room Banner" src="<?php bloginfo('template_url'); ?>/parts/blc/headers/Q3.jpg">
 				        		</div>
 				        		
 				        		<div class="identify">
@@ -156,7 +156,7 @@
 					        <!--  Quad Entrance -->
 					        	<div id="Q4" class="data">
 				        		<div class="banner">
-					        		<img src="<?php bloginfo('template_url'); ?>/parts/blc/headers/Q4.jpg">
+					        		<img alt="Quad Banner" src="<?php bloginfo('template_url'); ?>/parts/blc/headers/Q4.jpg">
 				        		</div>
 				        		
 				        		
@@ -180,7 +180,7 @@
 					        <!--  Quiet Reading Room -->
 					        	<div id="Q5" class="data">
 				        		<div class="banner">
-					        		<img src="<?php bloginfo('template_url'); ?>/parts/blc/headers/Q5.jpg">
+					        		<img alt="Quiet Room Banner" src="<?php bloginfo('template_url'); ?>/parts/blc/headers/Q5.jpg">
 				        		</div>
 				        		
 				        		<div class="identify">
@@ -202,7 +202,7 @@
 					        <!--  Choice Seating -->
 					        	<div id="Q6" class="data">
 				        		<div class="banner">
-					        		<img src="<?php bloginfo('template_url'); ?>/parts/blc/headers/Q6.jpg">
+					        		<img alt="Choice Seating Banner" src="<?php bloginfo('template_url'); ?>/parts/blc/headers/Q6.jpg">
 				        		</div>
 				        		
 				        		<div class="identify">
@@ -224,7 +224,7 @@
 					        <!--  Study Room -->
 					        	<div id="M1" class="data">
 				        		<div class="banner">
-					        		<img src="<?php bloginfo('template_url'); ?>/parts/blc/headers/M7.jpg">
+					        		<img alt="Study Room Banner" src="<?php bloginfo('template_url'); ?>/parts/blc/headers/M7.jpg">
 				        		</div>
 				        		
 				        		<div class="identify">
@@ -243,8 +243,8 @@
 					        		<div class="photos">
 				        			<div class="title">Photos</div>
 				        			<div class="thumbs">
-					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/7A.jpg" rel="lightbox-m1"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/7Athumb.jpg" alt=""></a>
-					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/7B.jpg" rel="lightbox-m1"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/7Bthumb.jpg" alt=""></a>
+					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/7A.jpg" rel="lightbox-m1"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/7Athumb.jpg" alt="Photo Thumbnail"></a>
+					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/7B.jpg" rel="lightbox-m1"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/7Bthumb.jpg" alt="Photo Thumbnail"></a>
 					        		</div>
 				        	
 			        			</div>
@@ -254,7 +254,7 @@
 					        <!--  See the Light -->
 					        	<div id="M2" class="data">
 				        		<div class="banner">
-					        		<img src="<?php bloginfo('template_url'); ?>/parts/blc/headers/M8.jpg">
+					        		<img alt="Light Banner" src="<?php bloginfo('template_url'); ?>/parts/blc/headers/M8.jpg">
 				        		</div>
 				        		
 				        		<div class="identify">
@@ -276,7 +276,7 @@
 					        <!--  Shared Spaces -->
 					        	<div id="M3" class="data">
 				        		<div class="banner">
-					        		<img src="<?php bloginfo('template_url'); ?>/parts/blc/headers/M10.jpg">
+					        		<img alt="Shared Spaces Banner" src="<?php bloginfo('template_url'); ?>/parts/blc/headers/M10.jpg">
 				        		</div>
 				        		
 				        		<div class="identify">
@@ -295,8 +295,8 @@
 					        		<div class="photos">
 				        			<div class="title">Photos</div>
 				        			<div class="thumbs">
-					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/10A.jpg" rel="lightbox-m3"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/10Athumb.jpg" alt=""></a>
-					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/10B.jpg" rel="lightbox-m3"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/10Bthumb.jpg" alt=""></a>
+					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/10A.jpg" rel="lightbox-m3"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/10Athumb.jpg" alt="Photo Thumbnail"></a>
+					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/10B.jpg" rel="lightbox-m3"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/10Bthumb.jpg" alt="Photo Thumbnail"></a>
 					        		</div>
 				        	</div>
 				        	</div>
@@ -304,7 +304,7 @@
 					        <!--  Seminar Room -->
 					        	<div id="M4" class="data">
 					        		<div class="banner">
-						        		<img src="<?php bloginfo('template_url'); ?>/parts/blc/headers/M9.jpg">
+						        		<img alt="Seminar Banner" src="<?php bloginfo('template_url'); ?>/parts/blc/headers/M9.jpg">
 					        		</div>
 					        		
 				        		<div class="identify">
@@ -323,8 +323,8 @@
 					        		<div class="photos">
 				        			<div class="title">Photos</div>
 				        			<div class="thumbs">
-					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/9A.jpg" rel="lightbox-m4"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/9Athumb.jpg" alt=""></a>
-					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/9B.jpg" rel="lightbox-m4"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/9Bthumb.jpg" alt=""></a>
+					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/9A.jpg" rel="lightbox-m4"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/9Athumb.jpg" alt="Photo Thumbnail"></a>
+					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/9B.jpg" rel="lightbox-m4"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/9Bthumb.jpg" alt="Photo Thumbnail"></a>
 					        		</div>
 					        	</div>
 
@@ -333,7 +333,7 @@
 					        <!--  Special Collections -->
 					        	<div id="M5" class="data">
 					        		<div class="banner">
-						        		<img src="<?php bloginfo('template_url'); ?>/parts/blc/headers/M11.jpg">
+						        		<img alt="Special Collections Banner" src="<?php bloginfo('template_url'); ?>/parts/blc/headers/M11.jpg">
 					        		</div>
 					        		
 				        		<div class="identify">
@@ -355,7 +355,7 @@
 					        <!--  MSEL-BLC -->
 					        <div id="A1" class="data">
 				        		<div class="banner">
-					        		<img src="<?php bloginfo('template_url'); ?>/parts/blc/headers/A12.jpg">
+					        		<img alt="MSEL-BLC Banner" src="<?php bloginfo('template_url'); ?>/parts/blc/headers/A12.jpg">
 				        		</div>
 				        		
 				        		<div class="identify">
@@ -377,7 +377,7 @@
 					        <!--  Conservation & Preservation -->
 					        <div id="A3" class="data">
 				        		<div class="banner">
-					        		<img src="<?php bloginfo('template_url'); ?>/parts/blc/headers/A13.jpg">
+					        		<img alt="Conservation Banner" src="<?php bloginfo('template_url'); ?>/parts/blc/headers/A13.jpg">
 				        		</div>
 				        		
 				        		
@@ -401,7 +401,7 @@
 					        <!--  Technology Room -->
 					        <div id="A4" class="data">
 				        		<div class="banner">
-					        		<img src="<?php bloginfo('template_url'); ?>/parts/blc/headers/A14.jpg">
+					        		<img alt="Technology Banner" src="<?php bloginfo('template_url'); ?>/parts/blc/headers/A14.jpg">
 				        		</div>
 				        		
 				        		
@@ -424,7 +424,7 @@
 					        <!--  Visualization Board -->
 					        <div id="A5" class="data">
 				        		<div class="banner">
-					        		<img src="<?php bloginfo('template_url'); ?>/parts/blc/headers/A15.jpg">
+					        		<img alt="Visualization Banner" src="<?php bloginfo('template_url'); ?>/parts/blc/headers/A15.jpg">
 				        		</div>
 				        		
 				        		
@@ -444,9 +444,9 @@
 				        			<div class="photos">
 				        			<div class="title">Photos</div>
 				        			<div class="thumbs">
-					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/15A.jpg" rel="lightbox-a5"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/15Athumb.jpg" alt=""></a>
-					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/15B.jpg" rel="lightbox-a5"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/15Bthumb.jpg" alt=""></a>
-					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/15C.jpg" rel="lightbox-a5"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/15Cthumb.jpg" alt=""></a>			
+					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/15A.jpg" rel="lightbox-a5"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/15Athumb.jpg" alt="Photo Thumbnail"></a>
+					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/15B.jpg" rel="lightbox-a5"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/15Bthumb.jpg" alt="Photo Thumbnail"></a>
+					        			<a href="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/15C.jpg" rel="lightbox-a5"><img src="<?php bloginfo('template_url'); ?>/parts/blc/slideshow/15Cthumb.jpg" alt="Photo Thumbnail"></a>			
 					        		</div>				        	
 					        		</div>
 
@@ -455,7 +455,7 @@
 					        <!--  Shared Spaces -->
 					        <div id="A6" class="data">
 				        		<div class="banner">
-					        		<img src="<?php bloginfo('template_url'); ?>/parts/blc/headers/A16.jpg">
+					        		<img alt="Shared Spaces Banner" src="<?php bloginfo('template_url'); ?>/parts/blc/headers/A16.jpg">
 				        		</div>
 				        		
 				        		
@@ -478,7 +478,7 @@
 					        <!--  South Entrance -->
 					        <div id="A7" class="data">
 				        		<div class="banner">
-					        		<img src="<?php bloginfo('template_url'); ?>/parts/blc/headers/A17.jpg">
+					        		<img alt="South" src="<?php bloginfo('template_url'); ?>/parts/blc/headers/A17.jpg">
 				        		</div>
 				        		
 				        		

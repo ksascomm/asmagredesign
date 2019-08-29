@@ -64,12 +64,12 @@ $k(document).ready(function(){
 			<h4>By Mary Zajac</h4>
 			<a href="#" id="part2nav" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/main-180x120.jpg"></a>
 			<ul>
-				<li><a href="#" id="part3nav" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/1-60x60.jpg"></a></li>
-				<li><a href="#" id="part4nav" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/2-60x60.jpg"></a></li>
-				<li><a href="#" id="part5nav" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/3-60x60.jpg"></a></li>
-				<li><a href="#" id="part6nav" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/4-60x60.jpg"></a></li>
-				<li><a href="#" id="part7nav" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/5-60x60.jpg"></a></li>
-				<li><a href="#" id="part8nav" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/6-60x60.jpg"></a></li>
+				<li><a href="#" id="part3nav" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/1-60x60.jpg" alt="thumb1"></a></li>
+				<li><a href="#" id="part4nav" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/2-60x60.jpg" alt="thumb2"></a></li>
+				<li><a href="#" id="part5nav" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/3-60x60.jpg" alt="thumb3"></a></li>
+				<li><a href="#" id="part6nav" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/4-60x60.jpg" alt="thumb4"></a></li>
+				<li><a href="#" id="part7nav" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/5-60x60.jpg" alt="thumb5"></a></li>
+				<li><a href="#" id="part8nav" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/6-60x60.jpg"alt="thumb6" ></a></li>
 			</ul>
 			<p class="photocredit1">Background photo:<br>
 			Art is on display in and around Johns Hopkins, including in the Levi Sculpture Garden at the nearby Baltimore Museum of Art, home to this 14-foot-high, red metal sculpture called <em>100 Yard Dash</em> by James Van Rensseleaer</p>
@@ -112,12 +112,12 @@ $k(document).ready(function(){
 				<div class="bottom-nav">
 			<ul>
 				<li><h3 class="storynav">Story Navigation:</h3></li>
-				<li><a href="#" id="3bot" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/1-60x60.jpg"></a></li>
-				<li><a href="#" id="4bot" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/2-60x60.jpg"></a></li>
-				<li><a href="#" id="5bot" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/3-60x60.jpg"></a></li>
-				<li><a href="#" id="6bot" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/4-60x60.jpg"></a></li>
-				<li><a href="#" id="7bot" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/5-60x60.jpg"></a></li>
-				<li><a href="#" id="8bot" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/6-60x60.jpg"></a></li>
+				<li><a href="#" id="3bot" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/1-60x60.jpg" alt="thumb7"></a></li>
+				<li><a href="#" id="4bot" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/2-60x60.jpg" alt="thumb8"></a></li>
+				<li><a href="#" id="5bot" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/3-60x60.jpg" alt="thumb9"></a></li>
+				<li><a href="#" id="6bot" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/4-60x60.jpg" alt="thumb10"></a></li>
+				<li><a href="#" id="7bot" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/5-60x60.jpg" alt="thumb11"></a></li>
+				<li><a href="#" id="8bot" class="leftnav"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/v9n2/6-60x60.jpg" alt="thumb12"></a></li>
 			</ul>
 
 		</div><div class="clearboth"></div>

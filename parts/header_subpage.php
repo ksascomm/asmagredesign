@@ -11,6 +11,11 @@
                   ));
 { ?> 
 
+<style>
+  .top-bar {
+    height: 2.8125rem !important;
+  }
+</style>
 <nav class="top-bar" data-topbar role="navigation">
   <div class="row">
        <div class="show-for-small-only">
@@ -32,7 +37,7 @@
     <!-- Right Nav Section -->
     <ul class="right">
       <li class="has-dropdown">
-        <a href="#">Departments</a>
+        <a class>Departments</a>
         <ul class="dropdown">
         <li><a href="<?php echo home_url(); ?>/volume/feature/">Features</a></li>
             <?php if ( ! empty( $departments ) && ! is_wp_error( $departments ) ) {

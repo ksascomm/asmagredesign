@@ -1,5 +1,5 @@
 <div id="intern1">
-	<div class="interntitle"><img src="<?php bloginfo('template_url'); ?>/assets/images/fall11/arrowblue.png" class="floatright"><h3>Gaining Their Trust<a href="#intern1story"><span class="storyjump">JUMP TO STORY</span></a></h3> </div>
+	<div class="interntitle"><img alt="arrow" src="<?php bloginfo('template_url'); ?>/assets/images/fall11/arrowblue.png" class="floatright"><h3>Gaining Their Trust<a href="#intern1story"><span class="storyjump">JUMP TO STORY</span></a></h3> </div>
 
 	<div id="feature" class="row">
 		<a id="intern1story" name="intern1story"></a>
@@ -44,7 +44,7 @@
 <div id="intern1foot">
 	<div class="footmaterial">
 		<div class="caption">
-			<img src="<?php bloginfo('template_url'); ?>/assets/images/fall11/arrow.png" align="left" />
+			<img alt="arrow" src="<?php bloginfo('template_url'); ?>/assets/images/fall11/arrow.png" align="left" />
 			<h5>Video</h5>
 			<p>This is the video description</p>
 		</div>
@@ -58,7 +58,7 @@
 
 
 <div id="intern2">
-	<div class="interntitle"><img src="<?php bloginfo('template_url'); ?>/assets/images/fall11/arrowblue.png" class="floatright"><h3>A Teacher Is Born<a href="#intern2story"><span class="storyjump">JUMP TO STORY</span></a></h3> </div>
+	<div class="interntitle"><img alt="arrow" src="<?php bloginfo('template_url'); ?>/assets/images/fall11/arrowblue.png" class="floatright"><h3>A Teacher Is Born<a href="#intern2story"><span class="storyjump">JUMP TO STORY</span></a></h3> </div>
 	<div id="feature" class="row">
 		<a id="intern2story" name="intern2story"></a>
 		<div class="postmaterial">
@@ -98,7 +98,7 @@
 <div id="intern2foot">
 	<div class="footmaterial">
 		<div class="caption">
-			<img src="<?php bloginfo('template_url'); ?>/assets/images/fall11/arrow.png" align="left" />
+			<img alt="arrow" src="<?php bloginfo('template_url'); ?>/assets/images/fall11/arrow.png" align="left" />
 			<h5>Image Gallery</h5>
 		</div>
 		
@@ -126,7 +126,7 @@
 </div>
 
 <div id="intern3">
-	<div class="interntitle"><img src="<?php bloginfo('template_url'); ?>/assets/images/fall11/arrowblue.png" class="floatright"><h3>Taking Time to Talk &hellip; Skip, and Jump<a href="#intern3story"><span class="storyjump">JUMP TO STORY</span></a></h3> </div>
+	<div class="interntitle"><img alt="arrow" src="<?php bloginfo('template_url'); ?>/assets/images/fall11/arrowblue.png" class="floatright"><h3>Taking Time to Talk &hellip; Skip, and Jump<a href="#intern3story"><span class="storyjump">JUMP TO STORY</span></a></h3> </div>
 	<div id="feature" class="row">
 		<a id="intern3story" name="intern3story"></a>
 		<div class="postmaterial">
@@ -167,7 +167,7 @@
 <div id="intern3foot">
 	<div class="footmaterial">
 		<div class="caption">
-			<img src="<?php bloginfo('template_url'); ?>/assets/images/fall11/arrow.png" align="left" />
+			<img alt="arrow" src="<?php bloginfo('template_url'); ?>/assets/images/fall11/arrow.png" align="left" />
 			<h5>Video</h5>
 			<p>This is the video description</p>
 		</div>
@@ -180,7 +180,7 @@
 </div>
 
 <div id="intern4">
-	<div class="interntitle"><img src="<?php bloginfo('template_url'); ?>/assets/images/fall11/arrowblue.png" class="floatright"><h3>&#8220;Addiction Is Real&#8221;<a href="#intern4story"><span class="storyjump">JUMP TO STORY</span></a></h3> </div>
+	<div class="interntitle"><img alt="arrow" src="<?php bloginfo('template_url'); ?>/assets/images/fall11/arrowblue.png" class="floatright"><h3>&#8220;Addiction Is Real&#8221;<a href="#intern4story"><span class="storyjump">JUMP TO STORY</span></a></h3> </div>
 	<div id="feature" class="row">
 		<a id="intern4story" name="intern4story"></a>
 		<div class="postmaterial">
@@ -221,7 +221,7 @@
 <div id="intern4foot">
 	<div class="footmaterial">
 		<div class="caption">
-			<img src="<?php bloginfo('template_url'); ?>/assets/images/fall11/arrow.png" align="left" />
+			<img alt="arrow" src="<?php bloginfo('template_url'); ?>/assets/images/fall11/arrow.png" align="left" />
 			<h5>Image Gallery</h5>
 		</div>
 		
@@ -250,7 +250,7 @@
 </div>
 <div id="intern5">
 	<div id="feature" class="row">
-					<img src="<?php bloginfo('template_url'); ?>/assets/images/fall11/abby.jpg" align="left" />
+					<img alt="arrow" src="<?php bloginfo('template_url'); ?>/assets/images/fall11/abby.jpg" align="left" />
 				<span class="yellow">
 				<h4>Q<span class="smaller">&amp;</span>A</h4>
 				<h5>Abby Neyenhouse</h5>
@@ -342,7 +342,7 @@
 <div id="intern5foot">
 	<div class="footmaterial">
 		<div class="caption">
-			<img src="<?php bloginfo('template_url'); ?>/assets/images/fall11/arrow.png" align="left" />
+			<img alt="arrow" src="<?php bloginfo('template_url'); ?>/assets/images/fall11/arrow.png" align="left" />
 			<h5>Video</h5>
 			<p>This is the video description</p>
 		</div>

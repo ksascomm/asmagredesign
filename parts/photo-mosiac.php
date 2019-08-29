@@ -20,6 +20,7 @@
 						echo '" class="lightbox">
 									<img src="' . $mosaic_link[0];
 						echo '" title="' . $mosaic_caption;
+						echo '" alt="' . $mosaic_caption;
 						echo '" /></a></li>';		
 	                    }
 	                } ?>
