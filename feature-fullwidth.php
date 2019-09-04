@@ -94,12 +94,18 @@ $hero_sm = $sm_hero_array[0]; // Mobile Hero
 								<?php echo get_post_meta($post->ID, 'ecpt_other_credits', true); ?>	
 							</p>
 						<?php endif; ?>
+						<style>
+							ul.inline-list li a {
+								color: #005eb8;
+							}
+						</style>
+
 						<ul class="inline-list">	
 							<li><h5>Share This Story</h5></li>
-							<li><a style="color: #005eb8" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode( get_permalink() ); ?>" target="_blank"><span class="fa fa-facebook-official fa-2x"></span><span class="show-for-sr">Facebook</span></a></li>
-							<li><a style="color: #005eb8" href="https://twitter.com/intent/tweet?text=<?php echo urlencode( get_the_title() ) ?>&amp;url=<?php echo urlencode( get_permalink() ); ?>&amp;via=JHUArtsSciences" target="_blank" title="Share this on Twitter"><span class="fa fa-twitter fa-2x"></span><span class="show-for-sr">Twitter</span></a></li>
+							<li><a aria-label="Facebook Sharer" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode( get_permalink() ); ?>" target="_blank"><span class="fa fa-facebook-official fa-2x"></span><span class="show-for-sr">Facebook</span></a></li>
+							<li><a aria-label="Twitter Sharer" href="https://twitter.com/intent/tweet?text=<?php echo urlencode( get_the_title() ) ?>&amp;url=<?php echo urlencode( get_permalink() ); ?>&amp;via=JHUArtsSciences" target="_blank" title="Share this on Twitter"><span class="fa fa-twitter fa-2x"></span><span class="show-for-sr">Twitter</span></a></li>
 							<li>
-								<a style="color: #005eb8" href="#" data-reveal-id="myModal">
+								<a href="#" data-reveal-id="myModal">
 									<span class="fa fa-envelope fa-2x"></span><span class="show-for-sr">Email</span>
 								</a>
 							</li>

@@ -33,11 +33,11 @@
 		</div>
 		<div class="small-12 medium-4 columns">
 			<ul class="inline-list">
-				<li><a href="http://facebook.com/JHUArtsSciences"><span class="fa fa-facebook-official fa-2x"></span><span class="show-for-sr">Facebook</span></a></li>
-				<li><a href="https://www.instagram.com/JHUArtsSciences/"><span class="fa fa-instagram fa-2x"></span><span class="show-for-sr">Instagram</span></a></li>
-				<li><a href="https://twitter.com/JHUArtsSciences"><span class="fa fa-twitter fa-2x"></span><span class="show-for-sr">Twitter</span></a></li>
-				<li><a href="https://www.youtube.com/user/jhuksas"><span class="fa fa-youtube-square fa-2x"></span><span class="show-for-sr">YouTube</span></a></li>
-				<li><a href="<?php echo home_url(); ?>/feed"><span class="fa fa-rss-square fa-2x"></span><span class="show-for-sr">RSS</span></a></li>
+				<li><a aria-label="Facebook Link" href="http://facebook.com/JHUArtsSciences"><span class="fa fa-facebook-official fa-2x"></span><span class="show-for-sr">Facebook</span></a></li>
+				<li><a aria-label="Instagram Link" href="https://www.instagram.com/JHUArtsSciences/"><span class="fa fa-instagram fa-2x"></span><span class="show-for-sr">Instagram</span></a></li>
+				<li><a aria-label="Twitter Link" href="https://twitter.com/JHUArtsSciences"><span class="fa fa-twitter fa-2x"></span><span class="show-for-sr">Twitter</span></a></li>
+				<li><a aria-label="Youtube Link" href="https://www.youtube.com/user/jhuksas"><span class="fa fa-youtube-square fa-2x"></span><span class="show-for-sr">YouTube</span></a></li>
+				<li><a aria-label="RSS Feed" href="<?php echo home_url(); ?>/feed"><span class="fa fa-rss-square fa-2x"></span><span class="show-for-sr">RSS</span></a></li>
 			</ul>
          </div>
 	</div>

@@ -8370,9 +8370,9 @@ h4, h5, h6,
   font-style: normal; }
 
 .button.blue_bg {
-  background: #005eb8; }
+  background: #002d72; }
   .button.blue_bg:hover, .button.blue_bg:focus {
-    background: #005eb8; }
+    background: #002d72; }
 
 .white {
   color: #ffffff; }
@@ -8414,10 +8414,10 @@ h4, h5, h6,
   background: #007a53; }
 
 .students h4, .students.digest h4, .student-digest h4 {
-  color: #005eb8; }
+  color: #002d72; }
 
 .students .spacer, .students.digest .spacer, .student-digest .spacer {
-  background: #005eb8; }
+  background: #002d72; }
 
 .alumni h4 {
   color: #ff6900; }
@@ -8440,7 +8440,7 @@ hr.style15:after {
   font-size: 18px; }
 
 .main a, #footer-top a {
-  color: #005eb8;
+  color: #002d72;
   border-bottom: .125em dotted;
   border-bottom-color: rgba(0, 0, 0, 0.2); }
   .main a:hover, .main a:active, #footer-top a:hover, #footer-top a:active {
@@ -8452,14 +8452,14 @@ hr.style15:after {
 /* 5.1 Logo
 ---------------------------------------------*/
 .top-bar {
-  background: #005eb8; }
+  background: #002d72; }
 
 .top-bar.expanded {
-  background: #005eb8;
+  background: #002d72;
   height: auto; }
 
 .top-bar.expanded .title-area {
-  background: #005eb8; }
+  background: #002d72; }
 
 .top-bar ul li a {
   font-family: "gentona-thin", "Myriad W01 Regular", Arial, sans-serif; }
@@ -8854,11 +8854,11 @@ button:hover {
   padding-bottom: 0.375em; }
 
 .postmaterial a {
-  color: #005eb8;
+  color: #002d72;
   font-family: "arnhem", Georgia, serif;
   text-decoration: none; }
   .postmaterial a:hover .postmaterial a:visited {
-    color: #005eb8;
+    color: #002d72;
     font-family: "arnhem", Georgia, serif;
     text-decoration: none; }
 
@@ -9353,7 +9353,7 @@ blockquote {
     font-style: normal;
     font-weight: bold;
     font-size: 1.1rem;
-    color: #005eb8;
+    color: #002d72;
     line-height: 1.35rem; }
     blockquote cite a {
       font-family: "gentona-book", "Myriad W01 SmBd", Arial, sans-serif; }
@@ -9433,7 +9433,7 @@ ul.page-numbers li {
   text-align: center; }
 
 .tell-me .quote-marks {
-  color: #005eb8;
+  color: #002d72;
   content: "\201C";
   font-size: 5em;
   position: absolute;
@@ -9956,11 +9956,11 @@ ul.page-numbers li {
     #sidebar .bigideas .spacer, #sidebar .Big.Ideas .spacer, #sidebar .big-ideas .spacer {
       background: #007a53; }
   #sidebar .students, #sidebar .Students.Digest {
-    color: #005eb8; }
+    color: #002d72; }
     #sidebar .students h4, #sidebar .Students.Digest h4 {
-      color: #005eb8; }
+      color: #002d72; }
     #sidebar .students .spacer, #sidebar .Students.Digest .spacer {
-      background: #005eb8; }
+      background: #002d72; }
   #sidebar .table h4 {
     color: #333; }
   #sidebar .breadcrumbs {
@@ -9991,7 +9991,7 @@ ul.page-numbers li {
   #sidebar .alumni .breadcrumbs > * a {
     color: #ff6900; }
   #sidebar .students .breadcrumbs > * a {
-    color: #005eb8; }
+    color: #002d72; }
 
 .button {
   color: #fff !important; }
@@ -10007,7 +10007,7 @@ ul.page-numbers li {
   background-color: #007a53; }
 
 .students.button {
-  background-color: #005eb8; }
+  background-color: #002d72; }
 
 .alumni.button {
   background-color: #ff6900; }
@@ -10152,7 +10152,7 @@ div.news {
   font-family: "gentona-semibold", "Myriad W01 SmBd Cnd", Arial, sans-serif; }
 
 .students .section-header {
-  background: #005eb8; }
+  background: #002d72; }
 
 .alumni h2 {
   font-family: "gentona-semibold", "Myriad W01 SmBd Cnd", Arial, sans-serif; }
@@ -10372,8 +10372,8 @@ h2.toc_header {
     color: #2C2C33;
     border-bottom-color: #2C2C33; }
   h2.toc_header.students {
-    color: #005eb8;
-    border-bottom-color: #005eb8; }
+    color: #002d72;
+    border-bottom-color: #002d72; }
   h2.toc_header.bigideas {
     color: #007a53;
     border-bottom-color: #007a53; }
@@ -10472,7 +10472,7 @@ input#gsc-i-id1 {
   padding-left: .5rem !important; }
 
 .gsc-results .gsc-cursor-box .gsc-cursor-page {
-  color: #005eb8 !important;
+  color: #002d72 !important;
   font-size: 1rem; }
 
 .gsc-cursor-page.gsc-cursor-current-page {
@@ -10567,12 +10567,12 @@ input#gsc-i-id1 {
 
 @media only screen and (min-width: 40.0625em) {
   .top-bar-section li:not(.has-form) a:not(.button) {
-    background: #005eb8; }
+    background: #002d72; }
     .top-bar-section li:not(.has-form) a:not(.button):hover {
       background-color: #141418 !important;
-      background: #005eb8; }
+      background: #002d72; }
   .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
-    background: #005eb8; }
+    background: #002d72; }
   .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
     border-right: solid 1px #2C2C33; }
   .slide img {
