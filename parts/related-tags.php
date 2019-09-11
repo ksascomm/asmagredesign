@@ -19,7 +19,7 @@
 				<h4>Related <?php echo $tagname; ?> Articles</h4>
 			</div>
 			<div class="small-4 medium-6 columns">
-				<h2><span class="spacer"></span></h2>
+				<span class="spacer"></span>
 			</div>
 		</div>		
 

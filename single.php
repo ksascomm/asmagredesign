@@ -44,7 +44,7 @@
 		
 		<div class="small-12 columns">
 			<style>
-				ul.inline-list li a {
+				ul.social-share.inline-list li a {
 					color: #005eb8;
 				}
 				h4 {
@@ -54,7 +54,7 @@
 
 			<h4>Share This Story <span class="spacer"></span></h4>
 
-			<ul class="inline-list">	
+			<ul class="social-share inline-list">	
 				<li><a aria-label="Facebook Sharer" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode( get_permalink() ); ?>" target="_blank"><span class="fa fa-facebook-official fa-2x"></span><span class="show-for-sr">Facebook</span></a></li>
 				<li><a aria-label="Twitter Sharer" href="https://twitter.com/intent/tweet?text=<?php echo urlencode( get_the_title() ) ?>&amp;url=<?php echo urlencode( get_permalink() ); ?>&amp;via=JHUArtsSciences" target="_blank" title="Share this on Twitter"><span class="fa fa-twitter fa-2x"></span><span class="show-for-sr">Twitter</span></a></li>
 				<li>
