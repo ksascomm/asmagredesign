@@ -56,14 +56,20 @@ echo '<div class="small-12 medium-7 medium-offset-5 columns">';
 							$mosaic_caption = $mosaic_attachment->post_excerpt;
 							$mosaic_description = $mosaic_attachment->post_excerpt;
 							$mosaic_dimensions = $mosaic_attachment->menu_order;
+							$image_alt = get_post_meta( $mosaic_attachment->ID, '_wp_attachment_image_alt', true);
+						    if ( empty( $image_alt )) {
+						        $image_alt = $mosaic_attachment->post_title;
+						    }
+						    if ( empty( $image_alt )) {
+						        $image_alt = $mosaic_attachment->post_excerpt;
+						    }
 							echo $mosaic_description;
 							echo '<li class="item size-' . $mosaic_dimensions;
 							echo '">
 									<a href="' . $mosaic_link[0];
 							echo '" class="lightbox">
 										<img src="' . $mosaic_link[0];
-							echo '" title="' . $mosaic_caption;
-							echo '" alt="' . $mosaic_caption;
+							echo '" alt="' . $image_alt;
 							echo '" /></a></li>';		
 		                    }
 		                } ?>
