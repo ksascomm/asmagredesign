@@ -7,7 +7,7 @@ footer {
   margin-top: 1.5em;
   a {
     color: $white;
-    &:hover {
+    &:hover, &:focus {
       color: #ccc;
     }
   }
@@ -94,8 +94,8 @@ h2.toc_header {
     border-bottom-color: $red;
   }
   &.alumni {
-    color: $orange;
-    border-bottom-color: $orange;
+    color: $purple;
+    border-bottom-color: $purple;
   }
   &.departments {
     color: $black;

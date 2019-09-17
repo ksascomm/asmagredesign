@@ -8384,10 +8384,10 @@ h4, h5, h6,
   background: #993366; }
 
 .Alumni h4 {
-  color: #ff6900; }
+  color: #51284F; }
 
 .Alumni .spacer {
-  background: #ff6900; }
+  background: #51284F; }
 
 .News h4 {
   color: #0072ce; }
@@ -8420,10 +8420,10 @@ h4, h5, h6,
   background: #002d72; }
 
 .alumni h4 {
-  color: #ff6900; }
+  color: #51284F; }
 
 .alumni .spacer {
-  background: #ff6900; }
+  background: #51284F; }
 
 hr.style15 {
   border-top: 4px double #8c8b8b;
@@ -8739,7 +8739,7 @@ article.field {
   background: #007a53; }
 
 .purple_bg, #news .caption-box {
-  background: #24135f; }
+  background: #51284F; }
 
 .fushia, #insights .caption-box {
   background: #8e3a80; }
@@ -9926,11 +9926,11 @@ ul.page-numbers li {
     #sidebar .Insights .spacer {
       background: #993366; }
   #sidebar .Alumni, #sidebar .alumni {
-    color: #ff6900; }
+    color: #51284F; }
     #sidebar .Alumni h4, #sidebar .alumni h4 {
-      color: #ff6900; }
+      color: #51284F; }
     #sidebar .Alumni .spacer, #sidebar .alumni .spacer {
-      background: #ff6900; }
+      background: #51284F; }
   #sidebar .News, #sidebar .news {
     color: #0072ce; }
     #sidebar .News h4, #sidebar .news h4 {
@@ -9989,7 +9989,7 @@ ul.page-numbers li {
   #sidebar .news .breadcrumbs > * a {
     color: #0072ce; }
   #sidebar .alumni .breadcrumbs > * a {
-    color: #ff6900; }
+    color: #51284F; }
   #sidebar .students .breadcrumbs > * a {
     color: #002d72; }
 
@@ -10010,7 +10010,7 @@ ul.page-numbers li {
   background-color: #002d72; }
 
 .alumni.button {
-  background-color: #ff6900; }
+  background-color: #51284F; }
 
 .features.button {
   background-color: #8a2a2b; }
@@ -10158,7 +10158,7 @@ div.news {
   font-family: "gentona-semibold", "Myriad W01 SmBd Cnd", Arial, sans-serif; }
 
 .alumni .section-header {
-  background: #ff6900; }
+  background: #51284F; }
 
 .item h5 {
   font-family: "gentona-semibold", "Myriad W01 SmBd Cnd", Arial, sans-serif; }
@@ -10299,7 +10299,7 @@ footer {
   margin-top: 1.5em; }
   footer a {
     color: #FFFFFF; }
-    footer a:hover {
+    footer a:hover, footer a:focus {
       color: #ccc; }
 
 .inline-list li a {
@@ -10366,8 +10366,8 @@ h2.toc_header {
     color: #8a2a2b;
     border-bottom-color: #8a2a2b; }
   h2.toc_header.alumni {
-    color: #ff6900;
-    border-bottom-color: #ff6900; }
+    color: #51284F;
+    border-bottom-color: #51284F; }
   h2.toc_header.departments {
     color: #31261D;
     border-bottom-color: #31261D; }
