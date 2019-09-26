@@ -16,11 +16,17 @@
   a {
     color: $jhublue;
     font-family: $font-stack;
-    text-decoration: none;
-    &:hover .postmaterial a:visited {
-      color: $jhublue;
-      font-family: $font-stack;
-      text-decoration: none;
+    border-bottom: .125em solid ;
+    border-bottom-color: $silver;
+    background-color: transparent;
+    border-radius: 0;
+    transition: border-color,background-color,color;
+    transition-duration: 250ms,250ms,250ms;
+    transition-timing-function: ease-in-out,ease-in-out,ease-in-out;
+    &:hover, a:visited {
+      color: $ksasblue;
+      border-bottom: .125em solid;
+      border-bottom-color: $black;
     }
   }
 }

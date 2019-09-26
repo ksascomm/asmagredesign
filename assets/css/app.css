@@ -8856,11 +8856,17 @@ button:hover {
 .postmaterial a {
   color: #002d72;
   font-family: "arnhem", Georgia, serif;
-  text-decoration: none; }
-  .postmaterial a:hover .postmaterial a:visited {
-    color: #002d72;
-    font-family: "arnhem", Georgia, serif;
-    text-decoration: none; }
+  border-bottom: .125em solid;
+  border-bottom-color: #E5E2E0;
+  background-color: transparent;
+  border-radius: 0;
+  transition: border-color,background-color,color;
+  transition-duration: 250ms,250ms,250ms;
+  transition-timing-function: ease-in-out,ease-in-out,ease-in-out; }
+  .postmaterial a:hover, .postmaterial a a:visited {
+    color: #0072ce;
+    border-bottom: .125em solid;
+    border-bottom-color: #31261D; }
 
 p.author {
   font-family: "gentona-extra-light", "Myriad W01 Regular", Arial, sans-serif;
