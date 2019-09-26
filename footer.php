@@ -12,6 +12,7 @@
 				<h5><a href="<?php echo get_site_url(); ?>/contact/">Contact Us</a></h5>
 				<h5><a href="<?php echo get_site_url(); ?>/subscribe/">Subscribe/Update Address</a></h5>
    			</div>
+   			<?php if (!is_page_template('template-tableofcontents.php') && !is_page_template('template-tableofcontents-features.php')) :?>
 			<div class="row" id="search-bar">
 				<form method="GET" action="<?php echo home_url( '/' ); ?>" role="search" aria-label="Utility Bar Search">
 		            <div class="row">
@@ -30,6 +31,7 @@
 		            </div>
 		        </form>
 			</div>
+		<?php endif;?>
 		</div>
 		<div class="small-12 medium-4 columns">
 			<ul class="inline-list">

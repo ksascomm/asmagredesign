@@ -2,7 +2,7 @@
 			<div class="small-12 medium-4 columns centered">
 			<div class="mobile-logo centered">
 				<li class="logo"><a href="<?php echo home_url(); ?>" title="Krieger School of Arts & Sciences"><span class="hide">Arts & Sciences</span></a>
-				<select class="bright_blue_bg issue" onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+				<select title="Issue" class="bright_blue_bg issue" onchange="window.open(this.options[this.selectedIndex].value,'_top')">
 				<?php $volume_name = get_the_volume_name($post);  $volume = get_the_volume($post);?>
 				<option><?php echo $volume_name; ?></option>
 				<?php wp_nav_menu( array( 
@@ -38,18 +38,18 @@
 		</div>		<div class="row hide-for-small">
 			<div class="small-12 columns" id="logo_nav">
 				<li class="logo"><a href="<?php echo home_url(); ?>" title="Krieger School of Arts & Sciences"><span class="hide">Arts & Sciences</span></a>
-								<select class="issue" onchange="window.open(this.options[this.selectedIndex].value,'_top')">
-								<?php $volume_name = get_the_volume_name($post); ?>
-								<option><?php echo $volume_name; ?></option>
-								<?php wp_nav_menu( array( 
-									'theme_location' => 'issue-menu', 
-									'menu_class' => '', 
-									'fallback_cb' => 'foundation_page_menu', 
-									'container' => '',
-									'depth' => 1,
-									'walker'=> new mobile_select_menu,
-									'items_wrap' => '%3$s', )); ?>
-								</select><span class="logo-sub">Magazine</span></li>
+				<select title="Issue" class="issue" onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+				<?php $volume_name = get_the_volume_name($post); ?>
+				<option><?php echo $volume_name; ?></option>
+				<?php wp_nav_menu( array( 
+					'theme_location' => 'issue-menu', 
+					'menu_class' => '', 
+					'fallback_cb' => 'foundation_page_menu', 
+					'container' => '',
+					'depth' => 1,
+					'walker'=> new mobile_select_menu,
+					'items_wrap' => '%3$s', )); ?>
+				</select><span class="logo-sub">Magazine</span></li>
 							
 			</div>
 		</div>
@@ -66,7 +66,6 @@
 						<div class="button bright_blue_bg"><a href="#" data-filter=".exclusive, .expanded-story, .video, .slideshow" onclick="ga('send', 'event', 'Stories', 'Filter', 'Web Extras');">Web Extras</a></div>
 					</div>
 					<div class="small-2 columns offset-gutter">
-						<label for="search" class="hide">Search by keyword:</label>	
 						<input type="submit" class="icon-search" placeholder="Filter by keyword"value="&#48;" />
 						<input type="text" name="search" id="id_search" aria-label="Search"  /> 	
 					</div>			

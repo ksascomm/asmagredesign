@@ -8735,22 +8735,22 @@ article.field {
   margin-bottom: 20px;
   width: 235px !important; }
 
-#features .caption-box, .green_bg {
+.features .caption-box, .green_bg {
   background: #007a53; }
 
-.purple_bg, #news .caption-box {
+.purple_bg, .news .caption-box {
   background: #51284F; }
 
-.fushia, #insights .caption-box {
+.fushia, .insights .caption-box {
   background: #8e3a80; }
 
-.yellow_bg, #research .caption-box {
-  background: #cba052; }
+.yellow_bg, .research .caption-box {
+  background: #90723B; }
 
-.orange_bg, #alumni .caption-box {
-  background: #cc6600; }
+.orange_bg, .alumni .caption-box {
+  background: #C75302; }
 
-.bright_blue_bg, #exclusive .caption-box {
+.bright_blue_bg, .exclusive .caption-box {
   background: #0072ce; }
 
 #homepage .row {

@@ -78,27 +78,27 @@ article.field {
   width: 235px !important;
 }
 
-#features .caption-box, .green_bg {
+.features .caption-box, .green_bg {
   background: $green;
 }
 
-.purple_bg, #news .caption-box {
+.purple_bg, .news .caption-box {
   background: $purple;
 }
 
-.fushia, #insights .caption-box {
+.fushia, .insights .caption-box {
   background: #8e3a80;
 }
 
-.yellow_bg, #research .caption-box {
+.yellow_bg, .research .caption-box {
   background: $yellow;
 }
 
-.orange_bg, #alumni .caption-box {
-  background: #cc6600;
+.orange_bg, .alumni .caption-box {
+  background: $orange;
 }
 
-.bright_blue_bg, #exclusive .caption-box {
+.bright_blue_bg, .exclusive .caption-box {
   background: $ksasblue;
 }
 

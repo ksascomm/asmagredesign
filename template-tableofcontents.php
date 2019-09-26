@@ -52,7 +52,7 @@ Template Name: Issue Table of Contents
 				
 					<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field">
 						<?php the_post_thumbnail('filterthumb', array('class'=>'no-margin')); ?>						
-					<article id="features" class="small-12 columns field">
+					<article class="features small-12 columns field">
 							<div class="row">
 								<div class="small-12 columns caption-box">
 									<h3><?php if(is_array($multimedia)) { foreach( $multimedia as $icon) { echo '<span class="icon-' . $icon . '"></span>&nbsp;'; unset($multimedia);}} ?><?php the_title(); ?></h3>
@@ -91,7 +91,7 @@ Template Name: Issue Table of Contents
 				
 					<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field">
 					<?php the_post_thumbnail('filterthumb', array('class'=>'no-margin')); ?>
-						<article class="small-12 columns field" id="<?php echo $category_name; ?>">
+						<article class="small-12 columns field <?php echo $category_name; ?>">
 							<div class="row">
 								<div class="small-12 columns caption-box">
 									<h3><?php if(is_array($multimedia)) { foreach( $multimedia as $icon) { echo '<span class="icon-' . $icon . '"></span>&nbsp;'; unset($multimedia);}} ?><?php the_title(); ?></h3>
